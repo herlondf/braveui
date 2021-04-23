@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{7E1C7536-B5A0-43CD-8EC6-058D44B664BE}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="..\BraveButton.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\sample\BraveButtonDemo.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="BraveButton">
+        <MSBuild Projects="..\BraveButton.dproj"/>
+    </Target>
+    <Target Name="BraveButton:Clean">
+        <MSBuild Projects="..\BraveButton.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BraveButton:Make">
+        <MSBuild Projects="..\BraveButton.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="BraveButtonDemo">
+        <MSBuild Projects="..\sample\BraveButtonDemo.dproj"/>
+    </Target>
+    <Target Name="BraveButtonDemo:Clean">
+        <MSBuild Projects="..\sample\BraveButtonDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BraveButtonDemo:Make">
+        <MSBuild Projects="..\sample\BraveButtonDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="BraveButton;BraveButtonDemo"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="BraveButton:Clean;BraveButtonDemo:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="BraveButton:Make;BraveButtonDemo:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

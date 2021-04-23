@@ -1,0 +1,13 @@
+{
+	"name": "BraveButton",
+	"description": "",
+	"version": "1.0.0",
+	"homepage": "",
+	"mainsrc": "./src",
+	"projects": [
+		"./BraveButton.dproj"
+	],
+	"dependencies": {
+		"github.com/herlondf/bravecommon": "^1.0.0"
+	}
+}
