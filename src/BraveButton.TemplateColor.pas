@@ -14,12 +14,12 @@ uses
 
 type
   TFontConfiguration = class(TInterfacedObject, iFontConfigurationCommon)
-    constructor Create(AStyleTemplateColor: TStyleTemplateColor; AOwner: TComponent);
+    constructor Create(ATemplateColor: TTemplateColor; AOwner: TComponent);
     destructor Destroy; override;
-    class function New(AStyleTemplateColor: TStyleTemplateColor; AOwner: TComponent): iFontConfigurationCommon;
+    class function New(ATemplateColor: TTemplateColor; AOwner: TComponent): iFontConfigurationCommon;
   private
     FOwner                  : TComponent;
-    FStyleTemplateColor     : TStyleTemplateColor;
+    FTemplateColor          : TTemplateColor;
 
     FFont                   : TFont;
     FFontDisabled           : TFont;
@@ -38,11 +38,11 @@ type
   end;
 
   TPenConfiguration = class(TInterfacedObject, iPenConfigurationCommon)
-    constructor Create(AStyleTemplateColor: TStyleTemplateColor; AOwner: TComponent);
-    class function New(AStyleTemplateColor: TStyleTemplateColor; AOwner: TComponent): iPenConfigurationCommon;
+    constructor Create(ATemplateColor: TTemplateColor; AOwner: TComponent);
+    class function New(ATemplateColor: TTemplateColor; AOwner: TComponent): iPenConfigurationCommon;
   private
     FOwner                    : TComponent;
-    FStyleTemplateColor       : TStyleTemplateColor;
+    FTemplateColor            : TTemplateColor;
 
     function GetPenStyle          : TPenStyle;
     function GetPenFocusedStyle   : TPenStyle;
@@ -61,11 +61,11 @@ type
   end;
 
   TBrushConfiguration = class(TInterfacedObject, iBrushConfigurationCommom)
-    constructor Create(AStyleTemplateColor: TStyleTemplateColor; AOwner: TComponent);
-    class function New(AStyleTemplateColor: TStyleTemplateColor; AOwner: TComponent): iBrushConfigurationCommom;
+    constructor Create(ATemplateColor: TTemplateColor; AOwner: TComponent);
+    class function New(ATemplateColor: TTemplateColor; AOwner: TComponent): iBrushConfigurationCommom;
   private
     FOwner                        : TComponent;
-    FStyleTemplateColor           : TStyleTemplateColor;
+    FTemplateColor                : TTemplateColor;
 
     function GetBrushColor        : TColor;
     function GetBrushFocusedColor : TColor;
@@ -73,9 +73,9 @@ type
     function GetBrushDownColor    : TColor;
   end;
 
-  TButtonStyleTemplateColor = class(TInterfacedObject, iButtonStyleTemplate)
-    constructor Create(AStyleTemplateColor: TStyleTemplateColor; AOwner: TComponent);
-    class function New(AStyleTemplateColor: TStyleTemplateColor; AOwner: TComponent): iButtonStyleTemplate;
+  TBraveButtonTemplateColor = class(TInterfacedObject, iBraveButtonTemplateColor)
+    constructor Create(ATemplateColor: TTemplateColor; AOwner: TComponent);
+    class function New(ATemplateColor: TTemplateColor; AOwner: TComponent): iBraveButtonTemplateColor;
   private
     FPenConfigurationCommon              : iPenConfigurationCommon;
     FBrushConfigurationCommon            : iBrushConfigurationCommom;
@@ -92,31 +92,31 @@ type
 
 implementation
 
-{ TButtonStyleTemplateColor }
+{ TBraveButtonTemplateColor }
 
-constructor TButtonStyleTemplateColor.Create(AStyleTemplateColor: TStyleTemplateColor; AOwner: TComponent);
+constructor TBraveButtonTemplateColor.Create(ATemplateColor: TTemplateColor; AOwner: TComponent);
 begin
-  FPenConfigurationCommon   := TPenConfiguration.New  ( AStyleTemplateColor, AOwner );
-  FBrushConfigurationCommon := TBrushConfiguration.New( AStyleTemplateColor, AOwner );
-  FFontConfigurationCommon  := TFontConfiguration.New ( AStyleTemplateColor, AOwner );
+  FPenConfigurationCommon   := TPenConfiguration.New  ( ATemplateColor, AOwner );
+  FBrushConfigurationCommon := TBrushConfiguration.New( ATemplateColor, AOwner );
+  FFontConfigurationCommon  := TFontConfiguration.New ( ATemplateColor, AOwner );
 end;
 
-class function TButtonStyleTemplateColor.New(AStyleTemplateColor: TStyleTemplateColor; AOwner: TComponent): iButtonStyleTemplate;
+class function TBraveButtonTemplateColor.New(ATemplateColor: TTemplateColor; AOwner: TComponent): iBraveButtonTemplateColor;
 begin
-  Result := Self.Create(AStyleTemplateColor, AOwner);
+  Result := Self.Create(ATemplateColor, AOwner);
 end;
 
-function TButtonStyleTemplateColor.GetPenConfigurationCommon: iPenConfigurationCommon;
+function TBraveButtonTemplateColor.GetPenConfigurationCommon: iPenConfigurationCommon;
 begin
   Result := FPenConfigurationCommon;
 end;
 
-function TButtonStyleTemplateColor.GetBrushConfigurationCommon: iBrushConfigurationCommom;
+function TBraveButtonTemplateColor.GetBrushConfigurationCommon: iBrushConfigurationCommom;
 begin
   Result := FBrushConfigurationCommon;
 end;
 
-function TButtonStyleTemplateColor.GetFontConfigurationCommon: iFontConfigurationCommon;
+function TBraveButtonTemplateColor.GetFontConfigurationCommon: iFontConfigurationCommon;
 begin
   Result := FFontConfigurationCommon;
 end;
@@ -125,284 +125,316 @@ end;
 
 { TBrushConfiguration }
 
-constructor TBrushConfiguration.Create(AStyleTemplateColor: TStyleTemplateColor; AOwner: TComponent);
+constructor TBrushConfiguration.Create(ATemplateColor: TTemplateColor; AOwner: TComponent);
 begin
-  FStyleTemplateColor := AStyleTemplateColor;
+  FTemplateColor      := ATemplateColor;
   FOwner              := AOwner;
 end;
 
-class function TBrushConfiguration.New(AStyleTemplateColor: TStyleTemplateColor; AOwner: TComponent): iBrushConfigurationCommom;
+class function TBrushConfiguration.New(ATemplateColor: TTemplateColor; AOwner: TComponent): iBrushConfigurationCommom;
 begin
-  Result := Self.Create(AStyleTemplateColor, AOwner);
+  Result := Self.Create(ATemplateColor, AOwner);
 end;
 
 function TBrushConfiguration.GetBrushColor: TColor;
 begin
-  case FStyleTemplateColor of
-    stWarning    : Result := RGB( 251, 198, 88  );
-    stDanger     : Result := RGB( 239, 129, 87  );
-    stPrimary    : Result := RGB( 81 , 203, 206 );
-    stSecondary  : Result := RGB( 132, 106, 208 );
-    stLight      : Result := RGB( 255, 255, 255 );
-    stDark       : Result := RGB( 102, 97 , 91  );
-    stSuccess    : Result := RGB( 107, 208, 152 );
-    stInfo       : Result := RGB( 81 , 188, 218 );
+  Result := clWhite;
+
+  case FTemplateColor of
+    tcWarning    : Result := RGB( 251, 198, 88  );
+    tcDanger     : Result := RGB( 239, 129, 87  );
+    tcPrimary    : Result := RGB( 81 , 203, 206 );
+    tcSecondary  : Result := RGB( 132, 106, 208 );
+    tcLight      : Result := RGB( 255, 255, 255 );
+    tcDark       : Result := RGB( 102, 97 , 91  );
+    tcSuccess    : Result := RGB( 107, 208, 152 );
+    tcInfo       : Result := RGB( 81 , 188, 218 );
   end;
 end;
 
 function TBrushConfiguration.GetBrushDisabledColor: TColor;
 begin
-  case FStyleTemplateColor of
-    stWarning     : Result := Intensity( GetBrushColor, 80 );
-    stDanger      : Result := Intensity( GetBrushColor, 80 );
-    stPrimary     : Result := Intensity( GetBrushColor, 80 );
-    stSecondary   : Result := Intensity( GetBrushColor, 80 );
-    stLight       : Result := Intensity( GetBrushColor, 80 );
-    stDark        : Result := Intensity( GetBrushColor, 80 );
-    stSuccess     : Result := Intensity( GetBrushColor, 80 );
-    stInfo        : Result := Intensity( GetBrushColor, 80 );
+  Result := clWhite;
+
+  case FTemplateColor of
+    tcWarning     : Result := Intensity( GetBrushColor, 80 );
+    tcDanger      : Result := Intensity( GetBrushColor, 80 );
+    tcPrimary     : Result := Intensity( GetBrushColor, 80 );
+    tcSecondary   : Result := Intensity( GetBrushColor, 80 );
+    tcLight       : Result := Intensity( GetBrushColor, 80 );
+    tcDark        : Result := Intensity( GetBrushColor, 80 );
+    tcSuccess     : Result := Intensity( GetBrushColor, 80 );
+    tcInfo        : Result := Intensity( GetBrushColor, 80 );
   end;
 end;
 
 function TBrushConfiguration.GetBrushDownColor: TColor;
 begin
-  case FStyleTemplateColor of
-    stWarning    : Result := Intensity( GetBrushColor, 50 );
-    stDanger     : Result := Intensity( GetBrushColor, 50 );
-    stPrimary    : Result := Intensity( GetBrushColor, 45 );
-    stSecondary  : Result := Intensity( GetBrushColor, 50 );
-    stLight      : Result := Intensity( GetBrushColor, 50 );
-    stDark       : Result := Intensity( GetBrushColor, 25 );
-    stSuccess    : Result := Intensity( GetBrushColor, 50 );
-    stInfo       : Result := Intensity( GetBrushColor, 45 );
+  Result := clWhite;
+
+  case FTemplateColor of
+    tcWarning    : Result := Intensity( GetBrushColor, 50 );
+    tcDanger     : Result := Intensity( GetBrushColor, 50 );
+    tcPrimary    : Result := Intensity( GetBrushColor, 45 );
+    tcSecondary  : Result := Intensity( GetBrushColor, 50 );
+    tcLight      : Result := Intensity( GetBrushColor, 50 );
+    tcDark       : Result := Intensity( GetBrushColor, 25 );
+    tcSuccess    : Result := Intensity( GetBrushColor, 50 );
+    tcInfo       : Result := Intensity( GetBrushColor, 45 );
   end;
 end;
 
 function TBrushConfiguration.GetBrushFocusedColor: TColor;
 begin
-  case FStyleTemplateColor of
-    stWarning    : Result := Intensity( GetBrushColor, 55 );
-    stDanger     : Result := Intensity( GetBrushColor, 55 );
-    stPrimary    : Result := Intensity( GetBrushColor, 50 );
-    stSecondary  : Result := Intensity( GetBrushColor, 55 );
-    stLight      : Result := Intensity( GetBrushColor, 55 );
-    stDark       : Result := Intensity( GetBrushColor, 30 );
-    stSuccess    : Result := Intensity( GetBrushColor, 55 );
-    stInfo       : Result := Intensity( GetBrushColor, 50 );
+  Result := clWhite;
+
+  case FTemplateColor of
+    tcWarning    : Result := Intensity( GetBrushColor, 55 );
+    tcDanger     : Result := Intensity( GetBrushColor, 55 );
+    tcPrimary    : Result := Intensity( GetBrushColor, 50 );
+    tcSecondary  : Result := Intensity( GetBrushColor, 55 );
+    tcLight      : Result := Intensity( GetBrushColor, 55 );
+    tcDark       : Result := Intensity( GetBrushColor, 30 );
+    tcSuccess    : Result := Intensity( GetBrushColor, 55 );
+    tcInfo       : Result := Intensity( GetBrushColor, 50 );
   end;
 end;
 
 { TPenConfiguration }
 
-constructor TPenConfiguration.Create(AStyleTemplateColor: TStyleTemplateColor; AOwner: TComponent);
+constructor TPenConfiguration.Create(ATemplateColor: TTemplateColor; AOwner: TComponent);
 begin
   FOwner              := AOwner;
-  FStyleTemplateColor := AStyleTemplateColor;
+  FTemplateColor := ATemplateColor;
 end;
 
-class function TPenConfiguration.New(AStyleTemplateColor: TStyleTemplateColor; AOwner: TComponent): iPenConfigurationCommon;
+class function TPenConfiguration.New(ATemplateColor: TTemplateColor; AOwner: TComponent): iPenConfigurationCommon;
 begin
-  Result := Self.Create(AStyleTemplateColor, AOwner);
+  Result := Self.Create(ATemplateColor, AOwner);
 end;
 
 function TPenConfiguration.GetPenColor: TColor;
 begin
-  case FStyleTemplateColor of
-    stWarning    : Result := RGB( 251, 198, 88  );
-    stDanger     : Result := RGB( 239, 129, 87  );
-    stPrimary    : Result := RGB( 81 , 203, 206 );
-    stSecondary  : Result := RGB( 132, 106, 208 );
-    stLight      : Result := RGB( 255, 255, 255 );
-    stDark       : Result := RGB( 102, 97 , 91  );
-    stSuccess    : Result := RGB( 107, 208, 152 );
-    stInfo       : Result := RGB( 81 , 188, 218 );
+  Result := clWhite;
+
+  case FTemplateColor of
+    tcWarning    : Result := RGB( 251, 198, 88  );
+    tcDanger     : Result := RGB( 239, 129, 87  );
+    tcPrimary    : Result := RGB( 81 , 203, 206 );
+    tcSecondary  : Result := RGB( 132, 106, 208 );
+    tcLight      : Result := RGB( 255, 255, 255 );
+    tcDark       : Result := RGB( 102, 97 , 91  );
+    tcSuccess    : Result := RGB( 107, 208, 152 );
+    tcInfo       : Result := RGB( 81 , 188, 218 );
   end;
 end;
 
 function TPenConfiguration.GetPenDisabledColor: TColor;
 begin
-  case FStyleTemplateColor of
-    stWarning    : Result := Intensity( GetPenColor, 80 );
-    stDanger     : Result := Intensity( GetPenColor, 80 );
-    stPrimary    : Result := Intensity( GetPenColor, 80 );
-    stSecondary  : Result := Intensity( GetPenColor, 80 );
-    stLight      : Result := Intensity( GetPenColor, 80 );
-    stDark       : Result := Intensity( GetPenColor, 80 );
-    stSuccess    : Result := Intensity( GetPenColor, 80 );
-    stInfo       : Result := Intensity( GetPenColor, 80 );
+  Result := clWhite;
+
+  case FTemplateColor of
+    tcWarning    : Result := Intensity( GetPenColor, 80 );
+    tcDanger     : Result := Intensity( GetPenColor, 80 );
+    tcPrimary    : Result := Intensity( GetPenColor, 80 );
+    tcSecondary  : Result := Intensity( GetPenColor, 80 );
+    tcLight      : Result := Intensity( GetPenColor, 80 );
+    tcDark       : Result := Intensity( GetPenColor, 80 );
+    tcSuccess    : Result := Intensity( GetPenColor, 80 );
+    tcInfo       : Result := Intensity( GetPenColor, 80 );
   end;
 end;
 
 function TPenConfiguration.GetPenDisabledStyle: TPenStyle;
 begin
-  case FStyleTemplateColor of
-    stWarning    : Result := psSolid;
-    stDanger     : Result := psSolid;
-    stPrimary    : Result := psSolid;
-    stSecondary  : Result := psSolid;
-    stLight      : Result := psSolid;
-    stDark       : Result := psSolid;
-    stSuccess    : Result := psSolid;
-    stInfo       : Result := psSolid;
+  Result := psSolid;
+
+  case FTemplateColor of
+    tcWarning    : Result := psSolid;
+    tcDanger     : Result := psSolid;
+    tcPrimary    : Result := psSolid;
+    tcSecondary  : Result := psSolid;
+    tcLight      : Result := psSolid;
+    tcDark       : Result := psSolid;
+    tcSuccess    : Result := psSolid;
+    tcInfo       : Result := psSolid;
   end;
 end;
 
 function TPenConfiguration.GetPenDisabledWidth: Smallint;
 begin
-  case FStyleTemplateColor of
-    stWarning    : Result := 1;
-    stDanger     : Result := 1;
-    stPrimary    : Result := 1;
-    stSecondary  : Result := 1;
-    stLight      : Result := 1;
-    stDark       : Result := 1;
-    stSuccess    : Result := 1;
-    stInfo       : Result := 1;
+  Result := 0;
+
+  case FTemplateColor of
+    tcWarning    : Result := 1;
+    tcDanger     : Result := 1;
+    tcPrimary    : Result := 1;
+    tcSecondary  : Result := 1;
+    tcLight      : Result := 1;
+    tcDark       : Result := 1;
+    tcSuccess    : Result := 1;
+    tcInfo       : Result := 1;
   end;
 end;
 
 function TPenConfiguration.GetPenDownColor: TColor;
 begin
-  case FStyleTemplateColor of
-    stWarning    : Result := Intensity( GetPenColor, 50 );
-    stDanger     : Result := Intensity( GetPenColor, 50 );
-    stPrimary    : Result := Intensity( GetPenColor, 40 );
-    stSecondary  : Result := Intensity( GetPenColor, 50 );
-    stLight      : Result := Intensity( GetPenColor, 40 );
-    stDark       : Result := Intensity( GetPenColor, 25 );
-    stSuccess    : Result := Intensity( GetPenColor, 50 );
-    stInfo       : Result := Intensity( GetPenColor, 50 );
+  Result := clWhite;
+
+  case FTemplateColor of
+    tcWarning    : Result := Intensity( GetPenColor, 50 );
+    tcDanger     : Result := Intensity( GetPenColor, 50 );
+    tcPrimary    : Result := Intensity( GetPenColor, 40 );
+    tcSecondary  : Result := Intensity( GetPenColor, 50 );
+    tcLight      : Result := Intensity( GetPenColor, 40 );
+    tcDark       : Result := Intensity( GetPenColor, 25 );
+    tcSuccess    : Result := Intensity( GetPenColor, 50 );
+    tcInfo       : Result := Intensity( GetPenColor, 50 );
   end;
 end;
 
 function TPenConfiguration.GetPenDownStyle: TPenStyle;
 begin
-  case FStyleTemplateColor of
-    stWarning    : Result := psSolid;
-    stDanger     : Result := psSolid;
-    stPrimary    : Result := psSolid;
-    stSecondary  : Result := psSolid;
-    stLight      : Result := psSolid;
-    stDark       : Result := psSolid;
-    stSuccess    : Result := psSolid;
-    stInfo       : Result := psSolid;
+  Result := psSolid;
+
+  case FTemplateColor of
+    tcWarning    : Result := psSolid;
+    tcDanger     : Result := psSolid;
+    tcPrimary    : Result := psSolid;
+    tcSecondary  : Result := psSolid;
+    tcLight      : Result := psSolid;
+    tcDark       : Result := psSolid;
+    tcSuccess    : Result := psSolid;
+    tcInfo       : Result := psSolid;
   end;
 end;
 
 function TPenConfiguration.GetPenDownWidth: Smallint;
 begin
-  case FStyleTemplateColor of
-    stWarning    : Result := 1;
-    stDanger     : Result := 1;
-    stPrimary    : Result := 1;
-    stSecondary  : Result := 1;
-    stLight      : Result := 1;
-    stDark       : Result := 1;
-    stSuccess    : Result := 1;
-    stInfo       : Result := 1;
+  Result := 0;
+
+  case FTemplateColor of
+    tcWarning    : Result := 1;
+    tcDanger     : Result := 1;
+    tcPrimary    : Result := 1;
+    tcSecondary  : Result := 1;
+    tcLight      : Result := 1;
+    tcDark       : Result := 1;
+    tcSuccess    : Result := 1;
+    tcInfo       : Result := 1;
   end;
 end;
 
 function TPenConfiguration.GetPenFocusedColor: TColor;
 begin
-  case FStyleTemplateColor of
-    stWarning    : Result := Intensity( GetPenColor, 45 );
-    stDanger     : Result := Intensity( GetPenColor, 45 );
-    stPrimary    : Result := Intensity( GetPenColor, 40 );
-    stSecondary  : Result := Intensity( GetPenColor, 45 );
-    stLight      : Result := Intensity( GetPenColor, 45 );
-    stDark       : Result := Intensity( GetPenColor, 45 );
-    stSuccess    : Result := Intensity( GetPenColor, 45 );
-    stInfo       : Result := Intensity( GetPenColor, 40 );
+  Result := 0;
+
+  case FTemplateColor of
+    tcWarning    : Result := Intensity( GetPenColor, 45 );
+    tcDanger     : Result := Intensity( GetPenColor, 45 );
+    tcPrimary    : Result := Intensity( GetPenColor, 40 );
+    tcSecondary  : Result := Intensity( GetPenColor, 45 );
+    tcLight      : Result := Intensity( GetPenColor, 45 );
+    tcDark       : Result := Intensity( GetPenColor, 45 );
+    tcSuccess    : Result := Intensity( GetPenColor, 45 );
+    tcInfo       : Result := Intensity( GetPenColor, 40 );
   end;
 end;
 
 function TPenConfiguration.GetPenFocusedStyle: TPenStyle;
 begin
-  case FStyleTemplateColor of
-    stWarning    : Result := psSolid;
-    stDanger     : Result := psSolid;
-    stPrimary    : Result := psSolid;
-    stSecondary  : Result := psSolid;
-    stLight      : Result := psSolid;
-    stDark       : Result := psSolid;
-    stSuccess    : Result := psSolid;
-    stInfo       : Result := psSolid;
+  Result := psSolid;
+
+  case FTemplateColor of
+    tcWarning    : Result := psSolid;
+    tcDanger     : Result := psSolid;
+    tcPrimary    : Result := psSolid;
+    tcSecondary  : Result := psSolid;
+    tcLight      : Result := psSolid;
+    tcDark       : Result := psSolid;
+    tcSuccess    : Result := psSolid;
+    tcInfo       : Result := psSolid;
   end;
 end;
 
 function TPenConfiguration.GetPenFocusedWidth: Smallint;
 begin
-  case FStyleTemplateColor of
-    stWarning    : Result := 1;
-    stDanger     : Result := 1;
-    stPrimary    : Result := 1;
-    stSecondary  : Result := 1;
-    stLight      : Result := 1;
-    stDark       : Result := 1;
-    stSuccess    : Result := 1;
-    stInfo       : Result := 1;
+  Result := 0;
+
+  case FTemplateColor of
+    tcWarning    : Result := 1;
+    tcDanger     : Result := 1;
+    tcPrimary    : Result := 1;
+    tcSecondary  : Result := 1;
+    tcLight      : Result := 1;
+    tcDark       : Result := 1;
+    tcSuccess    : Result := 1;
+    tcInfo       : Result := 1;
   end;
 end;
 
 function TPenConfiguration.GetPenStyle: TPenStyle;
 begin
-  case FStyleTemplateColor of
-    stWarning    : Result := psSolid;
-    stDanger     : Result := psSolid;
-    stPrimary    : Result := psSolid;
-    stSecondary  : Result := psSolid;
-    stLight      : Result := psSolid;
-    stDark       : Result := psSolid;
-    stSuccess    : Result := psSolid;
-    stInfo       : Result := psSolid;
+  Result := psSolid;
+
+  case FTemplateColor of
+    tcWarning    : Result := psSolid;
+    tcDanger     : Result := psSolid;
+    tcPrimary    : Result := psSolid;
+    tcSecondary  : Result := psSolid;
+    tcLight      : Result := psSolid;
+    tcDark       : Result := psSolid;
+    tcSuccess    : Result := psSolid;
+    tcInfo       : Result := psSolid;
   end;
 end;
 
 function TPenConfiguration.GetPenWidth: Smallint;
 begin
-  case FStyleTemplateColor of
-    stWarning    : Result := 1;
-    stDanger     : Result := 1;
-    stPrimary    : Result := 1;
-    stSecondary  : Result := 1;
-    stLight      : Result := 1;
-    stDark       : Result := 1;
-    stSuccess    : Result := 1;
-    stInfo       : Result := 1;
+  Result := 0;
+
+  case FTemplateColor of
+    tcWarning    : Result := 1;
+    tcDanger     : Result := 1;
+    tcPrimary    : Result := 1;
+    tcSecondary  : Result := 1;
+    tcLight      : Result := 1;
+    tcDark       : Result := 1;
+    tcSuccess    : Result := 1;
+    tcInfo       : Result := 1;
   end;
 end;
 
 { TFontConfiguration }
 
-constructor TFontConfiguration.Create(AStyleTemplateColor: TStyleTemplateColor; AOwner: TComponent);
+constructor TFontConfiguration.Create(ATemplateColor: TTemplateColor; AOwner: TComponent);
 begin
   FOwner              := AOwner;
-  FStyleTemplateColor := AStyleTemplateColor;
+  FTemplateColor := ATemplateColor;
 
   FFont              := TFont.Create;
   Font.Color         := RGB(255,255,255);
   Font.Name          := 'Segoe UI Semibold';
   Font.Style         := [];
-  Font.Size          := 10;
+  Font.Size          := 9;
 
   FFontDisabled      := TFont.Create;
   FontDisabled.Color := RGB(255,255,255);
   FontDisabled.Name  := 'Segoe UI Semibold';
   FontDisabled.Style := [];
-  FontDisabled.Size  := 10;
+  FontDisabled.Size  := 9;
 
   FFontFocused       := TFont.Create;
   FontFocused.Color  := RGB(255,255,255);
   FontFocused.Name   := 'Segoe UI Semibold';
   FontFocused.Style  := [];
-  FontFocused.Size   := 10;
+  FontFocused.Size   := 9;
 
   FFontDown          := TFont.Create;
   FontDown.Color     := RGB(255,255,255);
   FontDown.Name      := 'Segoe UI Semibold';
   FontDown.Style     := [];
-  FontDown.Size      := 10;
+  FontDown.Size      := 9;
 end;
 
 destructor TFontConfiguration.Destroy;
@@ -415,9 +447,9 @@ begin
   inherited;
 end;
 
-class function TFontConfiguration.New(AStyleTemplateColor: TStyleTemplateColor; AOwner: TComponent): iFontConfigurationCommon;
+class function TFontConfiguration.New(ATemplateColor: TTemplateColor; AOwner: TComponent): iFontConfigurationCommon;
 begin
-  Result := Self.Create(AStyleTemplateColor, AOwner);
+  Result := Self.Create(ATemplateColor, AOwner);
 end;
 
 function TFontConfiguration.GetFont: TFont;

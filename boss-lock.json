@@ -1,14 +1,5 @@
 {
 	"hash": "d41d8cd98f00b204e9800998ecf8427e",
 	"updated": "2021-04-22T16:34:39.7960129-03:00",
-	"installedModules": {
-		"github.com/herlondf/bravecommon": {
-			"name": "bravecommon",
-			"version": "1.0.0",
-			"hash": "214030a887b38a4830d475901ee3237e",
-			"artifacts": {},
-			"failed": false,
-			"changed": false
-		}
-	}
+	"installedModules": {}
 }
