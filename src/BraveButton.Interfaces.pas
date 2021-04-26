@@ -40,14 +40,14 @@ type
     function GetFontDisabled      : TFont;
   end;
 
-  iButtonStyleTemplate = interface
+  iBraveButtonTemplateColor = interface
     ['{031E5FF4-2134-4E99-B3E1-7108533DC890}']
     function GetPenConfigurationCommon   : iPenConfigurationCommon;
     function GetBrushConfigurationCommon : iBrushConfigurationCommom;
     function GetFontConfigurationCommon  : iFontConfigurationCommon;
   end;
 
-  iButtonStyleTemplateType = interface
+  iBraveButtonTemplateStyle = interface
     ['{97B300BD-3362-49C1-AE07-CC3A37C4987A}']
     function GetPicture                   : TPicture;
     function GetPictureDark               : TPicture;

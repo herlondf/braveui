@@ -5,9 +5,7 @@
 	"homepage": "",
 	"mainsrc": "./src",
 	"projects": [
-		"./BraveButton.dproj"
+		"./BraveUI.dproj"
 	],
-	"dependencies": {
-		"github.com/herlondf/bravecommon": "^1.0.0"
-	}
+	"dependencies": {}
 }

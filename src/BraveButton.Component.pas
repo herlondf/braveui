@@ -22,7 +22,8 @@ uses
 
   {Brave}
   BraveButton.Interfaces,
-  BraveButton.Consts;
+  BraveButton.Consts,
+  Common.Utils, Vcl.Dialogs;
 
 type
   TBraveButton = class;
@@ -57,10 +58,12 @@ type
 
   TBraveButton = class(TGraphicControl)
   private
-    FButtonStyleTemplate       : iButtonStyleTemplate;
-    FButtonStyleTemplateType   : iButtonStyleTemplateType;
+    FBraveButtonTemplateColor       : iBraveButtonTemplateColor;
+    FBraveButtonTemplateStyle   : iBraveButtonTemplateStyle;
 
     FOwner                     : TComponent;
+
+    FAbout                     : String;
 
     FMouseEnter                : Boolean;
     FState                     : TButtonState;
@@ -77,7 +80,7 @@ type
     FBrushFocused              : TBrush;
     FBrushDisabled             : TBrush;
 
-    FPicture                   : TPicture;
+    FPicture                    : TPicture;
     FPictureFocused            : TPicture;
     FPictureDisabled           : TPicture;
     FPictureDark               : TPicture;
@@ -99,14 +102,13 @@ type
     FRadius                    : SmallInt;
     FSpacing                   : SmallInt;
 
-    FClickOnEnter              : Boolean;
     FAlignment                 : TPraAlignment;
 
     FSizeLayout                : TSizeLayout;
     FShape                     : TButtonStyleType;
-    FTemplateColor             : TStyleTemplateColor;
+    FTemplateColor             : TTemplateColor;
     FStyleOutline              : Boolean;
-    FTemplateStyle             : TStyleTemplateType;
+    FTemplateStyle             : TTemplateStyle;
     FPictureLayout             : TPictureLayout;
 
     FImageList                 : TImageList;
@@ -147,7 +149,6 @@ type
     function IsRadius           : Boolean;
     function IsSpacing          : Boolean;
     function IsShowCaption      : Boolean;
-    function IsClickOnEnter     : Boolean;
     function IsStoredAlignment  : Boolean;
     function IsPictureMarginLeft: Boolean;
 
@@ -168,7 +169,6 @@ type
     procedure SetAlignment(const Value: TPraAlignment);
 
     procedure DestroyFocusControl;
-    procedure SetClickOnEnter(const Value: Boolean);
     procedure CreateFocusControl(AOwner: TComponent; AParent: TWinControl);
     procedure WMEraseBkgnd(var Message: TWMEraseBkGnd); message WM_ERASEBKGND;
     procedure DoMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
@@ -180,14 +180,14 @@ type
     function GetPictureHeight: SmallInt;
     function GetSpacing: SmallInt;
 
-    procedure SetTemplateColor(const Value: TStyleTemplateColor);
+    procedure SetTemplateColor(const Value: TTemplateColor);
 
     function IsStyleOutline       : Boolean;
     function IsStoredTemplateColor: Boolean;
     function IsStoredTemplateStyle: Boolean;
 
     procedure SetStyleOutline(const Value: Boolean);
-    procedure SetTemplateStyle(const Value: TStyleTemplateType);
+    procedure SetTemplateStyle(const Value: TTemplateStyle);
 
     procedure StyleChanged(Sender: TObject);
     procedure StyleOutlineConfig;
@@ -204,10 +204,10 @@ type
     procedure LoadingTemplateWarning;
     procedure LoadingTemplatePrimary;
     procedure LoadingTemplateSecondary;
-    procedure LoadingTemplateDefault;
+    //procedure LoadingTemplateDefault;
 
-    procedure CreateButtonColor   ( AStyleTemplateColor: TStyleTemplateColor );
-    procedure CreateButtonTemplate( AStyleTemplateType: TStyleTemplateType   );
+    procedure CreateButtonColor   ( ATemplateColor: TTemplateColor );
+    procedure CreateButtonTemplate( ATemplateStyle: TTemplateStyle   );
 
     procedure ApplyTemplate;
     procedure SetPictureTemplate;
@@ -220,16 +220,15 @@ type
     function IsImageIndexPictureFocused : Boolean;
     function IsImageIndexPictureDark    : Boolean;
 
+    procedure SetPictureLayout             ( const Value: TPictureLayout   );
+    procedure SetImageList                 ( const Value: TImageList       );
+    procedure SetImageIndexPicture         ( const Value: Integer          );
+    procedure SetImageIndexPictureFocused  ( const Value: Integer          );
+    procedure SetImageIndexPictureDisabled ( const Value: Integer          );
+    procedure SetImageIndexPictureDark     ( const Value: Integer          );
+    procedure SetSizeLayout                ( const Value: TSizeLayout      );
+
     procedure AdjustSizeLayout;
-
-    procedure SetPictureLayout             ( const Value: TPictureLayout );
-    procedure SetImageList                 ( const Value: TImageList     );
-    procedure SetImageIndexPicture         ( const Value: Integer        );
-    procedure SetImageIndexPictureFocused  ( const Value: Integer        );
-    procedure SetImageIndexPictureDisabled ( const Value: Integer        );
-    procedure SetImageIndexPictureDark     ( const Value: Integer        );
-
-    procedure SetSizeLayout                ( const Value: TSizeLayout    );
   protected
     procedure DoKeyUp;
     procedure Paint; override;
@@ -283,29 +282,31 @@ type
     property Font;
     property ParentFont default true;
 
-    property Pen             : TPen        read FPen             write SetPen;
-    property PenDown         : TPen        read FPenDown         write SetPenDown;
-    property PenFocused      : TPen        read FPenFocused      write SetPenFocused;
-    property PenDisabled     : TPen        read FPenDisabled     write SetPenDisabled;
+    property About             : String              read FAbout              write FAbout Stored false;
 
-    property Brush           : TBrush      read FBrush           write SetBrush;
-    property BrushDown       : TBrush      read FBrushDown       write SetBrushDown;
-    property BrushFocused    : TBrush      read FBrushFocused    write SetBrushFocused;
-    property BrushDisabled   : TBrush      read FBrushDisabled   write SetBrushDisabled;
+    property Pen               : TPen                read FPen                write SetPen;
+    property PenDown           : TPen                read FPenDown            write SetPenDown;
+    property PenFocused        : TPen                read FPenFocused         write SetPenFocused;
+    property PenDisabled       : TPen                read FPenDisabled        write SetPenDisabled;
 
-    property Picture         : TPicture    read FPicture         write SetPicture;
-    property PictureFocused  : TPicture    read FPictureFocused  write SetPictureFocused;
-    property PictureDisabled : TPicture    read FPictureDisabled write SetPictureDisabled;
-    property PictureDark     : TPicture    read FPictureDark     write SetPictureDark;
+    property Brush             : TBrush              read FBrush              write SetBrush;
+    property BrushDown         : TBrush              read FBrushDown          write SetBrushDown;
+    property BrushFocused      : TBrush              read FBrushFocused       write SetBrushFocused;
+    property BrushDisabled     : TBrush              read FBrushDisabled      write SetBrushDisabled;
 
-    property FontDown        : TButtonFont read FFontDown        Write SetFontDown;
-    property FontFocused     : TButtonFont read FFontFocused     Write SetFontFocused;
-    property FontDisabled    : TButtonFont read FFontDisabled    Write SetFontDisabled;
+    property Picture           : TPicture            read FPicture            write SetPicture;
+    property PictureFocused    : TPicture            read FPictureFocused     write SetPictureFocused;
+    property PictureDisabled   : TPicture            read FPictureDisabled    write SetPictureDisabled;
+    property PictureDark       : TPicture            read FPictureDark        write SetPictureDark;
 
-    property SubFont         : TControlCanvas read FSubFont         write SetSubFont;
-    property SubFontDown     : TButtonFont    read FSubFontDown     write SetSubFontDown;
-    property SubFontFocused  : TButtonFont    read FSubFontFocused  write SetSubFontFocused;
-    property SubFontDisabled : TButtonFont    read FSubFontDisabled write SetSubFontDisabled;
+    property FontDown          : TButtonFont         read FFontDown           write SetFontDown;
+    property FontFocused       : TButtonFont         read FFontFocused        write SetFontFocused;
+    property FontDisabled      : TButtonFont         read FFontDisabled       write SetFontDisabled;
+
+    property SubFont           : TControlCanvas      read FSubFont            write SetSubFont;
+    property SubFontDown       : TButtonFont         read FSubFontDown        write SetSubFontDown;
+    property SubFontFocused    : TButtonFont         read FSubFontFocused     write SetSubFontFocused;
+    property SubFontDisabled   : TButtonFont         read FSubFontDisabled    write SetSubFontDisabled;
 
     property Caption           : TCaption            read FCaption            write SetCaption;
     property CaptionSub        : TCaption            read FCaptionSub         write SetCaptionSub;
@@ -315,12 +316,11 @@ type
     property Shape             : TButtonStyleType    read FShape              write SetShape                                                  default stRectangle;
     property Spacing           : SmallInt            read FSpacing            write SetSpacing             stored IsSpacing                   default 10;
     property ShowCaption       : Boolean             read FShowCaption        write SetShowCaption         stored IsShowCaption               default true;
-    property ClickOnEnter      : Boolean             read FClickOnEnter       write SetClickOnEnter        stored IsClickOnEnter              default true;
     property Alignment         : TPraAlignment       read FAlignment          write SetAlignment           stored IsStoredAlignment           default paCenter;
     property PictureMarginLeft : SmallInt            read FPictureMarginLeft  write SetPictureMarginLeft   stored IsPictureMarginLeft         default 6;
-    property TemplateColor     : TStyleTemplateColor read FTemplateColor      write SetTemplateColor       stored IsStoredTemplateColor       default stCustom;
+    property TemplateColor     : TTemplateColor      read FTemplateColor      write SetTemplateColor       stored IsStoredTemplateColor       default tcCustom;
     property StyleOutline      : Boolean             read FStyleOutline       write SetStyleOutline        stored IsStyleOutline              default false;
-    property TemplateStyle     : TStyleTemplateType  read FTemplateStyle      write SetTemplateStyle       stored IsStoredTemplateStyle       default tsBasic;
+    property TemplateStyle     : TTemplateStyle      read FTemplateStyle      write SetTemplateStyle       stored IsStoredTemplateStyle       default tsBasic;
     property PictureLayout     : TPictureLayout      read FPictureLayout      write SetPictureLayout       stored IsPictureLayout             default plGraphicCenter;
     property SizeLayout        : TSizeLayout         read FSizeLayout         write SetSizeLayout          stored IsSizeLayout                default sl110x35;
 
@@ -335,175 +335,7 @@ implementation
 
 uses
   BraveButton.TemplateColor,
-  BraveButton.TemplateType;
-
-procedure TBraveButton.AdjustSizeLayout;
-begin
-  case FSizeLayout of
-    sl25x25  :
-    begin
-      Self.Width  := 25;
-      Self.Height := 25;
-    end;
-    sl90x25:
-    begin
-      Self.Width  := 90;
-      Self.Height := 25;
-    end;
-    sl90x30:
-    begin
-      Self.Width  := 90;
-      Self.Height := 30;
-    end;
-    sl110x30 :
-    begin
-      Self.Width  := 110;
-      Self.Height := 30;
-    end;
-    sl110x25 :
-    begin
-      Self.Width  := 110;
-      Self.Height := 25;
-    end;
-    sl110x35 :
-    begin
-      Self.Width  := 110;
-      Self.Height := 35;
-    end;
-    sl110x60 :
-    begin
-      Self.Width  := 110;
-      Self.Height := 60;
-    end;
-    sl110x90 :
-    begin
-      Self.Width  := 110;
-      Self.Height := 90;
-    end;
-  end;
-end;
-
-procedure TBraveButton.ApplyTemplate;
-begin
-  Brush.Color         := FButtonStyleTemplate.GetBrushConfigurationCommon.GetBrushColor;
-  BrushFocused.Color  := FButtonStyleTemplate.GetBrushConfigurationCommon.GetBrushFocusedColor;
-  BrushDown.Color     := FButtonStyleTemplate.GetBrushConfigurationCommon.GetBrushDownColor;
-  BrushDisabled.Color := FButtonStyleTemplate.GetBrushConfigurationCommon.GetBrushDisabledColor;
-
-  Pen.Color           := FButtonStyleTemplate.GetPenConfigurationCommon.GetPenColor;
-  Pen.Style           := FButtonStyleTemplate.GetPenConfigurationCommon.GetPenStyle;
-  Pen.Width           := FButtonStyleTemplate.GetPenConfigurationCommon.GetPenDownWidth;
-
-  PenFocused.Color    := FButtonStyleTemplate.GetPenConfigurationCommon.GetPenFocusedColor;
-  PenFocused.Style    := FButtonStyleTemplate.GetPenConfigurationCommon.GetPenFocusedStyle;
-  PenFocused.Width    := FButtonStyleTemplate.GetPenConfigurationCommon.GetPenFocusedWidth;
-
-  PenDown.Color       := FButtonStyleTemplate.GetPenConfigurationCommon.GetPenDownColor;
-  PenDown.Style       := FButtonStyleTemplate.GetPenConfigurationCommon.GetPenDownStyle;
-  PenDown.Width       := FButtonStyleTemplate.GetPenConfigurationCommon.GetPenDownWidth;
-
-  PenDisabled.Color   := FButtonStyleTemplate.GetPenConfigurationCommon.GetPenDisabledColor;
-  PenDisabled.Style   := FButtonStyleTemplate.GetPenConfigurationCommon.GetPenDisabledStyle;
-  PenDisabled.Width   := FButtonStyleTemplate.GetPenConfigurationCommon.GetPenDisabledWidth;
-
-  Font.Assign           ( FButtonStyleTemplate.GetFontConfigurationCommon.GetFont          );
-  FontDown.Assign       ( FButtonStyleTemplate.GetFontConfigurationCommon.GetFontDown      );
-  FontDisabled.Assign   ( FButtonStyleTemplate.GetFontConfigurationCommon.GetFontDisabled  );
-  FontFocused.Assign    ( FButtonStyleTemplate.GetFontConfigurationCommon.GetFontFocused   );
-
-  SubFont.Font.Assign   ( FButtonStyleTemplate.GetFontConfigurationCommon.GetFont          );
-  SubFontDown.Assign    ( FButtonStyleTemplate.GetFontConfigurationCommon.GetFontDown      );
-  SubFontFocused.Assign ( FButtonStyleTemplate.GetFontConfigurationCommon.GetFontFocused   );
-  SubFontDisabled.Assign( FButtonStyleTemplate.GetFontConfigurationCommon.GetFontDisabled  );
-end;
-
-procedure TBraveButton.Assign(Source: TPersistent);
-begin
-  if Source is TBraveButton then
-  begin
-    Brush.Assign(TBraveButton(Source).Brush);
-    BrushFocused.Assign(TBraveButton(Source).BrushFocused);
-    Pen.Assign(TBraveButton(Source).Pen);
-    PenFocused.Assign(TBraveButton(Source).PenFocused);
-    Font.Assign(TBraveButton(Source).Font);
-    FontFocused.Assign(TBraveButton(Source).FontFocused);
-    FontDown.Assign(TBraveButton(Source).FontDown);
-    Radius := TBraveButton(Source).Radius;
-  end
-  else
-    inherited Assign(Source);
-end;
-
-procedure TBraveButton.ChangeScale(M, D: Integer; isDpiChange: Boolean);
-var
-  Flags: TScalingFlags;
-begin
-  FPen.Width := MulDiv(FPen.Width, M, D);
-  // Scaling of other Fonts as current Font
-  if csLoading in ComponentState then
-    Flags := ScalingFlags
-  else
-    Flags := DefaultScalingFlags;
-
-  if not ParentFont and (sfFont in Flags) then
-  begin
-    FFontDown.Height     := MulDiv( FFontDown.Height    , M, D );
-    FFontFocused.Height  := MulDiv( FFontFocused.Height , M, D );
-    FFontDisabled.Height := MulDiv( FFontDisabled.Height, M, D );
-  end;
-
-  inherited;
-end;
-
-procedure TBraveButton.Click;
-begin
-  inherited;
-end;
-
-procedure TBraveButton.CMEnter(var Message: TCMEnter);
-begin
-  if not(Enabled) or (csDesigning in ComponentState) then
-    Exit;
-
-  FMouseEnter := false;
-  invalidate;
-end;
-
-procedure TBraveButton.CMMouseEnter(var Message: TNotifyEvent);
-begin
-  if not(Enabled) or (csDesigning in ComponentState) then
-    Exit;
-
-  FMouseEnter := true;
-  invalidate;
-end;
-
-procedure TBraveButton.CMMouseLeave(var Message: TNotifyEvent);
-begin
-  if not(Enabled) or (csDesigning in ComponentState) then
-    Exit;
-
-  FMouseEnter := false;
-  invalidate;
-end;
-
-procedure TBraveButton.FontDisabledCopyOfFont(const AValue: Boolean);
-begin
-  if AValue then
-    FFontDisabled.Assign(Font);
-end;
-
-procedure TBraveButton.FontDownCopyOfFont(const AValue: Boolean);
-begin
-  if AValue then
-    FFontDown.Assign(Font);
-end;
-
-procedure TBraveButton.FontFocusedCopyOfFont(const AValue: Boolean);
-begin
-  if AValue then
-    FFontFocused.Assign(Font);
-end;
+  BraveButton.TemplateStyle;
 
 constructor TBraveButton.Create(AOwner: TComponent);
 begin
@@ -597,8 +429,6 @@ begin
   FMouseEnter := false;
   FShowCaption := true;
 
-  FClickOnEnter := true;
-
   TabStop := true;
 
   SetPictureMarginLeft(6);
@@ -611,85 +441,247 @@ begin
   FControllerStyleTemplate := false;
 
   FStyleOutline := false;
-  //FPictureLayout := plGraphicCenter;
 
   ImageIndexPicture         := -1;
   ImageIndexPictureFocused  := -1;
   ImageIndexPictureDisabled := -1;
   IMageIndexPictureDark     := -1;
 
-  //CreateButtonTemplate(tsBasic);
+  CreateButtonTemplate(tsBasic);
 end;
 
-procedure TBraveButton.CreateButtonColor(AStyleTemplateColor: TStyleTemplateColor);
+procedure TBraveButton.AdjustSizeLayout;
 begin
-  case AStyleTemplateColor of
-    stCustom:
+  case FSizeLayout of
+    sl25x25  :
     begin
-
+      Self.Width  := 25;
+      Self.Height := 25;
     end;
-
-    stWarning:
+    sl90x25:
     begin
-      LoadingTemplateWarning;
-      SetSizeLayout(sl110x35);
+      Self.Width  := 90;
+      Self.Height := 25;
     end;
-
-    stDanger:
+    sl90x30:
     begin
-      LoadingTemplateDanger;
-      SetSizeLayout(sl110x35);
+      Self.Width  := 90;
+      Self.Height := 30;
     end;
-
-    stPrimary:
+    sl110x30 :
     begin
-      LoadingTemplatePrimary;
-      SetSizeLayout(sl110x35);
+      Self.Width  := 110;
+      Self.Height := 30;
     end;
-
-    stSecondary:
+    sl110x25 :
     begin
-      LoadingTemplateSecondary;
-      SetSizeLayout(sl110x35);
+      Self.Width  := 110;
+      Self.Height := 25;
     end;
-
-    stLight:
+    sl110x35 :
     begin
-      LoadingTemplateLight;
-      SetSizeLayout(sl110x35);
+      Self.Width  := 110;
+      Self.Height := 35;
     end;
-
-    stDark:
+    sl110x60 :
     begin
-      LoadingTemplateDark;
-      SetSizeLayout(sl110x35);
+      Self.Width  := 110;
+      Self.Height := 60;
     end;
-
-    stSuccess:
+    sl110x90 :
     begin
-      LoadingTemplateSuccess;
-      SetSizeLayout(sl110x35);
-    end;
-
-    stInfo:
-    begin
-      LoadingTemplateInfo;
-      SetSizeLayout(sl110x35);
+      Self.Width  := 110;
+      Self.Height := 90;
     end;
   end;
 end;
 
-procedure TBraveButton.CreateButtonTemplate(AStyleTemplateType: TStyleTemplateType);
+procedure TBraveButton.ApplyTemplate;
 begin
-  case AStyleTemplateType of
+  Brush.Color         := FBraveButtonTemplateColor.GetBrushConfigurationCommon.GetBrushColor;
+  BrushFocused.Color  := FBraveButtonTemplateColor.GetBrushConfigurationCommon.GetBrushFocusedColor;
+  BrushDown.Color     := FBraveButtonTemplateColor.GetBrushConfigurationCommon.GetBrushDownColor;
+  BrushDisabled.Color := FBraveButtonTemplateColor.GetBrushConfigurationCommon.GetBrushDisabledColor;
+
+  Pen.Color           := FBraveButtonTemplateColor.GetPenConfigurationCommon.GetPenColor;
+  Pen.Style           := FBraveButtonTemplateColor.GetPenConfigurationCommon.GetPenStyle;
+  Pen.Width           := FBraveButtonTemplateColor.GetPenConfigurationCommon.GetPenDownWidth;
+
+  PenFocused.Color    := FBraveButtonTemplateColor.GetPenConfigurationCommon.GetPenFocusedColor;
+  PenFocused.Style    := FBraveButtonTemplateColor.GetPenConfigurationCommon.GetPenFocusedStyle;
+  PenFocused.Width    := FBraveButtonTemplateColor.GetPenConfigurationCommon.GetPenFocusedWidth;
+
+  PenDown.Color       := FBraveButtonTemplateColor.GetPenConfigurationCommon.GetPenDownColor;
+  PenDown.Style       := FBraveButtonTemplateColor.GetPenConfigurationCommon.GetPenDownStyle;
+  PenDown.Width       := FBraveButtonTemplateColor.GetPenConfigurationCommon.GetPenDownWidth;
+
+  PenDisabled.Color   := FBraveButtonTemplateColor.GetPenConfigurationCommon.GetPenDisabledColor;
+  PenDisabled.Style   := FBraveButtonTemplateColor.GetPenConfigurationCommon.GetPenDisabledStyle;
+  PenDisabled.Width   := FBraveButtonTemplateColor.GetPenConfigurationCommon.GetPenDisabledWidth;
+
+  Font.Assign           ( FBraveButtonTemplateColor.GetFontConfigurationCommon.GetFont          );
+  FontDown.Assign       ( FBraveButtonTemplateColor.GetFontConfigurationCommon.GetFontDown      );
+  FontDisabled.Assign   ( FBraveButtonTemplateColor.GetFontConfigurationCommon.GetFontDisabled  );
+  FontFocused.Assign    ( FBraveButtonTemplateColor.GetFontConfigurationCommon.GetFontFocused   );
+
+  SubFont.Font.Assign   ( FBraveButtonTemplateColor.GetFontConfigurationCommon.GetFont          );
+  SubFontDown.Assign    ( FBraveButtonTemplateColor.GetFontConfigurationCommon.GetFontDown      );
+  SubFontFocused.Assign ( FBraveButtonTemplateColor.GetFontConfigurationCommon.GetFontFocused   );
+  SubFontDisabled.Assign( FBraveButtonTemplateColor.GetFontConfigurationCommon.GetFontDisabled  );
+end;
+
+procedure TBraveButton.Assign(Source: TPersistent);
+begin
+  if Source is TBraveButton then
+  begin
+    Brush.Assign(TBraveButton(Source).Brush);
+    BrushFocused.Assign(TBraveButton(Source).BrushFocused);
+    Pen.Assign(TBraveButton(Source).Pen);
+    PenFocused.Assign(TBraveButton(Source).PenFocused);
+    Font.Assign(TBraveButton(Source).Font);
+    FontFocused.Assign(TBraveButton(Source).FontFocused);
+    FontDown.Assign(TBraveButton(Source).FontDown);
+    Radius := TBraveButton(Source).Radius;
+  end
+  else
+    inherited Assign(Source);
+end;
+
+procedure TBraveButton.ChangeScale(M, D: Integer; isDpiChange: Boolean);
+var
+  Flags: TScalingFlags;
+begin
+  FPen.Width := MulDiv(FPen.Width, M, D);
+  // Scaling of other Fonts as current Font
+  if csLoading in ComponentState then
+    Flags := ScalingFlags
+  else
+    Flags := DefaultScalingFlags;
+
+  if not ParentFont and (sfFont in Flags) then
+  begin
+    FFontDown.Height     := MulDiv( FFontDown.Height    , M, D );
+    FFontFocused.Height  := MulDiv( FFontFocused.Height , M, D );
+    FFontDisabled.Height := MulDiv( FFontDisabled.Height, M, D );
+  end;
+
+  inherited;
+end;
+
+procedure TBraveButton.Click;
+begin
+  inherited;
+end;
+
+procedure TBraveButton.CMEnter(var Message: TCMEnter);
+begin
+  if not(Enabled) or (csDesigning in ComponentState) then
+    Exit;
+
+  FMouseEnter := false;
+  invalidate;
+end;
+
+procedure TBraveButton.CMMouseEnter(var Message: TNotifyEvent);
+begin
+  if not(Enabled) or (csDesigning in ComponentState) then
+    Exit;
+
+  FMouseEnter := true;
+  invalidate;
+end;
+
+procedure TBraveButton.CMMouseLeave(var Message: TNotifyEvent);
+begin
+  if not(Enabled) or (csDesigning in ComponentState) then
+    Exit;
+
+  FMouseEnter := false;
+  invalidate;
+end;
+
+procedure TBraveButton.FontDisabledCopyOfFont(const AValue: Boolean);
+begin
+  if AValue then
+    FFontDisabled.Assign(Font);
+end;
+
+procedure TBraveButton.FontDownCopyOfFont(const AValue: Boolean);
+begin
+  if AValue then
+    FFontDown.Assign(Font);
+end;
+
+procedure TBraveButton.FontFocusedCopyOfFont(const AValue: Boolean);
+begin
+  if AValue then
+    FFontFocused.Assign(Font);
+end;
+
+procedure TBraveButton.CreateButtonColor(ATemplateColor: TTemplateColor);
+begin
+  case ATemplateColor of
+    tcCustom:
+    begin
+
+    end;
+
+    tcWarning:
+    begin
+      LoadingTemplateWarning;
+    end;
+
+    tcDanger:
+    begin
+      LoadingTemplateDanger;
+    end;
+
+    tcPrimary:
+    begin
+      LoadingTemplatePrimary;
+    end;
+
+    tcSecondary:
+    begin
+      LoadingTemplateSecondary;
+    end;
+
+    tcLight:
+    begin
+      LoadingTemplateLight;
+    end;
+
+    tcDark:
+    begin
+      LoadingTemplateDark;
+    end;
+
+    tcSuccess:
+    begin
+      LoadingTemplateSuccess;
+    end;
+
+    tcInfo:
+    begin
+      LoadingTemplateInfo;
+    end;
+  end;
+end;
+
+procedure TBraveButton.CreateButtonTemplate(ATemplateStyle: TTemplateStyle);
+begin
+  case ATemplateStyle of
     tsBasic:
     begin
-      SetSizeLayout(sl110x35);
+      SetSizeLayout(sl90x25);
       LoadingTemplateLight;
-      FButtonStyleTemplateType := TButtonStyleTemplateType.New(tsBasic, stLight);
+      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsBasic, tcLight);
 
-      Self.Caption       := '';
-      Self.Alignment     := paLeftJustify;
+      Self.Caption           := '';
+      Self.Alignment         := paLeftJustify;
+      Self.PictureMarginLeft := 2;
+      Self.PictureLayout     := plGraphicCenter;
+      Self.Spacing           := 2;
     end;
 
     tsAdd:
@@ -697,10 +689,11 @@ begin
       SetSizeLayout(sl25x25);
 
       LoadingTemplateDark;
-      FButtonStyleTemplateType := TButtonStyleTemplateType.New(tsAdd, stDark);
+      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsAdd, tcDark);
 
-      Self.Caption       := '';
-      Self.Alignment     := paLeftJustify;
+      Self.Caption           := '';
+      Self.Alignment         := paCenter;
+      Self.PictureLayout     := plGraphicCenter;
     end;
 
     tsRemove:
@@ -708,109 +701,137 @@ begin
       SetSizeLayout(sl25x25);
 
       LoadingTemplateDark;
-      FButtonStyleTemplateType := TButtonStyleTemplateType.New(tsRemove, stDark);
+      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsRemove, tcDark);
 
-      Self.Caption       := '';
-      Self.Alignment     := paLeftJustify;
+      Self.Caption           := '';
+      Self.Alignment         := paCenter;
+      Self.PictureLayout     := plGraphicCenter;
     end;
 
     tsCancel:
     begin
-      SetSizeLayout(sl110x35);
+      SetSizeLayout(sl90x25);
 
       LoadingTemplateDark;
-      FButtonStyleTemplateType := TButtonStyleTemplateType.New(tsCancel, stDark);
+      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsCancel, tcDark);
 
-      Self.Caption       := 'Cancelar';
-      Self.Alignment     := paLeftJustify;
+      Self.Caption           := 'CANCELAR';
+      Self.Alignment         := paLeftJustify;
+      Self.PictureMarginLeft := 2;
+      Self.PictureLayout     := plGraphicCenter;
+      Self.Spacing           := 2;
     end;
 
     tsOK:
     begin
-      SetSizeLayout(sl110x35);
+      SetSizeLayout(sl90x25);
 
       LoadingTemplateInfo;
-      FButtonStyleTemplateType := TButtonStyleTemplateType.New(tsOK, stInfo);
+      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsOK, tcInfo);
 
-      Self.Caption       := 'OK';
-      Self.Alignment     := paLeftJustify;
+      Self.Caption           := 'OK';
+      Self.Alignment         := paLeftJustify;
+      Self.PictureMarginLeft := 2;
+      Self.PictureLayout     := plGraphicCenter;
+      Self.Spacing           := 2;
     end;
 
     tsDelete:
     begin
-      SetSizeLayout(sl110x35);
+      SetSizeLayout(sl90x25);
 
       LoadingTemplateDanger;
-      FButtonStyleTemplateType := TButtonStyleTemplateType.New(tsDelete, stDanger);
+      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsDelete, tcDanger);
 
-      Self.Caption       := 'Deletar';
-      Self.Alignment     := paLeftJustify;
+      Self.Caption           := 'DELETAR';
+      Self.Alignment         := paLeftJustify;
+      Self.PictureMarginLeft := 2;
+      Self.PictureLayout     := plGraphicCenter;
+      Self.Spacing           := 2;
     end;
 
     tsSave:
     begin
-      SetSizeLayout(sl110x35);
+      SetSizeLayout(sl90x25);
 
       LoadingTemplateSuccess;
-      FButtonStyleTemplateType := TButtonStyleTemplateType.New(tsSave, stSuccess);
+      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsSave, tcSuccess);
 
-      Self.Caption       := 'Salvar';
-      Self.Alignment     := paLeftJustify;
+      Self.Caption           := 'SALVAR';
+      Self.Alignment         := paLeftJustify;
+      Self.PictureMarginLeft := 2;
+      Self.PictureLayout     := plGraphicCenter;
+      Self.Spacing           := 2;
     end;
 
     tsNew:
     begin
-      SetSizeLayout(sl110x35);
+      SetSizeLayout(sl90x25);
 
       LoadingTemplateInfo;
-      FButtonStyleTemplateType := TButtonStyleTemplateType.New(tsNew, stInfo);
+      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsNew, tcInfo);
 
-      Self.Caption       := 'Novo';
-      Self.Alignment     := paLeftJustify;
+      Self.Caption           := 'NOVO';
+      Self.Alignment         := paLeftJustify;
+      Self.PictureMarginLeft := 2;
+      Self.PictureLayout     := plGraphicCenter;
+      Self.Spacing           := 2;
     end;
 
     tsEdit:
     begin
-      SetSizeLayout(sl110x35);
+      SetSizeLayout(sl90x25);
 
       LoadingTemplateWarning;
-      FButtonStyleTemplateType := TButtonStyleTemplateType.New(tsEdit, stWarning);
+      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsEdit, tcWarning);
 
-      Self.Caption       := 'Editar';
-      Self.Alignment     := paLeftJustify;
+      Self.Caption           := 'Editar';
+      Self.Alignment         := paLeftJustify;
+      Self.PictureMarginLeft := 2;
+      Self.PictureLayout     := plGraphicCenter;
+      Self.Spacing           := 2;
     end;
 
     tsFind:
     begin
-      SetSizeLayout(sl110x35);
+      SetSizeLayout(sl90x25);
 
       LoadingTemplateInfo;
-      FButtonStyleTemplateType := TButtonStyleTemplateType.New(tsFind, stInfo);
+      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsFind, tcInfo);
 
-      Self.Caption       := 'Procurar';
-      Self.Alignment     := paLeftJustify;
+      Self.Caption           := 'Procurar';
+      Self.Alignment         := paLeftJustify;
+      Self.PictureMarginLeft := 2;
+      Self.PictureLayout     := plGraphicCenter;
+      Self.Spacing           := 2;
     end;
 
     tsPrint:
     begin
-      SetSizeLayout(sl110x35);
+      SetSizeLayout(sl90x25);
 
       LoadingTemplateInfo;
-      FButtonStyleTemplateType := TButtonStyleTemplateType.New(tsPrint, stInfo);
+      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsPrint, tcInfo);
 
-      Self.Caption       := 'Imprimir';
-      Self.Alignment     := paLeftJustify;
+      Self.Caption           := 'Imprimir';
+      Self.Alignment         := paLeftJustify;
+      Self.PictureMarginLeft := 2;
+      Self.PictureLayout     := plGraphicCenter;
+      Self.Spacing           := 2;
     end;
 
     tsRefresh:
     begin
-      SetSizeLayout(sl110x35);
+      SetSizeLayout(sl90x25);
 
       LoadingTemplateInfo;
-      FButtonStyleTemplateType := TButtonStyleTemplateType.New(tsRefresh, stInfo);
+      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsRefresh, tcInfo);
 
-      Self.Caption       := 'Atualizar';
-      Self.Alignment     := paLeftJustify;
+      Self.Caption           := 'Atualizar';
+      Self.Alignment         := paLeftJustify;
+      Self.PictureMarginLeft := 2;
+      Self.PictureLayout     := plGraphicCenter;
+      Self.Spacing           := 2;
     end;
 
     tsArrowUp:
@@ -818,10 +839,11 @@ begin
       SetSizeLayout(sl25x25);
 
       LoadingTemplateDark;
-      FButtonStyleTemplateType := TButtonStyleTemplateType.New(tsArrowUp, stDark);
+      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsArrowUp, tcDark);
 
-      Self.Caption       := '';
-      Self.Alignment     := paCenter;
+      Self.Caption           := '';
+      Self.Alignment         := paCenter;
+      Self.PictureLayout     := plGraphicCenter;
     end;
 
     tsArrowDown:
@@ -829,10 +851,11 @@ begin
       SetSizeLayout(sl25x25);
 
       LoadingTemplateDark;
-      FButtonStyleTemplateType := TButtonStyleTemplateType.New(tsArrowDown, stDark);
+      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsArrowDown, tcDark);
 
-      Self.Caption := '';
-      Self.Alignment := paCenter;
+      Self.Caption           := '';
+      Self.Alignment         := paCenter;
+      Self.PictureLayout     := plGraphicCenter;
     end;
 
     tsMain:
@@ -840,7 +863,7 @@ begin
       SetSizeLayout(sl110x90);
 
       LoadingTemplateLight;
-      FButtonStyleTemplateType := TButtonStyleTemplateType.New(tsNew, stLight);
+      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsNew, tcLight);
 
       Self.Caption           := '';
       Self.Alignment         := paCenter;
@@ -906,7 +929,7 @@ end;
 
 procedure TBraveButton.DoKeyDown(var Key: Word; Shift: TShiftState);
 begin
-  if ClickOnEnter and (Key = 13) then
+  if ( Key in [13, 32] ) then
   begin
     FState := bsDown;
     invalidate;
@@ -1001,11 +1024,6 @@ begin
   result := Assigned(FPicture.Graphic) or Assigned(FPictureFocused.Graphic) or Assigned(FPictureDisabled.Graphic) or Assigned(FPictureDark.Graphic);
 end;
 
-function TBraveButton.IsClickOnEnter: Boolean;
-begin
-  result := FClickOnEnter <> true;
-end;
-
 function TBraveButton.IsImageIndexPicture: Boolean;
 begin
   result := ImageIndexPicture <> -1;
@@ -1053,6 +1071,8 @@ end;
 
 function TBraveButton.IsSizeLayout: Boolean;
 begin
+  Result := False;
+
   case FSizeLayout of
     sl25x25  : Result := ( Width =  25 ) AND ( Height = 25 );
     sl90x25  : Result := ( Width =  90 ) AND ( Height = 25 );
@@ -1077,7 +1097,7 @@ end;
 
 function TBraveButton.IsStoredTemplateColor: Boolean;
 begin
-  result := TemplateColor <> stCustom;
+  result := TemplateColor <> tcCustom;
 end;
 
 function TBraveButton.IsStoredTemplateStyle: Boolean;
@@ -1087,7 +1107,7 @@ end;
 
 procedure TBraveButton.Paint;
 var
-  ClientSize, X, Y, w, h, LMod: Integer;
+  ClientSize, X, Y, w, h: Integer;
 begin
   inherited;
 
@@ -1141,11 +1161,11 @@ begin
       FSubFont.Font.Size  := Font.Size - 3;
       FSubFont.Font.Style := [];
 
-//      if IsStyleOutline then
-//      begin
-//        Font.Color           := FPenFocused.Color;
-//        FSubFont.Pen.Color := FPenFocused.Color;
-//      end;
+      if IsStyleOutline then
+      begin
+        //Font.Color         := FPenFocused.Color;
+        //FSubFont.Pen.Color := FPenFocused.Color;
+      end;
     end
     else
     begin
@@ -1235,15 +1255,9 @@ begin
       if Alignment = paCenter then
       begin
         if (Assigned(Picture.Graphic) or (Assigned(PictureFocused.Graphic) and (FMouseEnter or Focused))) and (FPictureLayout = plGraphicCenter) then
-        begin
-          LMod := ( ClientWidth - ( GetPictureWidth + PictureMarginLeft ) ) mod 2;
-          X    := ( ( ClientWidth - ( GetPictureWidth + PictureMarginLeft ) ) div 2 ) - 7;
-        end
+          X    := ( ( ClientWidth - ( GetPictureWidth + PictureMarginLeft ) ) div 2 ) - 7
         else
-        begin
-          LMod := ( ClientWidth - Canvas.TextWidth(Caption) ) mod 2;
           X    := ( ( ClientWidth - Canvas.TextWidth(Caption) ) div 2 ) - 7;
-        end;
       end
       else
         X := GetPictureWidth + PictureMarginLeft + GetSpacing;
@@ -1260,8 +1274,8 @@ begin
 
       if FCaptionSub <> '' then
       begin
-        TextOut         ( X, Y + FSubFont.Font.Height +2, AnsiUpperCase( Caption     ) );
-        FSubFont.TextOut( X, Y - FSubFont.Font.Height +2, AnsiUpperCase( FCaptionSub ) );
+        TextOut         ( X, Y + FSubFont.Font.Height + 4, AnsiUpperCase( Caption     ) );
+        FSubFont.TextOut( X, Y - FSubFont.Font.Height, AnsiUpperCase( FCaptionSub ) );
       end
       else
         TextOut( X, Y, AnsiUpperCase( Caption ) );
@@ -1314,15 +1328,6 @@ procedure TBraveButton.SetCaptionSub(const Value: TCaption);
 begin
   FCaptionSub := Value;
   Invalidate;
-end;
-
-procedure TBraveButton.SetClickOnEnter(const Value: Boolean);
-begin
-  if FClickOnEnter <> Value then
-  begin
-    FClickOnEnter := Value;
-    invalidate;
-  end;
 end;
 
 procedure TBraveButton.SetFocus;
@@ -1427,7 +1432,7 @@ begin
   begin
     FStyleOutline := Value;
 
-    if TemplateColor <> stCustom then
+    if TemplateColor <> tcCustom then
       SetTemplateColor(FTemplateColor)
     else if isTemplateStyle then
       SetTemplateStyle(FTemplateStyle);
@@ -1501,23 +1506,23 @@ end;
 
 procedure TBraveButton.SetPictureTemplate;
 begin
-  if not Assigned((FButtonStyleTemplateType)) then
+  if not Assigned((FBraveButtonTemplateStyle)) then
     Exit;
 
   if StyleOutline then
   begin
-    Picture.Assign       ( FButtonStyleTemplateType.GetPictureStyleOutline        );
-    PictureFocused.Assign( FButtonStyleTemplateType.GetPictureFocusedStyleOutline );
+    Picture.Assign       ( FBraveButtonTemplateStyle.GetPictureStyleOutline        );
+    PictureFocused.Assign( FBraveButtonTemplateStyle.GetPictureFocusedStyleOutline );
   end
   else
   begin
-    Picture.Assign       ( FButtonStyleTemplateType.GetPicture        );
-    PictureFocused.Assign( FButtonStyleTemplateType.GetPictureFocused );
+    Picture.Assign       ( FBraveButtonTemplateStyle.GetPicture        );
+    PictureFocused.Assign( FBraveButtonTemplateStyle.GetPictureFocused );
   end;
 
-  PictureDark.Assign    ( FButtonStyleTemplateType.GetPictureDark     );
-  //PictureDisabled.Assign( FButtonStyleTemplateType.GetPictureDisabled );
-  PictureDisabled.Assign( FButtonStyleTemplateType.GetPicture );
+  PictureDark.Assign    ( FBraveButtonTemplateStyle.GetPictureDark     );
+  PictureDisabled.Assign( FBraveButtonTemplateStyle.GetPictureDisabled );
+  PictureDisabled.Assign( FBraveButtonTemplateStyle.GetPicture         );
 end;
 
 procedure TBraveButton.SetPictureMarginLeft(const Value: SmallInt);
@@ -1666,7 +1671,7 @@ begin
   end;
 end;
 
-procedure TBraveButton.SetTemplateColor(const Value: TStyleTemplateColor);
+procedure TBraveButton.SetTemplateColor(const Value: TTemplateColor);
 begin
   if isTemplateStyle then
   begin
@@ -1676,7 +1681,7 @@ begin
 
   if FControllerStyleTemplate then
   begin
-    CreateButtonColor(stCustom);
+    CreateButtonColor(tcCustom);
     FControllerStyleTemplate := false;
     Exit;
   end;
@@ -1685,10 +1690,13 @@ begin
 
   CreateButtonColor(FTemplateColor);
 
-  if Value <> stCustom then
+  if Value <> tcCustom then
   begin
     if StyleOutline then
+    begin
+      SetPictureTemplate;
       StyleOutlineConfig;
+    end;
   end;
 end;
 
@@ -1704,19 +1712,19 @@ begin
     FFocusControl.TabStop := Value;
 end;
 
-procedure TBraveButton.SetTemplateStyle(const Value: TStyleTemplateType);
+procedure TBraveButton.SetTemplateStyle(const Value: TTemplateStyle);
 begin
   if FControllerStyleTemplate then
   begin
-    CreateButtonColor(stCustom);
+    CreateButtonColor(tcCustom);
     FControllerStyleTemplate := false;
     Exit;
   end;
 
-  if TemplateColor <> stCustom then
+  if TemplateColor <> tcCustom then
   begin
     FControllerStyleTemplate := true;
-    TemplateColor := stCustom;
+    TemplateColor := tcCustom;
   end;
 
   Self.FTemplateStyle := Value;
@@ -1733,6 +1741,7 @@ begin
         StyleOutlineConfig;
     end;
   end;
+
 end;
 
 procedure TBraveButton.StyleChanged(Sender: TObject);
@@ -1756,68 +1765,62 @@ end;
 
 function TBraveButton.isTemplateStyle: Boolean;
 begin
-  result := TemplateStyle <> tsBasic;
+  result := true;
+  //TemplateStyle <> tsBasic;
 end;
 
 procedure TBraveButton.LoadingTemplateDanger;
 begin
-  FButtonStyleTemplate := TButtonStyleTemplateColor.New(stDanger, Self.Owner);
+  FBraveButtonTemplateColor := TBraveButtonTemplateColor.New(tcDanger, Self.Owner);
 
   ApplyTemplate;
 end;
 
 procedure TBraveButton.LoadingTemplateDark;
 begin
-  FButtonStyleTemplate := TButtonStyleTemplateColor.New(stDark, Self.Owner);
-
-  ApplyTemplate;
-end;
-
-procedure TBraveButton.LoadingTemplateDefault;
-begin
-  FButtonStyleTemplate := TButtonStyleTemplateColor.New(stCustom, Self.Owner);
+  FBraveButtonTemplateColor := TBraveButtonTemplateColor.New(tcDark, Self.Owner);
 
   ApplyTemplate;
 end;
 
 procedure TBraveButton.LoadingTemplateInfo;
 begin
-  FButtonStyleTemplate := TButtonStyleTemplateColor.New(stInfo, Self.Owner);
+  FBraveButtonTemplateColor := TBraveButtonTemplateColor.New(tcInfo, Self.Owner);
 
   ApplyTemplate;
 end;
 
 procedure TBraveButton.LoadingTemplateLight;
 begin
-  FButtonStyleTemplate := TButtonStyleTemplateColor.New(stLight, Self.Owner);
+  FBraveButtonTemplateColor := TBraveButtonTemplateColor.New(tcLight, Self.Owner);
 
   ApplyTemplate;
 end;
 
 procedure TBraveButton.LoadingTemplatePrimary;
 begin
-  FButtonStyleTemplate := TButtonStyleTemplateColor.New(stPrimary, Self.Owner);
+  FBraveButtonTemplateColor := TBraveButtonTemplateColor.New(tcPrimary, Self.Owner);
 
   ApplyTemplate;
 end;
 
 procedure TBraveButton.LoadingTemplateSecondary;
 begin
-  FButtonStyleTemplate := TButtonStyleTemplateColor.New(stSecondary, Self.Owner);
+  FBraveButtonTemplateColor := TBraveButtonTemplateColor.New(tcSecondary, Self.Owner);
 
   ApplyTemplate;
 end;
 
 procedure TBraveButton.LoadingTemplateSuccess;
 begin
-  FButtonStyleTemplate := TButtonStyleTemplateColor.New(stSuccess, Self.Owner);
+  FBraveButtonTemplateColor := TBraveButtonTemplateColor.New(tcSuccess, Self.Owner);
 
   ApplyTemplate;
 end;
 
 procedure TBraveButton.LoadingTemplateWarning;
 begin
-  FButtonStyleTemplate := TButtonStyleTemplateColor.New(stWarning, Self.Owner);
+  FBraveButtonTemplateColor := TBraveButtonTemplateColor.New(tcWarning, Self.Owner);
 
   ApplyTemplate;
 end;

@@ -8,19 +8,19 @@ uses
   Winapi.Windows;
 
 type
-  TStyleTemplateColor = (
-    stCustom,
-    stWarning,
-    stDanger,
-    stPrimary,
-    stSecondary,
-    stLight,
-    stDark,
-    stSuccess,
-    stInfo
+  TTemplateColor = (
+    tcCustom,
+    tcWarning,
+    tcDanger,
+    tcPrimary,
+    tcSecondary,
+    tcLight,
+    tcDark,
+    tcSuccess,
+    tcInfo
   );
 
-  TStyleTemplateType = (
+  TTemplateStyle = (
     tsBasic,
     tsAdd,
     tsRemove,
@@ -241,9 +241,6 @@ const
   SAVE_LIGHT                       = SAVE_COMPONENT + 'LIGHT';
   SAVE_SUCCESS                     = SAVE_COMPONENT + 'SUCCESS';
   SAVE_INFO                        = SAVE_COMPONENT + 'INFO';
-
-
-
 
 
 implementation
