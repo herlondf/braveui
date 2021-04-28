@@ -47,7 +47,8 @@ contains
   Common.GraphicControl in 'src\Common.GraphicControl.pas',
   BraveEditTag.Component in 'src\BraveEditTag.Component.pas',
   Common.Consts in 'src\Common.Consts.pas',
-  BraveAbout.View in 'src\BraveAbout.View.pas' {frmBraveAbout};
+  BraveAbout.View in 'src\BraveAbout.View.pas' {frmBraveAbout},
+  BraveLabel.Component in 'src\BraveLabel.Component.pas';
 
 end.
 

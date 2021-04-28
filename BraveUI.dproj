@@ -153,6 +153,7 @@
             <Form>frmBraveAbout</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="src\BraveLabel.Component.pas"/>
         <RcItem Include="assets\common\20px\ADD_DANGER.png">
             <ResourceType>RCDATA</ResourceType>
             <ResourceId>ADD_DANGER</ResourceId>
@@ -713,42 +714,6 @@
             <ResourceType>RCDATA</ResourceType>
             <ResourceId>BILL_WARNING</ResourceId>
         </RcItem>
-        <RcItem Include="assets\Common\20px\KEY_DARK.png">
-            <ResourceType>RCDATA</ResourceType>
-            <ResourceId>KEY_DARK</ResourceId>
-        </RcItem>
-        <RcItem Include="assets\Common\20px\KEY_DISABLED.png">
-            <ResourceType>RCDATA</ResourceType>
-            <ResourceId>KEY_DISABLED</ResourceId>
-        </RcItem>
-        <RcItem Include="assets\Common\20px\KEY_ENABLED.png">
-            <ResourceType>RCDATA</ResourceType>
-            <ResourceId>KEY_ENABLED</ResourceId>
-        </RcItem>
-        <RcItem Include="assets\Common\20px\KEY_INFO.png">
-            <ResourceType>RCDATA</ResourceType>
-            <ResourceId>KEY_INFO</ResourceId>
-        </RcItem>
-        <RcItem Include="assets\Common\20px\KEY_LIGHT.png">
-            <ResourceType>RCDATA</ResourceType>
-            <ResourceId>KEY_LIGHT</ResourceId>
-        </RcItem>
-        <RcItem Include="assets\Common\20px\KEY_PRIMARY.png">
-            <ResourceType>RCDATA</ResourceType>
-            <ResourceId>KEY_PRIMARY</ResourceId>
-        </RcItem>
-        <RcItem Include="assets\Common\20px\KEY_SECONDARY.png">
-            <ResourceType>RCDATA</ResourceType>
-            <ResourceId>KEY_SECONDARY</ResourceId>
-        </RcItem>
-        <RcItem Include="assets\Common\20px\KEY_SUCCESS.png">
-            <ResourceType>RCDATA</ResourceType>
-            <ResourceId>KEY_SUCCESS</ResourceId>
-        </RcItem>
-        <RcItem Include="assets\Common\20px\KEY_WARNING.png">
-            <ResourceType>RCDATA</ResourceType>
-            <ResourceId>KEY_WARNING</ResourceId>
-        </RcItem>
         <RcItem Include="assets\Common\20px\VALIDATION_DANGER_DANGER.png">
             <ResourceType>RCDATA</ResourceType>
             <ResourceId>VALIDATION_DANGER_DANGER</ResourceId>
@@ -868,6 +833,166 @@
         <RcItem Include="assets\Common\20px\VALIDATION_WARNING_WARNING.png">
             <ResourceType>RCDATA</ResourceType>
             <ResourceId>VALIDATION_WARNING_WARNING</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\ARROW_LEFT_DANGER.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>ARROW_LEFT_DANGER</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\ARROW_LEFT_DARK.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>ARROW_LEFT_DARK</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\ARROW_LEFT_DISABLED.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>ARROW_LEFT_DISABLED</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\ARROW_LEFT_ENABLED.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>ARROW_LEFT_ENABLED</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\ARROW_LEFT_INFO.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>ARROW_LEFT_INFO</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\ARROW_LEFT_LIGHT.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>ARROW_LEFT_LIGHT</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\ARROW_LEFT_PRIMARY.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>ARROW_LEFT_PRIMARY</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\ARROW_LEFT_SECONDARY.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>ARROW_LEFT_SECONDARY</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\ARROW_LEFT_SUCCESS.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>ARROW_LEFT_SUCCESS</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\ARROW_LEFT_WARNING.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>ARROW_LEFT_WARNING</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\ARROW_RIGHT_DANGER.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>ARROW_RIGHT_DANGER</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\ARROW_RIGHT_DARK.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>ARROW_RIGHT_DARK</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\ARROW_RIGHT_DISABLED.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>ARROW_RIGHT_DISABLED</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\ARROW_RIGHT_ENABLED.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>ARROW_RIGHT_ENABLED</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\ARROW_RIGHT_INFO.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>ARROW_RIGHT_INFO</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\ARROW_RIGHT_LIGHT.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>ARROW_RIGHT_LIGHT</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\ARROW_RIGHT_PRIMARY.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>ARROW_RIGHT_PRIMARY</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\ARROW_RIGHT_SECONDARY.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>ARROW_RIGHT_SECONDARY</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\ARROW_RIGHT_SUCCESS.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>ARROW_RIGHT_SUCCESS</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\ARROW_RIGHT_WARNING.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>ARROW_RIGHT_WARNING</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\GEAR_DANGER.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>GEAR_DANGER</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\GEAR_DARK.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>GEAR_DARK</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\GEAR_DISABLED.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>GEAR_DISABLED</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\GEAR_ENABLED.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>GEAR_ENABLED</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\GEAR_INFO.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>GEAR_INFO</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\GEAR_LIGHT.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>GEAR_LIGHT</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\GEAR_PRIMARY.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>GEAR_PRIMARY</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\GEAR_SECONDARY.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>GEAR_SECONDARY</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\GEAR_SUCCESS.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>GEAR_SUCCESS</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\GEAR_WARNING.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>GEAR_WARNING</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\KEY_DANGER.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>KEY_DANGER</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\KEY_DARK.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>KEY_DARK</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\KEY_DISABLED.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>KEY_DISABLED</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\KEY_ENABLED.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>KEY_ENABLED</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\KEY_INFO.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>KEY_INFO</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\KEY_LIGHT.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>KEY_LIGHT</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\KEY_PRIMARY.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>KEY_PRIMARY</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\KEY_SECONDARY.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>KEY_SECONDARY</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\KEY_SUCCESS.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>KEY_SUCCESS</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\Common\20px\KEY_WARNING.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>KEY_WARNING</ResourceId>
         </RcItem>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>

@@ -6,12 +6,12 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, BraveButton.Component,
   Vcl.Imaging.pngimage, Vcl.StdCtrls, Vcl.ExtCtrls, System.ImageList,
-  Vcl.ImgList, Common.Caption, BraveEdit.Component;
+  Vcl.ImgList, Common.Caption, BraveEdit.Component, BraveLabel.Component;
 
 type
   TfrmSample = class(TForm)
     Button1: TButton;
-    BraveButton1: TBraveButton;
+    Panel1: TPanel;
   private
     { Private declarations }
   public

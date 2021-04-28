@@ -1,2314 +1,3604 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AxialisIconCollection>
   <Name>BraveCollection</Name>
+<Icon>
+    <Name>ARROW_RIGHT_ENABLED</Name>
+    <StockIconName>symbol-arrow-right.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>100</ResourceIDValue>
+    <ResourceID>ID_ARROW_RIGHT_ENABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>121178389</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  <Icon>
+    <Name>ARROW_RIGHT_DISABLED</Name>
+    <StockIconName>symbol-arrow-right.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>101</ResourceIDValue>
+    <ResourceID>ID_ARROW_RIGHT_DISABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#E6E9EE</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  <Icon>
+    <Name>ARROW_RIGHT_DARK</Name>
+    <StockIconName>symbol-arrow-right.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>102</ResourceIDValue>
+    <ResourceID>ID_ARROW_RIGHT_DARK</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#636363</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  <Icon>
+    <Name>ARROW_RIGHT_WARNING</Name>
+    <StockIconName>symbol-arrow-right.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>103</ResourceIDValue>
+    <ResourceID>ID_ARROW_RIGHT_WARNING</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FBC658</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  <Icon>
+    <Name>ARROW_RIGHT_DANGER</Name>
+    <StockIconName>symbol-arrow-right.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>104</ResourceIDValue>
+    <ResourceID>ID_ARROW_RIGHT_DANGER</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#EF8157</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  <Icon>
+    <Name>ARROW_RIGHT_PRIMARY</Name>
+    <StockIconName>symbol-arrow-right.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>105</ResourceIDValue>
+    <ResourceID>ID_ARROW_RIGHT_PRIMARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51CBCE</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  <Icon>
+    <Name>ARROW_RIGHT_SECONDARY</Name>
+    <StockIconName>symbol-arrow-right.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>106</ResourceIDValue>
+    <ResourceID>ID_ARROW_RIGHT_SECONDARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#846AD0</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  <Icon>
+    <Name>ARROW_RIGHT_LIGHT</Name>
+    <StockIconName>symbol-arrow-right.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>107</ResourceIDValue>
+    <ResourceID>ID_ARROW_RIGHT_LIGHT</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  <Icon>
+    <Name>ARROW_RIGHT_SUCCESS</Name>
+    <StockIconName>symbol-arrow-right.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>108</ResourceIDValue>
+    <ResourceID>ID_ARROW_RIGHT_SUCCESS</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#6BD098</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  <Icon>
+    <Name>ARROW_RIGHT_INFO</Name>
+    <StockIconName>symbol-arrow-right.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>109</ResourceIDValue>
+    <ResourceID>ID_ARROW_RIGHT_INFO</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51BCDA</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+	<Icon>
+    <Name>ARROW_LEFT_ENABLED</Name>
+    <StockIconName>symbol-arrow-left.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>100</ResourceIDValue>
+    <ResourceID>ID_ARROW_LEFT_ENABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>121178389</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  <Icon>
+    <Name>ARROW_LEFT_DISABLED</Name>
+    <StockIconName>symbol-arrow-left.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>101</ResourceIDValue>
+    <ResourceID>ID_ARROW_LEFT_DISABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#E6E9EE</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  <Icon>
+    <Name>ARROW_LEFT_DARK</Name>
+    <StockIconName>symbol-arrow-left.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>102</ResourceIDValue>
+    <ResourceID>ID_ARROW_LEFT_DARK</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#636363</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  <Icon>
+    <Name>ARROW_LEFT_WARNING</Name>
+    <StockIconName>symbol-arrow-left.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>103</ResourceIDValue>
+    <ResourceID>ID_ARROW_LEFT_WARNING</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FBC658</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  <Icon>
+    <Name>ARROW_LEFT_DANGER</Name>
+    <StockIconName>symbol-arrow-left.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>104</ResourceIDValue>
+    <ResourceID>ID_ARROW_LEFT_DANGER</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#EF8157</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  <Icon>
+    <Name>ARROW_LEFT_PRIMARY</Name>
+    <StockIconName>symbol-arrow-left.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>105</ResourceIDValue>
+    <ResourceID>ID_ARROW_LEFT_PRIMARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51CBCE</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  <Icon>
+    <Name>ARROW_LEFT_SECONDARY</Name>
+    <StockIconName>symbol-arrow-left.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>106</ResourceIDValue>
+    <ResourceID>ID_ARROW_LEFT_SECONDARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#846AD0</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  <Icon>
+    <Name>ARROW_LEFT_LIGHT</Name>
+    <StockIconName>symbol-arrow-left.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>107</ResourceIDValue>
+    <ResourceID>ID_ARROW_LEFT_LIGHT</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  <Icon>
+    <Name>ARROW_LEFT_SUCCESS</Name>
+    <StockIconName>symbol-arrow-left.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>108</ResourceIDValue>
+    <ResourceID>ID_ARROW_LEFT_SUCCESS</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#6BD098</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  <Icon>
+    <Name>ARROW_LEFT_INFO</Name>
+    <StockIconName>symbol-arrow-left.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>109</ResourceIDValue>
+    <ResourceID>ID_ARROW_LEFT_INFO</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51BCDA</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  	<Icon>
+    <Name>GEAR_ENABLED</Name>
+    <StockIconName>gear.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>100</ResourceIDValue>
+    <ResourceID>ID_GEAR_ENABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>121178389</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  <Icon>
+    <Name>GEAR_DISABLED</Name>
+    <StockIconName>gear.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>101</ResourceIDValue>
+    <ResourceID>ID_GEAR_DISABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#E6E9EE</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  <Icon>
+    <Name>GEAR_DARK</Name>
+    <StockIconName>gear.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>102</ResourceIDValue>
+    <ResourceID>ID_GEAR_DARK</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#636363</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  <Icon>
+    <Name>GEAR_WARNING</Name>
+    <StockIconName>gear.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>103</ResourceIDValue>
+    <ResourceID>ID_GEAR_WARNING</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FBC658</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  <Icon>
+    <Name>GEAR_DANGER</Name>
+    <StockIconName>gear.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>104</ResourceIDValue>
+    <ResourceID>ID_GEAR_DANGER</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#EF8157</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  <Icon>
+    <Name>GEAR_PRIMARY</Name>
+    <StockIconName>gear.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>105</ResourceIDValue>
+    <ResourceID>ID_GEAR_PRIMARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51CBCE</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  <Icon>
+    <Name>GEAR_SECONDARY</Name>
+    <StockIconName>gear.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>106</ResourceIDValue>
+    <ResourceID>ID_GEAR_SECONDARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#846AD0</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  <Icon>
+    <Name>GEAR_LIGHT</Name>
+    <StockIconName>gear.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>107</ResourceIDValue>
+    <ResourceID>ID_GEAR_LIGHT</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  <Icon>
+    <Name>GEAR_SUCCESS</Name>
+    <StockIconName>gear.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>108</ResourceIDValue>
+    <ResourceID>ID_GEAR_SUCCESS</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#6BD098</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
+  <Icon>
+    <Name>GEAR_INFO</Name>
+    <StockIconName>gear.axvi</StockIconName>
+    <StockIconFamily>Axialis Line Design</StockIconFamily>
+    <StockIconSet>Basic</StockIconSet>
+    <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>109</ResourceIDValue>
+    <ResourceID>ID_GEAR_INFO</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51BCDA</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
+  </Icon>
   <Icon>
     <Name>KEY_ENABLED</Name>
     <StockIconName>key.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Security</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>100</ResourceIDValue>
+    <ResourceID>ID_KEY_ENABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
     <StockOverlayPos>121178389</StockOverlayPos>
-    <ResourceIDValue>235</ResourceIDValue>
-    <ResourceID>ID_KEY</ResourceID>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>KEY_DISABLED</Name>
     <StockIconName>key.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Security</StockIconSet>
-    <Colorize>#E6E9EE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
     <ResourceIDValue>101</ResourceIDValue>
     <ResourceID>ID_KEY_DISABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#E6E9EE</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>KEY_DARK</Name>
     <StockIconName>key.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Security</StockIconSet>
-    <Colorize>#636363</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
     <ResourceIDValue>102</ResourceIDValue>
     <ResourceID>ID_KEY_DARK</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#636363</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>KEY_WARNING</Name>
     <StockIconName>key.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Security</StockIconSet>
-    <Colorize>#FBC658</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
     <ResourceIDValue>103</ResourceIDValue>
     <ResourceID>ID_KEY_WARNING</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FBC658</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>KEY_DANGER</Name>
     <StockIconName>key.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Security</StockIconSet>
-    <Colorize>#EF8157</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
     <ResourceIDValue>104</ResourceIDValue>
     <ResourceID>ID_KEY_DANGER</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#EF8157</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>KEY_PRIMARY</Name>
     <StockIconName>key.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Security</StockIconSet>
-    <Colorize>#51CBCE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
     <ResourceIDValue>105</ResourceIDValue>
     <ResourceID>ID_KEY_PRIMARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51CBCE</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>KEY_SECONDARY</Name>
     <StockIconName>key.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Security</StockIconSet>
-    <Colorize>#846AD0</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
     <ResourceIDValue>106</ResourceIDValue>
     <ResourceID>ID_KEY_SECONDARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#846AD0</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>KEY_LIGHT</Name>
     <StockIconName>key.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Security</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
     <ResourceIDValue>107</ResourceIDValue>
     <ResourceID>ID_KEY_LIGHT</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>KEY_SUCCESS</Name>
     <StockIconName>key.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Security</StockIconSet>
-    <Colorize>#6BD098</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
     <ResourceIDValue>108</ResourceIDValue>
     <ResourceID>ID_KEY_SUCCESS</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#6BD098</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>KEY_INFO</Name>
     <StockIconName>key.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Security</StockIconSet>
-    <Colorize>#51BCDA</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
     <ResourceIDValue>109</ResourceIDValue>
     <ResourceID>ID_KEY_INFO</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51BCDA</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DB_RESTORE_ENABLED</Name>
     <StockIconName>database-restore.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Database</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>110</ResourceIDValue>
+    <ResourceID>ID_DB_RESTORE_ENABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
     <StockOverlayPos>121178389</StockOverlayPos>
-    <ResourceIDValue>234</ResourceIDValue>
-    <ResourceID>ID_DATABASE-RESTORE</ResourceID>
+    <DarkMode>0</DarkMode>
   </Icon>
- <Icon>
+  <Icon>
     <Name>DB_RESTORE_DISABLED</Name>
     <StockIconName>database-restore.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Database</StockIconSet>
-    <Colorize>#E6E9EE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
-    <ResourceIDValue>101</ResourceIDValue>
+    <ResourceIDValue>111</ResourceIDValue>
     <ResourceID>ID_DB_RESTORE_DISABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#E6E9EE</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DB_RESTORE_DARK</Name>
     <StockIconName>database-restore.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Database</StockIconSet>
-    <Colorize>#636363</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>102</ResourceIDValue>
+    <ResourceIDValue>112</ResourceIDValue>
     <ResourceID>ID_DB_RESTORE_DARK</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#636363</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DB_RESTORE_WARNING</Name>
     <StockIconName>database-restore.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Database</StockIconSet>
-    <Colorize>#FBC658</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>103</ResourceIDValue>
+    <ResourceIDValue>113</ResourceIDValue>
     <ResourceID>ID_DB_RESTORE_WARNING</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FBC658</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DB_RESTORE_DANGER</Name>
     <StockIconName>database-restore.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Database</StockIconSet>
-    <Colorize>#EF8157</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>104</ResourceIDValue>
+    <ResourceIDValue>114</ResourceIDValue>
     <ResourceID>ID_DB_RESTORE_DANGER</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#EF8157</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DB_RESTORE_PRIMARY</Name>
     <StockIconName>database-restore.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Database</StockIconSet>
-    <Colorize>#51CBCE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>105</ResourceIDValue>
+    <ResourceIDValue>115</ResourceIDValue>
     <ResourceID>ID_DB_RESTORE_PRIMARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51CBCE</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DB_RESTORE_SECONDARY</Name>
     <StockIconName>database-restore.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Database</StockIconSet>
-    <Colorize>#846AD0</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>106</ResourceIDValue>
+    <ResourceIDValue>116</ResourceIDValue>
     <ResourceID>ID_DB_RESTORE_SECONDARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#846AD0</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DB_RESTORE_LIGHT</Name>
     <StockIconName>database-restore.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Database</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>107</ResourceIDValue>
+    <ResourceIDValue>117</ResourceIDValue>
     <ResourceID>ID_DB_RESTORE_LIGHT</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DB_RESTORE_SUCCESS</Name>
     <StockIconName>database-restore.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Database</StockIconSet>
-    <Colorize>#6BD098</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>108</ResourceIDValue>
+    <ResourceIDValue>118</ResourceIDValue>
     <ResourceID>ID_DB_RESTORE_SUCCESS</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#6BD098</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DB_RESTORE_INFO</Name>
     <StockIconName>database-restore.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Database</StockIconSet>
-    <Colorize>#51BCDA</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>109</ResourceIDValue>
+    <ResourceIDValue>119</ResourceIDValue>
     <ResourceID>ID_DB_RESTORE_INFO</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51BCDA</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DB_SAVE_ENABLED</Name>
     <StockIconName>database-save.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Database</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>120</ResourceIDValue>
+    <ResourceID>ID_DB_SAVE_ENABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
     <StockOverlayPos>121178389</StockOverlayPos>
-    <ResourceIDValue>233</ResourceIDValue>
-    <ResourceID>ID_DATABASE-SAVE</ResourceID>
+    <DarkMode>0</DarkMode>
   </Icon>
-<Icon>
+  <Icon>
     <Name>DB_SAVE_DISABLED</Name>
     <StockIconName>database-save.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Database</StockIconSet>
-    <Colorize>#E6E9EE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
-    <ResourceIDValue>101</ResourceIDValue>
+    <ResourceIDValue>121</ResourceIDValue>
     <ResourceID>ID_DB_SAVE_DISABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#E6E9EE</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DB_SAVE_DARK</Name>
     <StockIconName>database-save.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Database</StockIconSet>
-    <Colorize>#636363</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>102</ResourceIDValue>
+    <ResourceIDValue>122</ResourceIDValue>
     <ResourceID>ID_DB_SAVE_DARK</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#636363</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DB_SAVE_WARNING</Name>
     <StockIconName>database-save.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Database</StockIconSet>
-    <Colorize>#FBC658</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>103</ResourceIDValue>
+    <ResourceIDValue>123</ResourceIDValue>
     <ResourceID>ID_DB_SAVE_WARNING</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FBC658</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DB_SAVE_DANGER</Name>
     <StockIconName>database-save.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Database</StockIconSet>
-    <Colorize>#EF8157</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>104</ResourceIDValue>
+    <ResourceIDValue>124</ResourceIDValue>
     <ResourceID>ID_DB_SAVE_DANGER</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#EF8157</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DB_SAVE_PRIMARY</Name>
     <StockIconName>database-save.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Database</StockIconSet>
-    <Colorize>#51CBCE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>105</ResourceIDValue>
+    <ResourceIDValue>125</ResourceIDValue>
     <ResourceID>ID_DB_SAVE_PRIMARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51CBCE</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DB_SAVE_SECONDARY</Name>
     <StockIconName>database-save.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Database</StockIconSet>
-    <Colorize>#846AD0</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>106</ResourceIDValue>
+    <ResourceIDValue>126</ResourceIDValue>
     <ResourceID>ID_DB_SAVE_SECONDARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#846AD0</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DB_SAVE_LIGHT</Name>
     <StockIconName>database-save.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Database</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>107</ResourceIDValue>
+    <ResourceIDValue>127</ResourceIDValue>
     <ResourceID>ID_DB_SAVE_LIGHT</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DB_SAVE_SUCCESS</Name>
     <StockIconName>database-save.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Database</StockIconSet>
-    <Colorize>#6BD098</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>108</ResourceIDValue>
+    <ResourceIDValue>128</ResourceIDValue>
     <ResourceID>ID_DB_SAVE_SUCCESS</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#6BD098</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DB_SAVE_INFO</Name>
     <StockIconName>database-save.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Database</StockIconSet>
-    <Colorize>#51BCDA</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>109</ResourceIDValue>
+    <ResourceIDValue>129</ResourceIDValue>
     <ResourceID>ID_DB_SAVE_INFO</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51BCDA</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>CLOUD_DOWNLOAD_ENABLED</Name>
     <StockIconName>cloud-download.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Database</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>130</ResourceIDValue>
+    <ResourceID>ID_CLOUD_DOWNLOAD_ENABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
     <StockOverlayPos>121178389</StockOverlayPos>
-    <ResourceIDValue>232</ResourceIDValue>
-    <ResourceID>ID_CLOUD-DOWNLOAD</ResourceID>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>CLOUD_DOWNLOAD_DISABLED</Name>
     <StockIconName>cloud-download.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
-   <StockIconSet>Database</StockIconSet>
-    <Colorize>#E6E9EE</Colorize>
+    <StockIconSet>Database</StockIconSet>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
-    <ResourceIDValue>101</ResourceIDValue>
+    <ResourceIDValue>131</ResourceIDValue>
     <ResourceID>ID_CLOUD_DOWNLOAD_DISABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#E6E9EE</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>CLOUD_DOWNLOAD_DARK</Name>
     <StockIconName>cloud-download.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
-   <StockIconSet>Database</StockIconSet>
-    <Colorize>#636363</Colorize>
+    <StockIconSet>Database</StockIconSet>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>102</ResourceIDValue>
+    <ResourceIDValue>132</ResourceIDValue>
     <ResourceID>ID_CLOUD_DOWNLOAD_DARK</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#636363</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>CLOUD_DOWNLOAD_WARNING</Name>
     <StockIconName>cloud-download.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
-   <StockIconSet>Database</StockIconSet>
-    <Colorize>#FBC658</Colorize>
+    <StockIconSet>Database</StockIconSet>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>103</ResourceIDValue>
+    <ResourceIDValue>133</ResourceIDValue>
     <ResourceID>ID_CLOUD_DOWNLOAD_WARNING</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FBC658</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>CLOUD_DOWNLOAD_DANGER</Name>
     <StockIconName>cloud-download.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
-   <StockIconSet>Database</StockIconSet>
-    <Colorize>#EF8157</Colorize>
+    <StockIconSet>Database</StockIconSet>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>104</ResourceIDValue>
+    <ResourceIDValue>134</ResourceIDValue>
     <ResourceID>ID_CLOUD_DOWNLOAD_DANGER</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#EF8157</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>CLOUD_DOWNLOAD_PRIMARY</Name>
     <StockIconName>cloud-download.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
-   <StockIconSet>Database</StockIconSet>
-    <Colorize>#51CBCE</Colorize>
+    <StockIconSet>Database</StockIconSet>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>105</ResourceIDValue>
+    <ResourceIDValue>135</ResourceIDValue>
     <ResourceID>ID_CLOUD_DOWNLOAD_PRIMARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51CBCE</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>CLOUD_DOWNLOAD_SECONDARY</Name>
     <StockIconName>cloud-download.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
-   <StockIconSet>Database</StockIconSet>
-    <Colorize>#846AD0</Colorize>
+    <StockIconSet>Database</StockIconSet>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>106</ResourceIDValue>
+    <ResourceIDValue>136</ResourceIDValue>
     <ResourceID>ID_CLOUD_DOWNLOAD_SECONDARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#846AD0</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>CLOUD_DOWNLOAD_LIGHT</Name>
     <StockIconName>cloud-download.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
-   <StockIconSet>Database</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
+    <StockIconSet>Database</StockIconSet>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>107</ResourceIDValue>
+    <ResourceIDValue>137</ResourceIDValue>
     <ResourceID>ID_CLOUD_DOWNLOAD_LIGHT</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>CLOUD_DOWNLOAD_SUCCESS</Name>
     <StockIconName>cloud-download.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
-   <StockIconSet>Database</StockIconSet>
-    <Colorize>#6BD098</Colorize>
+    <StockIconSet>Database</StockIconSet>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>108</ResourceIDValue>
+    <ResourceIDValue>138</ResourceIDValue>
     <ResourceID>ID_CLOUD_DOWNLOAD_SUCCESS</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#6BD098</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>CLOUD_DOWNLOAD_INFO</Name>
     <StockIconName>cloud-download.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
-   <StockIconSet>Database</StockIconSet>
-    <Colorize>#51BCDA</Colorize>
+    <StockIconSet>Database</StockIconSet>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>109</ResourceIDValue>
+    <ResourceIDValue>139</ResourceIDValue>
     <ResourceID>ID_CLOUD_DOWNLOAD_INFO</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51BCDA</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_OK_ENABLED</Name>
     <StockIconName>protection.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>140</ResourceIDValue>
+    <ResourceID>ID_VALIDATION_OK_ENABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
     <StockOverlayPos>121178389</StockOverlayPos>
-    <ResourceIDValue>237</ResourceIDValue>
-    <ResourceID>ID_PROTECTION</ResourceID>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_OK_DISABLED</Name>
     <StockIconName>protection.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#E6E9EE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
-    <ResourceIDValue>101</ResourceIDValue>
+    <ResourceIDValue>141</ResourceIDValue>
     <ResourceID>ID_VALIDATION_OK_DISABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#E6E9EE</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_OK_DARK</Name>
     <StockIconName>protection.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#636363</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>102</ResourceIDValue>
+    <ResourceIDValue>142</ResourceIDValue>
     <ResourceID>ID_VALIDATION_OK_DARK</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#636363</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_OK_WARNING</Name>
     <StockIconName>protection.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#FBC658</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>103</ResourceIDValue>
+    <ResourceIDValue>143</ResourceIDValue>
     <ResourceID>ID_VALIDATION_OK_WARNING</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FBC658</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_OK_DANGER</Name>
     <StockIconName>protection.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#EF8157</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>104</ResourceIDValue>
+    <ResourceIDValue>144</ResourceIDValue>
     <ResourceID>ID_VALIDATION_OK_DANGER</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#EF8157</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_OK_PRIMARY</Name>
     <StockIconName>protection.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#51CBCE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>105</ResourceIDValue>
+    <ResourceIDValue>145</ResourceIDValue>
     <ResourceID>ID_VALIDATION_OK_PRIMARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51CBCE</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_OK_SECONDARY</Name>
     <StockIconName>protection.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#846AD0</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>106</ResourceIDValue>
+    <ResourceIDValue>146</ResourceIDValue>
     <ResourceID>ID_VALIDATION_OK_SECONDARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#846AD0</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_OK_LIGHT</Name>
     <StockIconName>protection.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>107</ResourceIDValue>
+    <ResourceIDValue>147</ResourceIDValue>
     <ResourceID>ID_VALIDATION_OK_LIGHT</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_OK_SUCCESS</Name>
     <StockIconName>protection.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#6BD098</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>108</ResourceIDValue>
+    <ResourceIDValue>148</ResourceIDValue>
     <ResourceID>ID_VALIDATION_OK_SUCCESS</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#6BD098</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_OK_INFO</Name>
     <StockIconName>protection.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#51BCDA</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>109</ResourceIDValue>
+    <ResourceIDValue>149</ResourceIDValue>
     <ResourceID>ID_VALIDATION_OK_INFO</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51BCDA</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_WARNING_ENABLED</Name>
     <StockIconName>protection-warning.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>150</ResourceIDValue>
+    <ResourceID>ID_VALIDATION_WARNING_ENABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
     <StockOverlayPos>121178389</StockOverlayPos>
-    <ResourceIDValue>236</ResourceIDValue>
-    <ResourceID>ID_PROTECTION-WARNING</ResourceID>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_WARNING_DISABLED</Name>
     <StockIconName>protection-warning.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#E6E9EE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
-    <ResourceIDValue>101</ResourceIDValue>
+    <ResourceIDValue>151</ResourceIDValue>
     <ResourceID>ID_VALIDATION_WARNING_DISABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#E6E9EE</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_WARNING_DARK</Name>
     <StockIconName>protection-warning.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#636363</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>102</ResourceIDValue>
+    <ResourceIDValue>152</ResourceIDValue>
     <ResourceID>ID_VALIDATION_WARNING_DARK</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#636363</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_WARNING_WARNING</Name>
     <StockIconName>protection-warning.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#FBC658</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>103</ResourceIDValue>
+    <ResourceIDValue>153</ResourceIDValue>
     <ResourceID>ID_VALIDATION_WARNING_WARNING</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FBC658</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_WARNING_DANGER</Name>
     <StockIconName>protection-warning.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#EF8157</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>104</ResourceIDValue>
+    <ResourceIDValue>154</ResourceIDValue>
     <ResourceID>ID_VALIDATION_WARNING_DANGER</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#EF8157</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_WARNING_PRIMARY</Name>
     <StockIconName>protection-warning.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#51CBCE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>105</ResourceIDValue>
+    <ResourceIDValue>155</ResourceIDValue>
     <ResourceID>ID_VALIDATION_WARNING_PRIMARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51CBCE</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_WARNING_SECONDARY</Name>
     <StockIconName>protection-warning.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#846AD0</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>106</ResourceIDValue>
+    <ResourceIDValue>156</ResourceIDValue>
     <ResourceID>ID_VALIDATION_WARNING_SECONDARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#846AD0</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_WARNING_LIGHT</Name>
     <StockIconName>protection-warning.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>107</ResourceIDValue>
+    <ResourceIDValue>157</ResourceIDValue>
     <ResourceID>ID_VALIDATION_WARNING_LIGHT</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_WARNING_SUCCESS</Name>
     <StockIconName>protection-warning.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#6BD098</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>108</ResourceIDValue>
+    <ResourceIDValue>158</ResourceIDValue>
     <ResourceID>ID_VALIDATION_WARNING_SUCCESS</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#6BD098</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_WARNING_INFO</Name>
     <StockIconName>protection-warning.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#51BCDA</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>109</ResourceIDValue>
+    <ResourceIDValue>159</ResourceIDValue>
     <ResourceID>ID_VALIDATION_WARNING_INFO</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51BCDA</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_DANGER_ENABLED</Name>
     <StockIconName>protection-danger.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>160</ResourceIDValue>
+    <ResourceID>ID_VALIDATION_DANGER_ENABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
     <StockOverlayPos>121178389</StockOverlayPos>
-    <ResourceIDValue>231</ResourceIDValue>
-    <ResourceID>ID_PROTECTION-DANGER</ResourceID>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_DANGER_DISABLED</Name>
     <StockIconName>protection-danger.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#E6E9EE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
-    <ResourceIDValue>101</ResourceIDValue>
+    <ResourceIDValue>161</ResourceIDValue>
     <ResourceID>ID_VALIDATION_DANGER_DISABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#E6E9EE</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_DANGER_DARK</Name>
     <StockIconName>protection-danger.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#636363</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>102</ResourceIDValue>
+    <ResourceIDValue>162</ResourceIDValue>
     <ResourceID>ID_VALIDATION_DANGER_DARK</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#636363</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_DANGER_WARNING</Name>
     <StockIconName>protection-danger.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#FBC658</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>103</ResourceIDValue>
+    <ResourceIDValue>163</ResourceIDValue>
     <ResourceID>ID_VALIDATION_DANGER_WARNING</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FBC658</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_DANGER_DANGER</Name>
     <StockIconName>protection-danger.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#EF8157</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>104</ResourceIDValue>
+    <ResourceIDValue>164</ResourceIDValue>
     <ResourceID>ID_VALIDATION_DANGER_DANGER</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#EF8157</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_DANGER_PRIMARY</Name>
     <StockIconName>protection-danger.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#51CBCE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>105</ResourceIDValue>
+    <ResourceIDValue>165</ResourceIDValue>
     <ResourceID>ID_VALIDATION_DANGER_PRIMARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51CBCE</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_DANGER_SECONDARY</Name>
     <StockIconName>protection-danger.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#846AD0</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>106</ResourceIDValue>
+    <ResourceIDValue>166</ResourceIDValue>
     <ResourceID>ID_VALIDATION_DANGER_SECONDARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#846AD0</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_DANGER_LIGHT</Name>
     <StockIconName>protection-danger.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>107</ResourceIDValue>
+    <ResourceIDValue>167</ResourceIDValue>
     <ResourceID>ID_VALIDATION_DANGER_LIGHT</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_DANGER_SUCCESS</Name>
     <StockIconName>protection-danger.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#6BD098</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>108</ResourceIDValue>
+    <ResourceIDValue>168</ResourceIDValue>
     <ResourceID>ID_VALIDATION_DANGER_SUCCESS</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#6BD098</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>VALIDATION_DANGER_INFO</Name>
     <StockIconName>protection-danger.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Web and Email</StockIconSet>
-    <Colorize>#51BCDA</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>109</ResourceIDValue>
+    <ResourceIDValue>169</ResourceIDValue>
     <ResourceID>ID_VALIDATION_DANGER_INFO</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51BCDA</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>BILL_ENABLED</Name>
     <StockIconName>bill.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Business</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
+    <ResourceIDValue>170</ResourceIDValue>
+    <ResourceID>ID_BILL_ENABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
     <StockOverlayPos>121178389</StockOverlayPos>
-    <ResourceIDValue>230</ResourceIDValue>
-    <ResourceID>ID_BILL</ResourceID>
+    <DarkMode>0</DarkMode>
   </Icon>
-<Icon>
+  <Icon>
     <Name>BILL_DISABLED</Name>
     <StockIconName>bill.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Business</StockIconSet>
-    <Colorize>#E6E9EE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
-    <ResourceIDValue>101</ResourceIDValue>
+    <ResourceIDValue>171</ResourceIDValue>
     <ResourceID>ID_BILL_DISABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#E6E9EE</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>BILL_DARK</Name>
     <StockIconName>bill.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Business</StockIconSet>
-    <Colorize>#636363</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>102</ResourceIDValue>
+    <ResourceIDValue>172</ResourceIDValue>
     <ResourceID>ID_BILL_DARK</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#636363</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>BILL_WARNING</Name>
     <StockIconName>bill.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Business</StockIconSet>
-    <Colorize>#FBC658</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>103</ResourceIDValue>
+    <ResourceIDValue>173</ResourceIDValue>
     <ResourceID>ID_BILL_WARNING</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FBC658</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>BILL_DANGER</Name>
     <StockIconName>bill.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Business</StockIconSet>
-    <Colorize>#EF8157</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>104</ResourceIDValue>
+    <ResourceIDValue>174</ResourceIDValue>
     <ResourceID>ID_BILL_DANGER</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#EF8157</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>BILL_PRIMARY</Name>
     <StockIconName>bill.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Business</StockIconSet>
-    <Colorize>#51CBCE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>105</ResourceIDValue>
+    <ResourceIDValue>175</ResourceIDValue>
     <ResourceID>ID_BILL_PRIMARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51CBCE</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>BILL_SECONDARY</Name>
     <StockIconName>bill.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Business</StockIconSet>
-    <Colorize>#846AD0</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>106</ResourceIDValue>
+    <ResourceIDValue>176</ResourceIDValue>
     <ResourceID>ID_BILL_SECONDARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#846AD0</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>BILL_LIGHT</Name>
     <StockIconName>bill.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Business</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>107</ResourceIDValue>
+    <ResourceIDValue>177</ResourceIDValue>
     <ResourceID>ID_BILL_LIGHT</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>BILL_SUCCESS</Name>
     <StockIconName>bill.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Business</StockIconSet>
-    <Colorize>#6BD098</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>108</ResourceIDValue>
+    <ResourceIDValue>178</ResourceIDValue>
     <ResourceID>ID_BILL_SUCCESS</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#6BD098</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>BILL_INFO</Name>
     <StockIconName>bill.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Business</StockIconSet>
-    <Colorize>#51BCDA</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>109</ResourceIDValue>
+    <ResourceIDValue>179</ResourceIDValue>
     <ResourceID>ID_BILL_INFO</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51BCDA</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>NEW_ENABLED</Name>
     <StockIconName>document.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
-    <ResourceIDValue>100</ResourceIDValue>
+    <ResourceIDValue>180</ResourceIDValue>
     <ResourceID>ID_NEW_ENABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>NEW_DISABLED</Name>
     <StockIconName>document.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#E6E9EE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
-    <ResourceIDValue>101</ResourceIDValue>
+    <ResourceIDValue>181</ResourceIDValue>
     <ResourceID>ID_NEW_DISABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#E6E9EE</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>NEW_DARK</Name>
     <StockIconName>document.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#636363</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>102</ResourceIDValue>
+    <ResourceIDValue>182</ResourceIDValue>
     <ResourceID>ID_NEW_DARK</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#636363</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>NEW_WARNING</Name>
     <StockIconName>document.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FBC658</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>103</ResourceIDValue>
+    <ResourceIDValue>183</ResourceIDValue>
     <ResourceID>ID_NEW_WARNING</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FBC658</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>NEW_DANGER</Name>
     <StockIconName>document.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#EF8157</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>104</ResourceIDValue>
+    <ResourceIDValue>184</ResourceIDValue>
     <ResourceID>ID_NEW_DANGER</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#EF8157</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>NEW_PRIMARY</Name>
     <StockIconName>document.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#51CBCE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>105</ResourceIDValue>
+    <ResourceIDValue>185</ResourceIDValue>
     <ResourceID>ID_NEW_PRIMARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51CBCE</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>NEW_SECONDARY</Name>
     <StockIconName>document.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#846AD0</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>106</ResourceIDValue>
+    <ResourceIDValue>186</ResourceIDValue>
     <ResourceID>ID_NEW_SECONDARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#846AD0</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>NEW_LIGHT</Name>
     <StockIconName>document.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>107</ResourceIDValue>
+    <ResourceIDValue>187</ResourceIDValue>
     <ResourceID>ID_NEW_LIGHT</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>NEW_SUCCESS</Name>
     <StockIconName>document.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#6BD098</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>108</ResourceIDValue>
+    <ResourceIDValue>188</ResourceIDValue>
     <ResourceID>ID_NEW_SUCCESS</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#6BD098</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>NEW_INFO</Name>
     <StockIconName>document.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#51BCDA</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>109</ResourceIDValue>
+    <ResourceIDValue>189</ResourceIDValue>
     <ResourceID>ID_NEW_INFO</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51BCDA</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>FIND_ENABLED</Name>
     <StockIconName>find.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
-    <ResourceIDValue>110</ResourceIDValue>
+    <ResourceIDValue>190</ResourceIDValue>
     <ResourceID>ID_FIND_ENABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>FIND_DISABLED</Name>
     <StockIconName>find.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#E6E9EE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
-    <ResourceIDValue>111</ResourceIDValue>
+    <ResourceIDValue>191</ResourceIDValue>
     <ResourceID>ID_FIND_DISABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#E6E9EE</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>FIND_DARK</Name>
     <StockIconName>find.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#636363</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>112</ResourceIDValue>
+    <ResourceIDValue>192</ResourceIDValue>
     <ResourceID>ID_FIND_DARK</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#636363</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>FIND_WARNING</Name>
     <StockIconName>find.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FBC658</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>113</ResourceIDValue>
+    <ResourceIDValue>193</ResourceIDValue>
     <ResourceID>ID_FIND_WARNING</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FBC658</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>FIND_DANGER</Name>
     <StockIconName>find.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#EF8157</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>114</ResourceIDValue>
+    <ResourceIDValue>194</ResourceIDValue>
     <ResourceID>ID_FIND_DANGER</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#EF8157</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>FIND_PRIMARY</Name>
     <StockIconName>find.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#51CBCE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>115</ResourceIDValue>
+    <ResourceIDValue>195</ResourceIDValue>
     <ResourceID>ID_FIND_PRIMARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51CBCE</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>FIND_SECONDARY</Name>
     <StockIconName>find.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#846AD0</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>116</ResourceIDValue>
+    <ResourceIDValue>196</ResourceIDValue>
     <ResourceID>ID_FIND_SECONDARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#846AD0</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>FIND_LIGHT</Name>
     <StockIconName>find.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>117</ResourceIDValue>
+    <ResourceIDValue>197</ResourceIDValue>
     <ResourceID>ID_FIND_LIGHT</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>FIND_SUCCESS</Name>
     <StockIconName>find.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#6BD098</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>118</ResourceIDValue>
+    <ResourceIDValue>198</ResourceIDValue>
     <ResourceID>ID_FIND_SUCCESS</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#6BD098</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>FIND_INFO</Name>
     <StockIconName>find.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#51BCDA</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>119</ResourceIDValue>
+    <ResourceIDValue>199</ResourceIDValue>
     <ResourceID>ID_FIND_INFO</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51BCDA</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>PRINT_ENABLED</Name>
     <StockIconName>printer.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
-    <ResourceIDValue>120</ResourceIDValue>
+    <ResourceIDValue>200</ResourceIDValue>
     <ResourceID>ID_PRINT_ENABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>PRINT_DISABLED</Name>
     <StockIconName>printer.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#E6E9EE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
-    <ResourceIDValue>121</ResourceIDValue>
+    <ResourceIDValue>201</ResourceIDValue>
     <ResourceID>ID_PRINT_DISABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#E6E9EE</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>PRINT_DARK</Name>
     <StockIconName>printer.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#636363</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>122</ResourceIDValue>
+    <ResourceIDValue>202</ResourceIDValue>
     <ResourceID>ID_PRINT_DARK</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#636363</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>PRINT_WARNING</Name>
     <StockIconName>printer.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FBC658</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>123</ResourceIDValue>
+    <ResourceIDValue>203</ResourceIDValue>
     <ResourceID>ID_PRINT_WARNING</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FBC658</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>PRINT_DANGER</Name>
     <StockIconName>printer.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#EF8157</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>124</ResourceIDValue>
+    <ResourceIDValue>204</ResourceIDValue>
     <ResourceID>ID_PRINT_DANGER</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#EF8157</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>PRINT_PRIMARY</Name>
     <StockIconName>printer.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#51CBCE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>125</ResourceIDValue>
+    <ResourceIDValue>205</ResourceIDValue>
     <ResourceID>ID_PRINT_PRIMARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51CBCE</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>PRINT_SECONDARY</Name>
     <StockIconName>printer.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#846AD0</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>126</ResourceIDValue>
+    <ResourceIDValue>206</ResourceIDValue>
     <ResourceID>ID_PRINT_SECONDARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#846AD0</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>PRINT_LIGHT</Name>
     <StockIconName>printer.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>127</ResourceIDValue>
+    <ResourceIDValue>207</ResourceIDValue>
     <ResourceID>ID_PRINT_LIGHT</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>PRINT_SUCCESS</Name>
     <StockIconName>printer.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#6BD098</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>128</ResourceIDValue>
+    <ResourceIDValue>208</ResourceIDValue>
     <ResourceID>ID_PRINT_SUCCESS</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#6BD098</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>PRINT_INFO</Name>
     <StockIconName>printer.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#51BCDA</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>129</ResourceIDValue>
+    <ResourceIDValue>209</ResourceIDValue>
     <ResourceID>ID_PRINT_INFO</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51BCDA</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>SAVE_ENABLED</Name>
     <StockIconName>save.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
-    <ResourceIDValue>130</ResourceIDValue>
+    <ResourceIDValue>210</ResourceIDValue>
     <ResourceID>ID_SAVE_ENABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>SAVE_DISABLED</Name>
     <StockIconName>save.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#E6E9EE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
-    <ResourceIDValue>131</ResourceIDValue>
+    <ResourceIDValue>211</ResourceIDValue>
     <ResourceID>ID_SAVE_DISABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#E6E9EE</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>SAVE_DARK</Name>
     <StockIconName>save.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#636363</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>132</ResourceIDValue>
+    <ResourceIDValue>212</ResourceIDValue>
     <ResourceID>ID_SAVE_DARK</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#636363</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>SAVE_WARNING</Name>
     <StockIconName>save.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FBC658</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>133</ResourceIDValue>
+    <ResourceIDValue>213</ResourceIDValue>
     <ResourceID>ID_SAVE_WARNING</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FBC658</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>SAVE_DANGER</Name>
     <StockIconName>save.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#EF8157</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>134</ResourceIDValue>
+    <ResourceIDValue>214</ResourceIDValue>
     <ResourceID>ID_SAVE_DANGER</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#EF8157</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>SAVE_PRIMARY</Name>
     <StockIconName>save.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#51CBCE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>135</ResourceIDValue>
+    <ResourceIDValue>215</ResourceIDValue>
     <ResourceID>ID_SAVE_PRIMARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51CBCE</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>SAVE_SECONDARY</Name>
     <StockIconName>save.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#846AD0</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>136</ResourceIDValue>
+    <ResourceIDValue>216</ResourceIDValue>
     <ResourceID>ID_SAVE_SECONDARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#846AD0</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>SAVE_LIGHT</Name>
     <StockIconName>save.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>137</ResourceIDValue>
+    <ResourceIDValue>217</ResourceIDValue>
     <ResourceID>ID_SAVE_LIGHT</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>SAVE_SUCCESS</Name>
     <StockIconName>save.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#6BD098</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>138</ResourceIDValue>
+    <ResourceIDValue>218</ResourceIDValue>
     <ResourceID>ID_SAVE_SUCCESS</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#6BD098</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>SAVE_INFO</Name>
     <StockIconName>save.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#51BCDA</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>139</ResourceIDValue>
+    <ResourceIDValue>219</ResourceIDValue>
     <ResourceID>ID_SAVE_INFO</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51BCDA</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ADD_ENABLED</Name>
     <StockIconName>symbol-add.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>140</ResourceIDValue>
+    <ResourceIDValue>220</ResourceIDValue>
     <ResourceID>ID_ADD_ENABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ADD_DISABLED</Name>
     <StockIconName>symbol-add.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#E6E9EE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
-    <ResourceIDValue>141</ResourceIDValue>
+    <ResourceIDValue>221</ResourceIDValue>
     <ResourceID>ID_ADD_DISABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#E6E9EE</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ADD_DARK</Name>
     <StockIconName>symbol-add.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#636363</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>142</ResourceIDValue>
+    <ResourceIDValue>222</ResourceIDValue>
     <ResourceID>ID_ADD_DARK</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#636363</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ADD_WARNING</Name>
     <StockIconName>symbol-add.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FBC658</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>143</ResourceIDValue>
+    <ResourceIDValue>223</ResourceIDValue>
     <ResourceID>ID_ADD_WARNING</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FBC658</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ADD_DANGER</Name>
     <StockIconName>symbol-add.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#EF8157</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>144</ResourceIDValue>
+    <ResourceIDValue>224</ResourceIDValue>
     <ResourceID>ID_ADD_DANGER</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#EF8157</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ADD_PRIMARY</Name>
     <StockIconName>symbol-add.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#51CBCE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>145</ResourceIDValue>
+    <ResourceIDValue>225</ResourceIDValue>
     <ResourceID>ID_ADD_PRIMARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51CBCE</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ADD_SECONDARY</Name>
     <StockIconName>symbol-add.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#846AD0</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>146</ResourceIDValue>
+    <ResourceIDValue>226</ResourceIDValue>
     <ResourceID>ID_ADD_SECONDARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#846AD0</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ADD_LIGHT</Name>
     <StockIconName>symbol-add.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>147</ResourceIDValue>
+    <ResourceIDValue>227</ResourceIDValue>
     <ResourceID>ID_ADD_LIGHT</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ADD_SUCCESS</Name>
     <StockIconName>symbol-add.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#6BD098</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>148</ResourceIDValue>
+    <ResourceIDValue>228</ResourceIDValue>
     <ResourceID>ID_ADD_SUCCESS</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#6BD098</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ADD_INFO</Name>
     <StockIconName>symbol-add.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#51BCDA</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>149</ResourceIDValue>
+    <ResourceIDValue>229</ResourceIDValue>
     <ResourceID>ID_ADD_INFO</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51BCDA</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>REMOVE_ENABLED</Name>
     <StockIconName>symbol-remove.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>150</ResourceIDValue>
+    <ResourceIDValue>230</ResourceIDValue>
     <ResourceID>ID_REMOVE_ENABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>REMOVE_DISABLED</Name>
     <StockIconName>symbol-remove.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#E6E9EE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>151</ResourceIDValue>
+    <ResourceIDValue>231</ResourceIDValue>
     <ResourceID>ID_REMOVE_DISABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#E6E9EE</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>REMOVE_DARK</Name>
     <StockIconName>symbol-remove.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#636363</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>152</ResourceIDValue>
+    <ResourceIDValue>232</ResourceIDValue>
     <ResourceID>ID_REMOVE_DARK</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#636363</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>REMOVE_WARNING</Name>
     <StockIconName>symbol-remove.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FBC658</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>153</ResourceIDValue>
+    <ResourceIDValue>233</ResourceIDValue>
     <ResourceID>ID_REMOVE_WARNING</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FBC658</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>REMOVE_DANGER</Name>
     <StockIconName>symbol-remove.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#EF8157</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>154</ResourceIDValue>
+    <ResourceIDValue>234</ResourceIDValue>
     <ResourceID>ID_REMOVE_DANGER</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#EF8157</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>REMOVE_PRIMARY</Name>
     <StockIconName>symbol-remove.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#51CBCE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>155</ResourceIDValue>
+    <ResourceIDValue>235</ResourceIDValue>
     <ResourceID>ID_REMOVE_PRIMARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51CBCE</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>REMOVE_SECONDARY</Name>
     <StockIconName>symbol-remove.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#846AD0</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>156</ResourceIDValue>
+    <ResourceIDValue>236</ResourceIDValue>
     <ResourceID>ID_REMOVE_SECONDARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#846AD0</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>REMOVE_LIGHT</Name>
     <StockIconName>symbol-remove.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>157</ResourceIDValue>
+    <ResourceIDValue>237</ResourceIDValue>
     <ResourceID>ID_REMOVE_LIGHT</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>REMOVE_SUCCESS</Name>
     <StockIconName>symbol-remove.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#6BD098</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>158</ResourceIDValue>
+    <ResourceIDValue>238</ResourceIDValue>
     <ResourceID>ID_REMOVE_SUCCESS</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#6BD098</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>REMOVE_INFO</Name>
     <StockIconName>symbol-remove.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#51BCDA</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>159</ResourceIDValue>
+    <ResourceIDValue>239</ResourceIDValue>
     <ResourceID>ID_REMOVE_INFO</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51BCDA</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ARROW_DOWN_ENABLED</Name>
     <StockIconName>symbol-arrow-down.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>160</ResourceIDValue>
+    <ResourceIDValue>240</ResourceIDValue>
     <ResourceID>ID_ARROW_DOWN_ENABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ARROW_DOWN_DISABLED</Name>
     <StockIconName>symbol-arrow-down.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#E6E9EE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
-    <ResourceIDValue>161</ResourceIDValue>
+    <ResourceIDValue>241</ResourceIDValue>
     <ResourceID>ID_ARROW_DOWN_DISABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#E6E9EE</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ARROW_DOWN_DARK</Name>
     <StockIconName>symbol-arrow-down.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#636363</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>162</ResourceIDValue>
+    <ResourceIDValue>242</ResourceIDValue>
     <ResourceID>ID_ARROW_DOWN_DARK</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#636363</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ARROW_DOWN_WARNING</Name>
     <StockIconName>symbol-arrow-down.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FBC658</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>163</ResourceIDValue>
+    <ResourceIDValue>243</ResourceIDValue>
     <ResourceID>ID_ARROW_DOWN_WARNING</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FBC658</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ARROW_DOWN_DANGER</Name>
     <StockIconName>symbol-arrow-down.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#EF8157</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>164</ResourceIDValue>
+    <ResourceIDValue>244</ResourceIDValue>
     <ResourceID>ID_ARROW_DOWN_DANGER</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#EF8157</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ARROW_DOWN_PRIMARY</Name>
     <StockIconName>symbol-arrow-down.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#51CBCE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>165</ResourceIDValue>
+    <ResourceIDValue>245</ResourceIDValue>
     <ResourceID>ID_ARROW_DOWN_PRIMARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51CBCE</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ARROW_DOWN_SECONDARY</Name>
     <StockIconName>symbol-arrow-down.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#846AD0</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>166</ResourceIDValue>
+    <ResourceIDValue>246</ResourceIDValue>
     <ResourceID>ID_ARROW_DOWN_SECONDARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#846AD0</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ARROW_DOWN_LIGHT</Name>
     <StockIconName>symbol-arrow-down.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>167</ResourceIDValue>
+    <ResourceIDValue>247</ResourceIDValue>
     <ResourceID>ID_ARROW_DOWN_LIGHT</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ARROW_DOWN_SUCCESS</Name>
     <StockIconName>symbol-arrow-down.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#6BD098</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>168</ResourceIDValue>
+    <ResourceIDValue>248</ResourceIDValue>
     <ResourceID>ID_ARROW_DOWN_SUCCESS</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#6BD098</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ARROW_DOWN_INFO</Name>
     <StockIconName>symbol-arrow-down.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#51BCDA</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>169</ResourceIDValue>
+    <ResourceIDValue>249</ResourceIDValue>
     <ResourceID>ID_ARROW_DOWN_INFO</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51BCDA</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ARROW_UP_ENABLED</Name>
     <StockIconName>symbol-arrow-up.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>170</ResourceIDValue>
+    <ResourceIDValue>250</ResourceIDValue>
     <ResourceID>ID_ARROW_UP_ENABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ARROW_UP_DISABLED</Name>
     <StockIconName>symbol-arrow-up.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#E6E9EE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
-    <ResourceIDValue>171</ResourceIDValue>
+    <ResourceIDValue>251</ResourceIDValue>
     <ResourceID>ID_ARROW_UP_DISABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#E6E9EE</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ARROW_UP_DARK</Name>
     <StockIconName>symbol-arrow-up.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#636363</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>172</ResourceIDValue>
+    <ResourceIDValue>252</ResourceIDValue>
     <ResourceID>ID_ARROW_UP_DARK</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#636363</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ARROW_UP_WARNING</Name>
     <StockIconName>symbol-arrow-up.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FBC658</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>173</ResourceIDValue>
+    <ResourceIDValue>253</ResourceIDValue>
     <ResourceID>ID_ARROW_UP_WARNING</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FBC658</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ARROW_UP_DANGER</Name>
     <StockIconName>symbol-arrow-up.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#EF8157</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>174</ResourceIDValue>
+    <ResourceIDValue>254</ResourceIDValue>
     <ResourceID>ID_ARROW_UP_DANGER</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#EF8157</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ARROW_UP_PRIMARY</Name>
     <StockIconName>symbol-arrow-up.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#51CBCE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>175</ResourceIDValue>
+    <ResourceIDValue>255</ResourceIDValue>
     <ResourceID>ID_ARROW_UP_PRIMARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51CBCE</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ARROW_UP_SECONDARY</Name>
     <StockIconName>symbol-arrow-up.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#846AD0</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>176</ResourceIDValue>
+    <ResourceIDValue>256</ResourceIDValue>
     <ResourceID>ID_ARROW_UP_SECONDARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#846AD0</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ARROW_UP_LIGHT</Name>
     <StockIconName>symbol-arrow-up.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>177</ResourceIDValue>
+    <ResourceIDValue>257</ResourceIDValue>
     <ResourceID>ID_ARROW_UP_LIGHT</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ARROW_UP_SUCCESS</Name>
     <StockIconName>symbol-arrow-up.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#6BD098</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>178</ResourceIDValue>
+    <ResourceIDValue>258</ResourceIDValue>
     <ResourceID>ID_ARROW_UP_SUCCESS</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#6BD098</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>ARROW_UP_INFO</Name>
     <StockIconName>symbol-arrow-up.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#51BCDA</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>179</ResourceIDValue>
+    <ResourceIDValue>259</ResourceIDValue>
     <ResourceID>ID_ARROW_UP_INFO</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51BCDA</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>CANCEL_ENABLED</Name>
     <StockIconName>symbol-cancel.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
-    <ResourceIDValue>180</ResourceIDValue>
+    <ResourceIDValue>260</ResourceIDValue>
     <ResourceID>ID_CANCEL_ENABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>CANCEL_DISABLED</Name>
     <StockIconName>symbol-cancel.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#E6E9EE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
-    <ResourceIDValue>181</ResourceIDValue>
+    <ResourceIDValue>261</ResourceIDValue>
     <ResourceID>ID_CANCEL_DISABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#E6E9EE</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>CANCEL_DARK</Name>
     <StockIconName>symbol-cancel.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#636363</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>182</ResourceIDValue>
+    <ResourceIDValue>262</ResourceIDValue>
     <ResourceID>ID_CANCEL_DARK</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#636363</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>CANCEL_WARNING</Name>
     <StockIconName>symbol-cancel.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FBC658</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>183</ResourceIDValue>
+    <ResourceIDValue>263</ResourceIDValue>
     <ResourceID>ID_CANCEL_WARNING</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FBC658</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>CANCEL_DANGER</Name>
     <StockIconName>symbol-cancel.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#EF8157</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>184</ResourceIDValue>
+    <ResourceIDValue>264</ResourceIDValue>
     <ResourceID>ID_CANCEL_DANGER</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#EF8157</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>CANCEL_PRIMARY</Name>
     <StockIconName>symbol-cancel.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#51CBCE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>185</ResourceIDValue>
+    <ResourceIDValue>265</ResourceIDValue>
     <ResourceID>ID_CANCEL_PRIMARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51CBCE</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>CANCEL_SECONDARY</Name>
     <StockIconName>symbol-cancel.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#846AD0</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>186</ResourceIDValue>
+    <ResourceIDValue>266</ResourceIDValue>
     <ResourceID>ID_CANCEL_SECONDARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#846AD0</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>CANCEL_LIGHT</Name>
     <StockIconName>symbol-cancel.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>187</ResourceIDValue>
+    <ResourceIDValue>267</ResourceIDValue>
     <ResourceID>ID_CANCEL_LIGHT</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>CANCEL_SUCCESS</Name>
     <StockIconName>symbol-cancel.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#6BD098</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>188</ResourceIDValue>
+    <ResourceIDValue>268</ResourceIDValue>
     <ResourceID>ID_CANCEL_SUCCESS</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#6BD098</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>CANCEL_INFO</Name>
     <StockIconName>symbol-cancel.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#51BCDA</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>189</ResourceIDValue>
+    <ResourceIDValue>269</ResourceIDValue>
     <ResourceID>ID_CANCEL_INFO</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51BCDA</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>OK_ENABLED</Name>
     <StockIconName>symbol-ok.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
-    <ResourceIDValue>190</ResourceIDValue>
+    <ResourceIDValue>270</ResourceIDValue>
     <ResourceID>ID_OK_ENABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>OK_DISABLED</Name>
     <StockIconName>symbol-ok.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#E6E9EE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
-    <ResourceIDValue>191</ResourceIDValue>
+    <ResourceIDValue>271</ResourceIDValue>
     <ResourceID>ID_OK_DISABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#E6E9EE</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>OK_DARK</Name>
     <StockIconName>symbol-ok.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#636363</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>192</ResourceIDValue>
+    <ResourceIDValue>272</ResourceIDValue>
     <ResourceID>ID_OK_DARK</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#636363</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>OK_WARNING</Name>
     <StockIconName>symbol-ok.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FBC658</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>193</ResourceIDValue>
+    <ResourceIDValue>273</ResourceIDValue>
     <ResourceID>ID_OK_WARNING</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FBC658</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>OK_DANGER</Name>
     <StockIconName>symbol-ok.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#EF8157</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>194</ResourceIDValue>
+    <ResourceIDValue>274</ResourceIDValue>
     <ResourceID>ID_OK_DANGER</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#EF8157</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>OK_PRIMARY</Name>
     <StockIconName>symbol-ok.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#51CBCE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>195</ResourceIDValue>
+    <ResourceIDValue>275</ResourceIDValue>
     <ResourceID>ID_OK_PRIMARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51CBCE</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>OK_SECONDARY</Name>
     <StockIconName>symbol-ok.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#846AD0</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>196</ResourceIDValue>
+    <ResourceIDValue>276</ResourceIDValue>
     <ResourceID>ID_OK_SECONDARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#846AD0</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>OK_LIGHT</Name>
     <StockIconName>symbol-ok.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>197</ResourceIDValue>
+    <ResourceIDValue>277</ResourceIDValue>
     <ResourceID>ID_OK_LIGHT</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>OK_SUCCESS</Name>
     <StockIconName>symbol-ok.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#6BD098</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>198</ResourceIDValue>
+    <ResourceIDValue>278</ResourceIDValue>
     <ResourceID>ID_OK_SUCCESS</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#6BD098</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>OK_INFO</Name>
     <StockIconName>symbol-ok.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#51BCDA</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>199</ResourceIDValue>
+    <ResourceIDValue>279</ResourceIDValue>
     <ResourceID>ID_OK_INFO</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51BCDA</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>REFRESH_ENABLED</Name>
     <StockIconName>symbol-refresh.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
-    <ResourceIDValue>200</ResourceIDValue>
+    <ResourceIDValue>280</ResourceIDValue>
     <ResourceID>ID_REFRESH_ENABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>REFRESH_DISABLED</Name>
     <StockIconName>symbol-refresh.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#E6E9EE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
-    <ResourceIDValue>201</ResourceIDValue>
+    <ResourceIDValue>281</ResourceIDValue>
     <ResourceID>ID_REFRESH_DISABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#E6E9EE</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>REFRESH_DARK</Name>
     <StockIconName>symbol-refresh.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#636363</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>202</ResourceIDValue>
+    <ResourceIDValue>282</ResourceIDValue>
     <ResourceID>ID_REFRESH_DARK</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#636363</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>REFRESH_WARNING</Name>
     <StockIconName>symbol-refresh.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FBC658</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>203</ResourceIDValue>
+    <ResourceIDValue>283</ResourceIDValue>
     <ResourceID>ID_REFRESH_WARNING</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FBC658</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>REFRESH_DANGER</Name>
     <StockIconName>symbol-refresh.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#EF8157</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>204</ResourceIDValue>
+    <ResourceIDValue>284</ResourceIDValue>
     <ResourceID>ID_REFRESH_DANGER</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#EF8157</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>REFRESH_PRIMARY</Name>
     <StockIconName>symbol-refresh.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#51CBCE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>205</ResourceIDValue>
+    <ResourceIDValue>285</ResourceIDValue>
     <ResourceID>ID_REFRESH_PRIMARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51CBCE</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>REFRESH_SECONDARY</Name>
     <StockIconName>symbol-refresh.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#846AD0</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>206</ResourceIDValue>
+    <ResourceIDValue>286</ResourceIDValue>
     <ResourceID>ID_REFRESH_SECONDARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#846AD0</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>REFRESH_LIGHT</Name>
     <StockIconName>symbol-refresh.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>207</ResourceIDValue>
+    <ResourceIDValue>287</ResourceIDValue>
     <ResourceID>ID_REFRESH_LIGHT</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>REFRESH_SUCCESS</Name>
     <StockIconName>symbol-refresh.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#6BD098</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>208</ResourceIDValue>
+    <ResourceIDValue>288</ResourceIDValue>
     <ResourceID>ID_REFRESH_SUCCESS</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#6BD098</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>REFRESH_INFO</Name>
     <StockIconName>symbol-refresh.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#51BCDA</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>209</ResourceIDValue>
+    <ResourceIDValue>289</ResourceIDValue>
     <ResourceID>ID_REFRESH_INFO</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51BCDA</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DELETE_ENABLED</Name>
     <StockIconName>trash.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
-    <ResourceIDValue>210</ResourceIDValue>
+    <ResourceIDValue>290</ResourceIDValue>
     <ResourceID>ID_DELETE_ENABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DELETE_DISABLED</Name>
     <StockIconName>trash.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#E6E9EE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>211</ResourceIDValue>
+    <ResourceIDValue>291</ResourceIDValue>
     <ResourceID>ID_DELETE_DISABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#E6E9EE</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DELETE_DARK</Name>
     <StockIconName>trash.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#636363</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>212</ResourceIDValue>
+    <ResourceIDValue>292</ResourceIDValue>
     <ResourceID>ID_DELETE_DARK</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#636363</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DELETE_WARNING</Name>
     <StockIconName>trash.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FBC658</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>213</ResourceIDValue>
+    <ResourceIDValue>293</ResourceIDValue>
     <ResourceID>ID_DELETE_WARNING</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FBC658</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DELETE_DANGER</Name>
     <StockIconName>trash.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#EF8157</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>214</ResourceIDValue>
+    <ResourceIDValue>294</ResourceIDValue>
     <ResourceID>ID_DELETE_DANGER</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#EF8157</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DELETE_PRIMARY</Name>
     <StockIconName>trash.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#51CBCE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>215</ResourceIDValue>
+    <ResourceIDValue>295</ResourceIDValue>
     <ResourceID>ID_DELETE_PRIMARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51CBCE</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DELETE_SECONDARY</Name>
     <StockIconName>trash.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#846AD0</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>216</ResourceIDValue>
+    <ResourceIDValue>296</ResourceIDValue>
     <ResourceID>ID_DELETE_SECONDARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#846AD0</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DELETE_LIGHT</Name>
     <StockIconName>trash.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>217</ResourceIDValue>
+    <ResourceIDValue>297</ResourceIDValue>
     <ResourceID>ID_DELETE_LIGHT</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DELETE_SUCCESS</Name>
     <StockIconName>trash.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#6BD098</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>218</ResourceIDValue>
+    <ResourceIDValue>298</ResourceIDValue>
     <ResourceID>ID_DELETE_SUCCESS</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#6BD098</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>DELETE_INFO</Name>
     <StockIconName>trash.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Basic</StockIconSet>
-    <Colorize>#51BCDA</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>219</ResourceIDValue>
+    <ResourceIDValue>299</ResourceIDValue>
     <ResourceID>ID_DELETE_INFO</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51BCDA</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>EDIT_ENABLED</Name>
     <StockIconName>control-signature-line.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Development</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
-    <ResourceIDValue>220</ResourceIDValue>
+    <ResourceIDValue>300</ResourceIDValue>
     <ResourceID>ID_EDIT_ENABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>EDIT_DISABLED</Name>
     <StockIconName>control-signature-line.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Development</StockIconSet>
-    <Colorize>#E6E9EE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>4</StockOverlayPos>
-    <ResourceIDValue>221</ResourceIDValue>
+    <ResourceIDValue>301</ResourceIDValue>
     <ResourceID>ID_EDIT_DISABLED</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#E6E9EE</Colorize>
+    <StockOverlayPos>4</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>EDIT_DARK</Name>
     <StockIconName>control-signature-line.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Development</StockIconSet>
-    <Colorize>#636363</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>222</ResourceIDValue>
+    <ResourceIDValue>302</ResourceIDValue>
     <ResourceID>ID_EDIT_DARK</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#636363</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>EDIT_WARNING</Name>
     <StockIconName>control-signature-line.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Development</StockIconSet>
-    <Colorize>#FBC658</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>223</ResourceIDValue>
+    <ResourceIDValue>303</ResourceIDValue>
     <ResourceID>ID_EDIT_WARNING</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FBC658</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>EDIT_DANGER</Name>
     <StockIconName>control-signature-line.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Development</StockIconSet>
-    <Colorize>#EF8157</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>224</ResourceIDValue>
+    <ResourceIDValue>304</ResourceIDValue>
     <ResourceID>ID_EDIT_DANGER</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#EF8157</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>EDIT_PRIMARY</Name>
     <StockIconName>control-signature-line.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Development</StockIconSet>
-    <Colorize>#51CBCE</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>225</ResourceIDValue>
+    <ResourceIDValue>305</ResourceIDValue>
     <ResourceID>ID_EDIT_PRIMARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51CBCE</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>EDIT_SECONDARY</Name>
     <StockIconName>control-signature-line.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Development</StockIconSet>
-    <Colorize>#846AD0</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>226</ResourceIDValue>
+    <ResourceIDValue>306</ResourceIDValue>
     <ResourceID>ID_EDIT_SECONDARY</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#846AD0</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>EDIT_LIGHT</Name>
     <StockIconName>control-signature-line.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Development</StockIconSet>
-    <Colorize>#FFFFFF</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>227</ResourceIDValue>
+    <ResourceIDValue>307</ResourceIDValue>
     <ResourceID>ID_EDIT_LIGHT</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#FFFFFF</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>EDIT_SUCCESS</Name>
     <StockIconName>control-signature-line.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Development</StockIconSet>
-    <Colorize>#6BD098</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>228</ResourceIDValue>
+    <ResourceIDValue>308</ResourceIDValue>
     <ResourceID>ID_EDIT_SUCCESS</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#6BD098</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
   <Icon>
     <Name>EDIT_INFO</Name>
     <StockIconName>control-signature-line.axvi</StockIconName>
     <StockIconFamily>Axialis Line Design</StockIconFamily>
     <StockIconSet>Development</StockIconSet>
-    <Colorize>#51BCDA</Colorize>
     <StockOverlayName></StockOverlayName>
-    <StockOverlayPos>2296967</StockOverlayPos>
-    <ResourceIDValue>229</ResourceIDValue>
+    <ResourceIDValue>309</ResourceIDValue>
     <ResourceID>ID_EDIT_INFO</ResourceID>
+    <OverlayOffset>1</OverlayOffset>
+    <Opacity>255</Opacity>
+    <ColorizeMode>0</ColorizeMode>
+    <Colorize>#51BCDA</Colorize>
+    <StockOverlayPos>2296967</StockOverlayPos>
+    <DarkMode>0</DarkMode>
   </Icon>
 </AxialisIconCollection>

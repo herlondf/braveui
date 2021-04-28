@@ -4,7 +4,9 @@ interface
 
 uses
   Vcl.Themes,
+  Vcl.Styles,
   Vcl.Graphics,
+  Vcl.Controls,
   Winapi.Windows,
   System.Typinfo,
   System.Classes,
@@ -48,16 +50,19 @@ type
     function GetPenFocusedStyle   : TPenStyle;
     function GetPenDisabledStyle  : TPenStyle;
     function GetPenDownStyle      : TPenStyle;
+    function GetPenGlassyStyle    : TPenStyle;
 
     function GetPenWidth          : Smallint;
     function GetPenFocusedWidth   : Smallint;
     function GetPenDisabledWidth  : Smallint;
     function GetPenDownWidth      : Smallint;
+    function GetPenGlassyWidth    : Smallint;
 
     function GetPenColor          : TColor;
     function GetPenFocusedColor   : TColor;
     function GetPenDisabledColor  : TColor;
     function GetPenDownColor      : TColor;
+    function GetPenGlassyColor    : TColor;
   end;
 
   TBrushConfiguration = class(TInterfacedObject, iBrushConfigurationCommom)
@@ -71,6 +76,7 @@ type
     function GetBrushFocusedColor : TColor;
     function GetBrushDisabledColor: TColor;
     function GetBrushDownColor    : TColor;
+    function GetBrushGlassyColor  : TColor;
   end;
 
   TBraveButtonTemplateColor = class(TInterfacedObject, iBraveButtonTemplateColor)
@@ -137,6 +143,8 @@ begin
 end;
 
 function TBrushConfiguration.GetBrushColor: TColor;
+var
+   H, S, L: Word;
 begin
   Result := clWhite;
 
@@ -149,6 +157,13 @@ begin
     tcDark       : Result := RGB( 102, 97 , 91  );
     tcSuccess    : Result := RGB( 107, 208, 152 );
     tcInfo       : Result := RGB( 81 , 188, 218 );
+    tcGlassy     :
+    begin
+      if ( TStyleManager.IsCustomStyleActive ) then
+        Result := StyleServices.GetStyleColor(scWindow)
+      else
+        Result := TCustomControl(FOwner).Brush.Color;
+    end;
   end;
 end;
 
@@ -165,6 +180,13 @@ begin
     tcDark        : Result := Intensity( GetBrushColor, 80 );
     tcSuccess     : Result := Intensity( GetBrushColor, 80 );
     tcInfo        : Result := Intensity( GetBrushColor, 80 );
+    tcGlassy      :
+    begin
+      if ( TStyleManager.IsCustomStyleActive ) then
+        Result := Intensity( StyleServices.GetStyleColor(scWindow), 80 )
+      else
+        Result := Intensity( TWinControl(FOwner).Brush.Color, 80 );
+    end;
   end;
 end;
 
@@ -181,6 +203,13 @@ begin
     tcDark       : Result := Intensity( GetBrushColor, 25 );
     tcSuccess    : Result := Intensity( GetBrushColor, 50 );
     tcInfo       : Result := Intensity( GetBrushColor, 45 );
+    tcGlassy      :
+    begin
+      if ( TStyleManager.IsCustomStyleActive ) then
+        Result := Intensity( StyleServices.GetStyleColor(scWindow), 40 )
+      else
+        Result := Intensity( TWinControl(FOwner).Brush.Color, 40 );
+    end;
   end;
 end;
 
@@ -197,7 +226,22 @@ begin
     tcDark       : Result := Intensity( GetBrushColor, 30 );
     tcSuccess    : Result := Intensity( GetBrushColor, 55 );
     tcInfo       : Result := Intensity( GetBrushColor, 50 );
+    tcGlassy      :
+    begin
+      if ( TStyleManager.IsCustomStyleActive ) then
+        Result := Intensity( StyleServices.GetStyleColor(scWindow), 55 )
+      else
+        Result := Intensity( TWinControl(FOwner).Brush.Color, 55 );
+    end;
   end;
+end;
+
+function TBrushConfiguration.GetBrushGlassyColor: TColor;
+begin
+  if ( TStyleManager.IsCustomStyleActive ) then
+    Result := StyleServices.GetStyleColor(scWindow)
+  else
+    Result := TWinControl(FOwner).Brush.Color;
 end;
 
 { TPenConfiguration }
@@ -226,6 +270,13 @@ begin
     tcDark       : Result := RGB( 102, 97 , 91  );
     tcSuccess    : Result := RGB( 107, 208, 152 );
     tcInfo       : Result := RGB( 81 , 188, 218 );
+    tcGlassy     :
+    begin
+      if ( TStyleManager.IsCustomStyleActive ) then
+        Result := StyleServices.GetStyleColor(scWindow)
+      else
+        Result := TWinControl(FOwner).Brush.Color;
+    end;
   end;
 end;
 
@@ -242,6 +293,7 @@ begin
     tcDark       : Result := Intensity( GetPenColor, 80 );
     tcSuccess    : Result := Intensity( GetPenColor, 80 );
     tcInfo       : Result := Intensity( GetPenColor, 80 );
+    tcGlassy     : Result := Intensity( TWinControl(FOwner).Brush.Color, 80 );
   end;
 end;
 
@@ -258,6 +310,7 @@ begin
     tcDark       : Result := psSolid;
     tcSuccess    : Result := psSolid;
     tcInfo       : Result := psSolid;
+    tcGlassy     : Result := psSolid;
   end;
 end;
 
@@ -274,6 +327,7 @@ begin
     tcDark       : Result := 1;
     tcSuccess    : Result := 1;
     tcInfo       : Result := 1;
+    tcGlassy     : Result := 1;
   end;
 end;
 
@@ -290,6 +344,7 @@ begin
     tcDark       : Result := Intensity( GetPenColor, 25 );
     tcSuccess    : Result := Intensity( GetPenColor, 50 );
     tcInfo       : Result := Intensity( GetPenColor, 50 );
+    tcGlassy     : Result := Intensity( TWinControl(FOwner).Brush.Color, 50 );
   end;
 end;
 
@@ -306,6 +361,7 @@ begin
     tcDark       : Result := psSolid;
     tcSuccess    : Result := psSolid;
     tcInfo       : Result := psSolid;
+    tcGlassy     : Result := psSolid;
   end;
 end;
 
@@ -322,6 +378,7 @@ begin
     tcDark       : Result := 1;
     tcSuccess    : Result := 1;
     tcInfo       : Result := 1;
+    tcGlassy     : Result := 1;
   end;
 end;
 
@@ -338,7 +395,16 @@ begin
     tcDark       : Result := Intensity( GetPenColor, 45 );
     tcSuccess    : Result := Intensity( GetPenColor, 45 );
     tcInfo       : Result := Intensity( GetPenColor, 40 );
+    tcGlassy     : Result := Intensity( TWinControl(FOwner).Brush.Color, 40 );
   end;
+end;
+
+function TPenConfiguration.GetPenGlassyColor: TColor;
+begin
+  if ( TStyleManager.IsCustomStyleActive ) then
+    Result := StyleServices.GetStyleColor(scWindow)
+  else
+    Result := TWinControl(FOwner).Brush.Color;
 end;
 
 function TPenConfiguration.GetPenFocusedStyle: TPenStyle;
@@ -354,7 +420,13 @@ begin
     tcDark       : Result := psSolid;
     tcSuccess    : Result := psSolid;
     tcInfo       : Result := psSolid;
+    tcGlassy     : Result := psSolid;
   end;
+end;
+
+function TPenConfiguration.GetPenGlassyStyle: TPenStyle;
+begin
+  Result := psSolid;
 end;
 
 function TPenConfiguration.GetPenFocusedWidth: Smallint;
@@ -370,7 +442,13 @@ begin
     tcDark       : Result := 1;
     tcSuccess    : Result := 1;
     tcInfo       : Result := 1;
+    tcGlassy     : Result := 1;
   end;
+end;
+
+function TPenConfiguration.GetPenGlassyWidth: Smallint;
+begin
+  Result := 1;
 end;
 
 function TPenConfiguration.GetPenStyle: TPenStyle;
@@ -386,6 +464,7 @@ begin
     tcDark       : Result := psSolid;
     tcSuccess    : Result := psSolid;
     tcInfo       : Result := psSolid;
+    tcGlassy     : Result := psSolid;
   end;
 end;
 
@@ -402,6 +481,7 @@ begin
     tcDark       : Result := 1;
     tcSuccess    : Result := 1;
     tcInfo       : Result := 1;
+    tcGlassy     : Result := 1;
   end;
 end;
 

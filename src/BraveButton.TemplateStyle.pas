@@ -32,20 +32,20 @@ type
     function GetPictureFocusedStyleOutline : TPicture;
     function GetPictureDisabled            : TPicture;
   public
-    property Picture                       : TPicture read GetPicture;
-    property PictureDark                   : TPicture read GetPictureDark;
-    property PictureFocused                : TPicture read GetPictureFocused;
-    property PictureStyleOutline           : TPicture read GetPictureStyleOutline;
-    property PictureFocusedStyleOutline    : TPicture read GetPictureFocusedStyleOutline;
-    property PictureDisabled               : TPicture read GetPictureDisabled;
+    property Picture                       : TPicture       read GetPicture;
+    property PictureDark                   : TPicture       read GetPictureDark;
+    property PictureFocused                : TPicture       read GetPictureFocused;
+    property PictureStyleOutline           : TPicture       read GetPictureStyleOutline;
+    property PictureFocusedStyleOutline    : TPicture       read GetPictureFocusedStyleOutline;
+    property PictureDisabled               : TPicture       read GetPictureDisabled;
   end;
 
 implementation
 
 constructor TBraveButtonTemplateStyle.Create(ATemplateStyle: TTemplateStyle; ATemplateColor: TTemplateColor);
 begin
-  FTemplateStyle          := ATemplateStyle;
-  FTemplateColor         := ATemplateColor;
+  FTemplateStyle              := ATemplateStyle;
+  FTemplateColor              := ATemplateColor;
 
   FPicture                    := TPicture.Create;
   FPictureFocused             := TPicture.Create;
@@ -75,21 +75,26 @@ end;
 function TBraveButtonTemplateStyle.GetPicture: TPicture;
 begin
   case FTemplateStyle of
-    tsBasic     : FPicture.Graphic := nil;
-    tsAdd       : FPicture.Assign( GetPictureOfResource( ADD_ENABLED        ) );
-    tsRemove    : FPicture.Assign( GetPictureOfResource( REMOVE_ENABLED     ) );
-    tsCancel    : FPicture.Assign( GetPictureOfResource( CANCEL_ENABLED     ) );
-    tsOK        : FPicture.Assign( GetPictureOfResource( OK_ENABLED         ) );
-    tsDelete    : FPicture.Assign( GetPictureOfResource( DELETE_ENABLED     ) );
-    tsSave      : FPicture.Assign( GetPictureOfResource( SAVE_ENABLED       ) );
-    tsNew       : FPicture.Assign( GetPictureOfResource( NEW_ENABLED        ) );
-    tsEdit      : FPicture.Assign( GetPictureOfResource( EDIT_ENABLED       ) );
-    tsFind      : FPicture.Assign( GetPictureOfResource( FIND_ENABLED       ) );
-    tsPrint     : FPicture.Assign( GetPictureOfResource( PRINT_ENABLED      ) );
-    tsRefresh   : FPicture.Assign( GetPictureOfResource( REFRESH_ENABLED    ) );
-    tsArrowUp   : FPicture.Assign( GetPictureOfResource( ARROW_UP_ENABLED   ) );
-    tsArrowDown : FPicture.Assign( GetPictureOfResource( ARROW_DOWN_ENABLED ) );
-    tsMain      : FPicture.Graphic := nil;
+    tsBasic        : FPicture.Graphic := nil;
+    tsAdd          : FPicture.Assign( GetPictureOfResource( ADD_ENABLED         ) );
+    tsRemove       : FPicture.Assign( GetPictureOfResource( REMOVE_ENABLED      ) );
+    tsCancel       : FPicture.Assign( GetPictureOfResource( CANCEL_ENABLED      ) );
+    tsOK           : FPicture.Assign( GetPictureOfResource( OK_ENABLED          ) );
+    tsDelete       : FPicture.Assign( GetPictureOfResource( DELETE_ENABLED      ) );
+    tsSave         : FPicture.Assign( GetPictureOfResource( SAVE_ENABLED        ) );
+    tsNew          : FPicture.Assign( GetPictureOfResource( NEW_ENABLED         ) );
+    tsEdit         : FPicture.Assign( GetPictureOfResource( EDIT_ENABLED        ) );
+    tsFind,
+    tsSearch       : FPicture.Assign( GetPictureOfResource( FIND_ENABLED        ) );
+    tsPrint        : FPicture.Assign( GetPictureOfResource( PRINT_ENABLED       ) );
+    tsRefresh      : FPicture.Assign( GetPictureOfResource( REFRESH_ENABLED     ) );
+    tsArrowUp      : FPicture.Assign( GetPictureOfResource( ARROW_UP_ENABLED    ) );
+    tsArrowDown    : FPicture.Assign( GetPictureOfResource( ARROW_DOWN_ENABLED  ) );
+    tsArrowRight   : FPicture.Assign( GetPictureOfResource( ARROW_RIGHT_ENABLED ) );
+    tsArrowLeft    : FPicture.Assign( GetPictureOfResource( ARROW_LEFT_ENABLED  ) );
+    tsKey          : FPicture.Assign( GetPictureOfResource( KEY_ENABLED         ) );
+    tsConfig       : FPicture.Assign( GetPictureOfResource( GEAR_ENABLED        ) );
+    tsMain         : FPicture.Graphic := nil;
   end;
 
   Result := FPicture;
@@ -99,20 +104,25 @@ function TBraveButtonTemplateStyle.GetPictureDark: TPicture;
 begin
   case FTemplateStyle of
     tsBasic     : FPicture.Graphic := nil;
-    tsAdd       : FPictureDark.Assign( GetPictureOfResource( ADD_DARK        ) );
-    tsRemove    : FPictureDark.Assign( GetPictureOfResource( REMOVE_DARK     ) );
-    tsCancel    : FPictureDark.Assign( GetPictureOfResource( CANCEL_DARK     ) );
-    tsOK        : FPictureDark.Assign( GetPictureOfResource( OK_DARK         ) );
-    tsDelete    : FPictureDark.Assign( GetPictureOfResource( DELETE_DARK     ) );
-    tsSave      : FPictureDark.Assign( GetPictureOfResource( SAVE_DARK       ) );
-    tsNew       : FPictureDark.Assign( GetPictureOfResource( NEW_DARK        ) );
-    tsEdit      : FPictureDark.Assign( GetPictureOfResource( EDIT_DARK       ) );
-    tsFind      : FPictureDark.Assign( GetPictureOfResource( FIND_DARK       ) );
-    tsPrint     : FPictureDark.Assign( GetPictureOfResource( PRINT_DARK      ) );
-    tsRefresh   : FPictureDark.Assign( GetPictureOfResource( REFRESH_DARK    ) );
-    tsArrowUp   : FPictureDark.Assign( GetPictureOfResource( ARROW_UP_DARK   ) );
-    tsArrowDown : FPictureDark.Assign( GetPictureOfResource( ARROW_DOWN_DARK ) );
-    tsMain      : FPicture.Graphic := nil;
+    tsAdd       : FPictureDark.Assign( GetPictureOfResource( ADD_DARK         ) );
+    tsRemove    : FPictureDark.Assign( GetPictureOfResource( REMOVE_DARK      ) );
+    tsCancel    : FPictureDark.Assign( GetPictureOfResource( CANCEL_DARK      ) );
+    tsOK        : FPictureDark.Assign( GetPictureOfResource( OK_DARK          ) );
+    tsDelete    : FPictureDark.Assign( GetPictureOfResource( DELETE_DARK      ) );
+    tsSave      : FPictureDark.Assign( GetPictureOfResource( SAVE_DARK        ) );
+    tsNew       : FPictureDark.Assign( GetPictureOfResource( NEW_DARK         ) );
+    tsEdit      : FPictureDark.Assign( GetPictureOfResource( EDIT_DARK        ) );
+    tsFind,
+    tsSearch    : FPictureDark.Assign( GetPictureOfResource( FIND_DARK        ) );
+    tsPrint     : FPictureDark.Assign( GetPictureOfResource( PRINT_DARK       ) );
+    tsRefresh   : FPictureDark.Assign( GetPictureOfResource( REFRESH_DARK     ) );
+    tsArrowUp   : FPictureDark.Assign( GetPictureOfResource( ARROW_UP_DARK    ) );
+    tsArrowDown : FPictureDark.Assign( GetPictureOfResource( ARROW_DOWN_DARK  ) );
+    tsArrowRight: FPictureDark.Assign( GetPictureOfResource( ARROW_RIGHT_DARK ) );
+    tsArrowLeft : FPictureDark.Assign( GetPictureOfResource( ARROW_LEFT_DARK  ) );
+    tsKey       : FPictureDark.Assign( GetPictureOfResource( KEY_DARK         ) );
+    tsConfig    : FPictureDark.Assign( GetPictureOfResource( GEAR_DARK        ) );
+    tsMain      : FPictureDark.Graphic := nil;
   end;
 
   Result := FPictureDark;
@@ -122,20 +132,25 @@ function TBraveButtonTemplateStyle.GetPictureDisabled: TPicture;
 begin
   case FTemplateStyle of
     tsBasic     : FPicture.Graphic := nil;
-    tsAdd       : FPictureDisabled.Assign( GetPictureOfResource( ADD_DISABLED        ) );
-    tsRemove    : FPictureDisabled.Assign( GetPictureOfResource( REMOVE_DISABLED     ) );
-    tsCancel    : FPictureDisabled.Assign( GetPictureOfResource( CANCEL_DISABLED     ) );
-    tsOK        : FPictureDisabled.Assign( GetPictureOfResource( OK_DISABLED         ) );
-    tsDelete    : FPictureDisabled.Assign( GetPictureOfResource( DELETE_DISABLED     ) );
-    tsSave      : FPictureDisabled.Assign( GetPictureOfResource( SAVE_DISABLED       ) );
-    tsNew       : FPictureDisabled.Assign( GetPictureOfResource( NEW_DISABLED        ) );
-    tsEdit      : FPictureDisabled.Assign( GetPictureOfResource( EDIT_DISABLED       ) );
-    tsFind      : FPictureDisabled.Assign( GetPictureOfResource( FIND_DISABLED       ) );
-    tsPrint     : FPictureDisabled.Assign( GetPictureOfResource( PRINT_DISABLED      ) );
-    tsRefresh   : FPictureDisabled.Assign( GetPictureOfResource( REFRESH_DISABLED    ) );
-    tsArrowUp   : FPictureDisabled.Assign( GetPictureOfResource( ARROW_UP_DISABLED   ) );
-    tsArrowDown : FPictureDisabled.Assign( GetPictureOfResource( ARROW_DOWN_DISABLED ) );
-    tsMain      : FPicture.Graphic := nil;
+    tsAdd       : FPictureDisabled.Assign( GetPictureOfResource( ADD_DISABLED         ) );
+    tsRemove    : FPictureDisabled.Assign( GetPictureOfResource( REMOVE_DISABLED      ) );
+    tsCancel    : FPictureDisabled.Assign( GetPictureOfResource( CANCEL_DISABLED      ) );
+    tsOK        : FPictureDisabled.Assign( GetPictureOfResource( OK_DISABLED          ) );
+    tsDelete    : FPictureDisabled.Assign( GetPictureOfResource( DELETE_DISABLED      ) );
+    tsSave      : FPictureDisabled.Assign( GetPictureOfResource( SAVE_DISABLED        ) );
+    tsNew       : FPictureDisabled.Assign( GetPictureOfResource( NEW_DISABLED         ) );
+    tsEdit      : FPictureDisabled.Assign( GetPictureOfResource( EDIT_DISABLED        ) );
+    tsFind,
+    tsSearch    : FPictureDisabled.Assign( GetPictureOfResource( FIND_DISABLED        ) );
+    tsPrint     : FPictureDisabled.Assign( GetPictureOfResource( PRINT_DISABLED       ) );
+    tsRefresh   : FPictureDisabled.Assign( GetPictureOfResource( REFRESH_DISABLED     ) );
+    tsArrowUp   : FPictureDisabled.Assign( GetPictureOfResource( ARROW_UP_DISABLED    ) );
+    tsArrowDown : FPictureDisabled.Assign( GetPictureOfResource( ARROW_DOWN_DISABLED  ) );
+    tsArrowRight: FPictureDisabled.Assign( GetPictureOfResource( ARROW_RIGHT_DISABLED ) );
+    tsArrowLeft : FPictureDisabled.Assign( GetPictureOfResource( ARROW_LEFT_DISABLED  ) );
+    tsKey       : FPictureDisabled.Assign( GetPictureOfResource( KEY_DISABLED         ) );
+    tsConfig    : FPictureDisabled.Assign( GetPictureOfResource( GEAR_DISABLED        ) );
+    tsMain      : FPictureDisabled.Graphic := nil;
   end;
 
   Result := FPictureDisabled;
@@ -145,20 +160,25 @@ function TBraveButtonTemplateStyle.GetPictureFocused: TPicture;
 begin
   case FTemplateStyle of
     tsBasic     : FPicture.Graphic := nil;
-    tsAdd       : FPictureFocused.Assign( GetPictureOfResource( ADD_FOCUSED        ) );
-    tsRemove    : FPictureFocused.Assign( GetPictureOfResource( REMOVE_FOCUSED     ) );
-    tsCancel    : FPictureFocused.Assign( GetPictureOfResource( CANCEL_FOCUSED     ) );
-    tsOK        : FPictureFocused.Assign( GetPictureOfResource( OK_FOCUSED         ) );
-    tsDelete    : FPictureFocused.Assign( GetPictureOfResource( DELETE_FOCUSED     ) );
-    tsSave      : FPictureFocused.Assign( GetPictureOfResource( SAVE_FOCUSED       ) );
-    tsNew       : FPictureFocused.Assign( GetPictureOfResource( NEW_FOCUSED        ) );
-    tsEdit      : FPictureFocused.Assign( GetPictureOfResource( EDIT_FOCUSED       ) );
-    tsFind      : FPictureFocused.Assign( GetPictureOfResource( FIND_FOCUSED       ) );
-    tsPrint     : FPictureFocused.Assign( GetPictureOfResource( PRINT_FOCUSED      ) );
-    tsRefresh   : FPictureFocused.Assign( GetPictureOfResource( REFRESH_FOCUSED    ) );
-    tsArrowUp   : FPictureFocused.Assign( GetPictureOfResource( ARROW_UP_FOCUSED   ) );
-    tsArrowDown : FPictureFocused.Assign( GetPictureOfResource( ARROW_DOWN_FOCUSED ) );
-    tsMain      : FPicture.Graphic := nil;
+    tsAdd       : FPictureFocused.Assign( GetPictureOfResource( ADD_FOCUSED         ) );
+    tsRemove    : FPictureFocused.Assign( GetPictureOfResource( REMOVE_FOCUSED      ) );
+    tsCancel    : FPictureFocused.Assign( GetPictureOfResource( CANCEL_FOCUSED      ) );
+    tsOK        : FPictureFocused.Assign( GetPictureOfResource( OK_FOCUSED          ) );
+    tsDelete    : FPictureFocused.Assign( GetPictureOfResource( DELETE_FOCUSED      ) );
+    tsSave      : FPictureFocused.Assign( GetPictureOfResource( SAVE_FOCUSED        ) );
+    tsNew       : FPictureFocused.Assign( GetPictureOfResource( NEW_FOCUSED         ) );
+    tsEdit      : FPictureFocused.Assign( GetPictureOfResource( EDIT_FOCUSED        ) );
+    tsFind,
+    tsSearch    : FPictureFocused.Assign( GetPictureOfResource( FIND_FOCUSED        ) );
+    tsPrint     : FPictureFocused.Assign( GetPictureOfResource( PRINT_FOCUSED       ) );
+    tsRefresh   : FPictureFocused.Assign( GetPictureOfResource( REFRESH_FOCUSED     ) );
+    tsArrowUp   : FPictureFocused.Assign( GetPictureOfResource( ARROW_UP_FOCUSED    ) );
+    tsArrowDown : FPictureFocused.Assign( GetPictureOfResource( ARROW_DOWN_FOCUSED  ) );
+    tsArrowRight: FPictureFocused.Assign( GetPictureOfResource( ARROW_RIGHT_FOCUSED ) );
+    tsArrowLeft : FPictureFocused.Assign( GetPictureOfResource( ARROW_LEFT_FOCUSED  ) );
+    tsKey       : FPictureFocused.Assign( GetPictureOfResource( KEY_FOCUSED         ) );
+    tsConfig    : FPictureFocused.Assign( GetPictureOfResource( GEAR_FOCUSED        ) );
+    tsMain      : FPictureFocused.Graphic := nil;
   end;
 
 
@@ -304,7 +324,7 @@ begin
       end;
     end;
 
-    tsFind          :
+    tsFind, tsSearch:
     begin
       case FTemplateColor of
         tcCustom    : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'FIND_ENABLED' ) );
@@ -376,6 +396,66 @@ begin
         tcDark      : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'ARROW_DOWN_ENABLED' ) );
         tcSuccess   : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'ARROW_DOWN_ENABLED' ) );
         tcInfo      : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'ARROW_DOWN_ENABLED' ) );
+      end;
+    end;
+
+    tsArrowRight:
+    begin
+      case FTemplateColor of
+        tcCustom    : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'ARROW_RIGHT_ENABLED' ) );
+        tcWarning   : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'ARROW_RIGHT_ENABLED' ) );
+        tcDanger    : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'ARROW_RIGHT_ENABLED' ) );
+        tcPrimary   : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'ARROW_RIGHT_ENABLED' ) );
+        tcSecondary : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'ARROW_RIGHT_ENABLED' ) );
+        tcLight     : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'ARROW_RIGHT_ENABLED' ) );
+        tcDark      : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'ARROW_RIGHT_ENABLED' ) );
+        tcSuccess   : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'ARROW_RIGHT_ENABLED' ) );
+        tcInfo      : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'ARROW_RIGHT_ENABLED' ) );
+      end;
+    end;
+
+    tsArrowLeft :
+    begin
+      case FTemplateColor of
+        tcCustom    : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'ARROW_LEFT_ENABLED' ) );
+        tcWarning   : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'ARROW_LEFT_ENABLED' ) );
+        tcDanger    : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'ARROW_LEFT_ENABLED' ) );
+        tcPrimary   : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'ARROW_LEFT_ENABLED' ) );
+        tcSecondary : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'ARROW_LEFT_ENABLED' ) );
+        tcLight     : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'ARROW_LEFT_ENABLED' ) );
+        tcDark      : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'ARROW_LEFT_ENABLED' ) );
+        tcSuccess   : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'ARROW_LEFT_ENABLED' ) );
+        tcInfo      : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'ARROW_LEFT_ENABLED' ) );
+      end;
+    end;
+
+    tsKey       :
+    begin
+      case FTemplateColor of
+        tcCustom    : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'KEY_ENABLED' ) );
+        tcWarning   : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'KEY_ENABLED' ) );
+        tcDanger    : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'KEY_ENABLED' ) );
+        tcPrimary   : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'KEY_ENABLED' ) );
+        tcSecondary : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'KEY_ENABLED' ) );
+        tcLight     : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'KEY_ENABLED' ) );
+        tcDark      : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'KEY_ENABLED' ) );
+        tcSuccess   : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'KEY_ENABLED' ) );
+        tcInfo      : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'KEY_ENABLED' ) );
+      end;
+    end;
+
+    tsConfig    :
+    begin
+      case FTemplateColor of
+        tcCustom    : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'GEAR_ENABLED' ) );
+        tcWarning   : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'GEAR_ENABLED' ) );
+        tcDanger    : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'GEAR_ENABLED' ) );
+        tcPrimary   : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'GEAR_ENABLED' ) );
+        tcSecondary : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'GEAR_ENABLED' ) );
+        tcLight     : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'GEAR_ENABLED' ) );
+        tcDark      : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'GEAR_ENABLED' ) );
+        tcSuccess   : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'GEAR_ENABLED' ) );
+        tcInfo      : FPictureFocusedStyleOutline.Assign( GetPictureOfResource( 'GEAR_ENABLED' ) );
       end;
     end;
 
@@ -608,6 +688,66 @@ begin
         tcDark      : FPictureStyleOutline.Assign( GetPictureOfResource( 'ARROW_DOWN_DARK'       ) );
         tcSuccess   : FPictureStyleOutline.Assign( GetPictureOfResource( 'ARROW_DOWN_SUCCESS'    ) );
         tcInfo      : FPictureStyleOutline.Assign( GetPictureOfResource( 'ARROW_DOWN_INFO'       ) );
+      end;
+    end;
+
+    tsArrowRight:
+    begin
+      case FTemplateColor of
+        tcCustom    : FPictureStyleOutline.Assign( GetPictureOfResource( 'ARROW_RIGHT_ENABLED'    ) );
+        tcWarning   : FPictureStyleOutline.Assign( GetPictureOfResource( 'ARROW_RIGHT_WARNING'    ) );
+        tcDanger    : FPictureStyleOutline.Assign( GetPictureOfResource( 'ARROW_RIGHT_DANGER'     ) );
+        tcPrimary   : FPictureStyleOutline.Assign( GetPictureOfResource( 'ARROW_RIGHT_PRIMARY'    ) );
+        tcSecondary : FPictureStyleOutline.Assign( GetPictureOfResource( 'ARROW_RIGHT_SECONDARY'  ) );
+        tcLight     : FPictureStyleOutline.Assign( GetPictureOfResource( 'ARROW_RIGHT_LIGHT'      ) );
+        tcDark      : FPictureStyleOutline.Assign( GetPictureOfResource( 'ARROW_RIGHT_DARK'       ) );
+        tcSuccess   : FPictureStyleOutline.Assign( GetPictureOfResource( 'ARROW_RIGHT_SUCCESS'    ) );
+        tcInfo      : FPictureStyleOutline.Assign( GetPictureOfResource( 'ARROW_RIGHT_INFO'       ) );
+      end;
+    end;
+
+    tsArrowLeft :
+    begin
+      case FTemplateColor of
+        tcCustom    : FPictureStyleOutline.Assign( GetPictureOfResource( 'ARROW_LEFT_ENABLED'    ) );
+        tcWarning   : FPictureStyleOutline.Assign( GetPictureOfResource( 'ARROW_LEFT_WARNING'    ) );
+        tcDanger    : FPictureStyleOutline.Assign( GetPictureOfResource( 'ARROW_LEFT_DANGER'     ) );
+        tcPrimary   : FPictureStyleOutline.Assign( GetPictureOfResource( 'ARROW_LEFT_PRIMARY'    ) );
+        tcSecondary : FPictureStyleOutline.Assign( GetPictureOfResource( 'ARROW_LEFT_SECONDARY'  ) );
+        tcLight     : FPictureStyleOutline.Assign( GetPictureOfResource( 'ARROW_LEFT_LIGHT'      ) );
+        tcDark      : FPictureStyleOutline.Assign( GetPictureOfResource( 'ARROW_LEFT_DARK'       ) );
+        tcSuccess   : FPictureStyleOutline.Assign( GetPictureOfResource( 'ARROW_LEFT_SUCCESS'    ) );
+        tcInfo      : FPictureStyleOutline.Assign( GetPictureOfResource( 'ARROW_LEFT_INFO'       ) );
+      end;
+    end;
+
+    tsKey       :
+    begin
+      case FTemplateColor of
+        tcCustom    : FPictureStyleOutline.Assign( GetPictureOfResource( 'KEY_ENABLED'    ) );
+        tcWarning   : FPictureStyleOutline.Assign( GetPictureOfResource( 'KEY_WARNING'    ) );
+        tcDanger    : FPictureStyleOutline.Assign( GetPictureOfResource( 'KEY_DANGER'     ) );
+        tcPrimary   : FPictureStyleOutline.Assign( GetPictureOfResource( 'KEY_PRIMARY'    ) );
+        tcSecondary : FPictureStyleOutline.Assign( GetPictureOfResource( 'KEY_SECONDARY'  ) );
+        tcLight     : FPictureStyleOutline.Assign( GetPictureOfResource( 'KEY_LIGHT'      ) );
+        tcDark      : FPictureStyleOutline.Assign( GetPictureOfResource( 'KEY_DARK'       ) );
+        tcSuccess   : FPictureStyleOutline.Assign( GetPictureOfResource( 'KEY_SUCCESS'    ) );
+        tcInfo      : FPictureStyleOutline.Assign( GetPictureOfResource( 'KEY_INFO'       ) );
+      end;
+    end;
+
+    tsConfig    :
+    begin
+      case FTemplateColor of
+        tcCustom    : FPictureStyleOutline.Assign( GetPictureOfResource( 'GEAR_ENABLED'    ) );
+        tcWarning   : FPictureStyleOutline.Assign( GetPictureOfResource( 'GEAR_WARNING'    ) );
+        tcDanger    : FPictureStyleOutline.Assign( GetPictureOfResource( 'GEAR_DANGER'     ) );
+        tcPrimary   : FPictureStyleOutline.Assign( GetPictureOfResource( 'GEAR_PRIMARY'    ) );
+        tcSecondary : FPictureStyleOutline.Assign( GetPictureOfResource( 'GEAR_SECONDARY'  ) );
+        tcLight     : FPictureStyleOutline.Assign( GetPictureOfResource( 'GEAR_LIGHT'      ) );
+        tcDark      : FPictureStyleOutline.Assign( GetPictureOfResource( 'GEAR_DARK'       ) );
+        tcSuccess   : FPictureStyleOutline.Assign( GetPictureOfResource( 'GEAR_SUCCESS'    ) );
+        tcInfo      : FPictureStyleOutline.Assign( GetPictureOfResource( 'GEAR_INFO'       ) );
       end;
     end;
 

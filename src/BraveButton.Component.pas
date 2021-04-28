@@ -23,7 +23,7 @@ uses
   {Brave}
   BraveButton.Interfaces,
   BraveButton.Consts,
-  Common.Utils, Vcl.Dialogs;
+  Common.Utils;
 
 type
   TBraveButton = class;
@@ -58,7 +58,7 @@ type
 
   TBraveButton = class(TGraphicControl)
   private
-    FBraveButtonTemplateColor       : iBraveButtonTemplateColor;
+    FBraveButtonTemplateColor   : iBraveButtonTemplateColor;
     FBraveButtonTemplateStyle   : iBraveButtonTemplateStyle;
 
     FOwner                     : TComponent;
@@ -74,13 +74,15 @@ type
     FPenDown                   : TPen;
     FPenFocused                : TPen;
     FPenDisabled               : TPen;
+    FPenGlassy                 : TPen;
 
     FBrush                     : TBrush;
     FBrushDown                 : TBrush;
     FBrushFocused              : TBrush;
     FBrushDisabled             : TBrush;
+    FBrushGlassy               : TBrush;
 
-    FPicture                    : TPicture;
+    FPicture                   : TPicture;
     FPictureFocused            : TPicture;
     FPictureDisabled           : TPicture;
     FPictureDark               : TPicture;
@@ -116,6 +118,7 @@ type
     FImageIndexPictureFocused  : Integer;
     FImageIndexPictureDisabled : Integer;
     FIMageIndexPictureDark     : Integer;
+    FGlassy: Boolean;
 
 
     procedure SetPen              ( Value: TPen              );
@@ -204,6 +207,7 @@ type
     procedure LoadingTemplateWarning;
     procedure LoadingTemplatePrimary;
     procedure LoadingTemplateSecondary;
+    procedure LoadingTemplateGlassy;
     //procedure LoadingTemplateDefault;
 
     procedure CreateButtonColor   ( ATemplateColor: TTemplateColor );
@@ -229,6 +233,9 @@ type
     procedure SetSizeLayout                ( const Value: TSizeLayout      );
 
     procedure AdjustSizeLayout;
+    procedure RedefineColors;
+    function IsGlassy: Boolean;
+    procedure SetGlassy(const Value: Boolean);
   protected
     procedure DoKeyUp;
     procedure Paint; override;
@@ -312,8 +319,9 @@ type
     property CaptionSub        : TCaption            read FCaptionSub         write SetCaptionSub;
     property TabOrder          : Integer             read GetTabOrder         write SetTabOrder;
     property TabStop           : Boolean             read GetTabStop          write SetTabStop                                                default true;
-    property Radius            : SmallInt            read FRadius             write SetRadius              stored IsRadius                    default 4;
     property Shape             : TButtonStyleType    read FShape              write SetShape                                                  default stRectangle;
+    property Radius            : SmallInt            read FRadius             write SetRadius              stored IsRadius                    default 4;
+    property Glassy            : Boolean             read FGlassy             write SetGlassy              stored IsGlassy                    default False;
     property Spacing           : SmallInt            read FSpacing            write SetSpacing             stored IsSpacing                   default 10;
     property ShowCaption       : Boolean             read FShowCaption        write SetShowCaption         stored IsShowCaption               default true;
     property Alignment         : TPraAlignment       read FAlignment          write SetAlignment           stored IsStoredAlignment           default paCenter;
@@ -365,6 +373,9 @@ begin
   // PenDisabled
   FPenDisabled := TPen.Create;
   FPenDisabled.onChange := StyleChanged;
+  // PenGlassy
+  FPenGlassy := TPen.Create;
+  FPenGlassy.OnChange := StyleChanged;
 
   // Brush
   FBrush := TBrush.Create;
@@ -378,6 +389,9 @@ begin
   // BrushDisabled
   FBrushDisabled := TBrush.Create;
   FBrushDisabled.onChange := StyleChanged;
+  // BrushGlassy
+  FBrushGlassy := TBrush.Create;
+  FBrushGlassy.OnChange := StyleChanged;
 
   // Picture
   FPicture := TPicture.Create;
@@ -430,10 +444,6 @@ begin
   FShowCaption := true;
 
   TabStop := true;
-
-  SetPictureMarginLeft(6);
-
-  SetSpacing(5);
 
   OnMouseDown := DoMouseDown;
   OnMouseUp := DoMouseUp;
@@ -502,6 +512,7 @@ begin
   BrushFocused.Color  := FBraveButtonTemplateColor.GetBrushConfigurationCommon.GetBrushFocusedColor;
   BrushDown.Color     := FBraveButtonTemplateColor.GetBrushConfigurationCommon.GetBrushDownColor;
   BrushDisabled.Color := FBraveButtonTemplateColor.GetBrushConfigurationCommon.GetBrushDisabledColor;
+  FBrushGlassy.Color  := FBraveButtonTemplateColor.GetBrushConfigurationCommon.GetBrushGlassyColor;
 
   Pen.Color           := FBraveButtonTemplateColor.GetPenConfigurationCommon.GetPenColor;
   Pen.Style           := FBraveButtonTemplateColor.GetPenConfigurationCommon.GetPenStyle;
@@ -518,6 +529,10 @@ begin
   PenDisabled.Color   := FBraveButtonTemplateColor.GetPenConfigurationCommon.GetPenDisabledColor;
   PenDisabled.Style   := FBraveButtonTemplateColor.GetPenConfigurationCommon.GetPenDisabledStyle;
   PenDisabled.Width   := FBraveButtonTemplateColor.GetPenConfigurationCommon.GetPenDisabledWidth;
+
+  FPenGlassy.Color   := FBraveButtonTemplateColor.GetPenConfigurationCommon.GetPenGlassyColor;
+  FPenGlassy.Style   := FBraveButtonTemplateColor.GetPenConfigurationCommon.GetPenGlassyStyle;
+  FPenGlassy.Width   := FBraveButtonTemplateColor.GetPenConfigurationCommon.GetPenGlassyWidth;
 
   Font.Assign           ( FBraveButtonTemplateColor.GetFontConfigurationCommon.GetFont          );
   FontDown.Assign       ( FBraveButtonTemplateColor.GetFontConfigurationCommon.GetFontDown      );
@@ -693,7 +708,9 @@ begin
 
       Self.Caption           := '';
       Self.Alignment         := paCenter;
+      Self.PictureMarginLeft := 0;
       Self.PictureLayout     := plGraphicCenter;
+      Self.Spacing           := 0;
     end;
 
     tsRemove:
@@ -705,7 +722,9 @@ begin
 
       Self.Caption           := '';
       Self.Alignment         := paCenter;
+      Self.PictureMarginLeft := 0;
       Self.PictureLayout     := plGraphicCenter;
+      Self.Spacing           := 0;
     end;
 
     tsCancel:
@@ -726,8 +745,8 @@ begin
     begin
       SetSizeLayout(sl90x25);
 
-      LoadingTemplateInfo;
-      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsOK, tcInfo);
+      LoadingTemplateSuccess;
+      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsOK, tcSuccess);
 
       Self.Caption           := 'OK';
       Self.Alignment         := paLeftJustify;
@@ -768,8 +787,8 @@ begin
     begin
       SetSizeLayout(sl90x25);
 
-      LoadingTemplateInfo;
-      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsNew, tcInfo);
+      LoadingTemplatePrimary;
+      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsNew, tcPrimary);
 
       Self.Caption           := 'NOVO';
       Self.Alignment         := paLeftJustify;
@@ -785,7 +804,7 @@ begin
       LoadingTemplateWarning;
       FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsEdit, tcWarning);
 
-      Self.Caption           := 'Editar';
+      Self.Caption           := 'EDITAR';
       Self.Alignment         := paLeftJustify;
       Self.PictureMarginLeft := 2;
       Self.PictureLayout     := plGraphicCenter;
@@ -794,10 +813,24 @@ begin
 
     tsFind:
     begin
+      SetSizeLayout(sl25x25);
+
+      LoadingTemplateDark;
+      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsFind, tcDark);
+
+      Self.Caption           := '';
+      Self.Alignment         := paCenter;
+      Self.PictureMarginLeft := 0;
+      Self.PictureLayout     := plGraphicCenter;
+      Self.Spacing           := 0;
+    end;
+
+    tsSearch:
+    begin
       SetSizeLayout(sl90x25);
 
-      LoadingTemplateInfo;
-      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsFind, tcInfo);
+      LoadingTemplatePrimary;
+      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsSearch, tcPrimary);
 
       Self.Caption           := 'Procurar';
       Self.Alignment         := paLeftJustify;
@@ -810,8 +843,8 @@ begin
     begin
       SetSizeLayout(sl90x25);
 
-      LoadingTemplateInfo;
-      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsPrint, tcInfo);
+      LoadingTemplatePrimary;
+      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsPrint, tcLight);
 
       Self.Caption           := 'Imprimir';
       Self.Alignment         := paLeftJustify;
@@ -824,8 +857,8 @@ begin
     begin
       SetSizeLayout(sl90x25);
 
-      LoadingTemplateInfo;
-      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsRefresh, tcInfo);
+      LoadingTemplatePrimary;
+      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsRefresh, tcLight);
 
       Self.Caption           := 'Atualizar';
       Self.Alignment         := paLeftJustify;
@@ -843,7 +876,9 @@ begin
 
       Self.Caption           := '';
       Self.Alignment         := paCenter;
+      Self.PictureMarginLeft := 0;
       Self.PictureLayout     := plGraphicCenter;
+      Self.Spacing           := 0;
     end;
 
     tsArrowDown:
@@ -855,7 +890,65 @@ begin
 
       Self.Caption           := '';
       Self.Alignment         := paCenter;
+      Self.PictureMarginLeft := 0;
       Self.PictureLayout     := plGraphicCenter;
+      Self.Spacing           := 0;
+    end;
+
+    tsArrowRight:
+    begin
+      SetSizeLayout(sl90x25);
+
+      LoadingTemplatePrimary;
+      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsArrowRight, tcPrimary);
+
+      Self.Caption           := 'PRÓXIMO';
+      Self.Alignment         := paLeftJustify;
+      Self.PictureMarginLeft := 2;
+      Self.PictureLayout     := plGraphicCenter;
+      Self.Spacing           := 2;
+    end;
+
+    tsArrowLeft:
+    begin
+      SetSizeLayout(sl90x25);
+
+      LoadingTemplatePrimary;
+      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsArrowLeft, tcPrimary);
+
+      Self.Caption           := 'ANTERIOR';
+      Self.Alignment         := paLeftJustify;
+      Self.PictureMarginLeft := 2;
+      Self.PictureLayout     := plGraphicCenter;
+      Self.Spacing           := 2;
+    end;
+
+    tsKey:
+    begin
+      SetSizeLayout(sl90x25);
+
+      LoadingTemplatePrimary;
+      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsKey, tcPrimary);
+
+      Self.Caption           := 'PERMISSÃO';
+      Self.Alignment         := paLeftJustify;
+      Self.PictureMarginLeft := 2;
+      Self.PictureLayout     := plGraphicCenter;
+      Self.Spacing           := 2;
+    end;
+
+    tsConfig:
+    begin
+      SetSizeLayout(sl110x25);
+
+      LoadingTemplatePrimary;
+      FBraveButtonTemplateStyle := TBraveButtonTemplateStyle.New(tsConfig, tcPrimary);
+
+      Self.Caption           := 'CONFIGURAÇÃO';
+      Self.Alignment         := paLeftJustify;
+      Self.PictureMarginLeft := 2;
+      Self.PictureLayout     := plGraphicCenter;
+      Self.Spacing           := 2;
     end;
 
     tsMain:
@@ -893,11 +986,13 @@ begin
   FPenDown.Free;
   FPenFocused.Free;
   FPenDisabled.Free;
+  FPenGlassy.Free;
 
   FBrush.Free;
   FBrushDown.Free;
   FBrushFocused.Free;
   FBrushDisabled.Free;
+  FBrushGlassy.Free;
 
   FPicture.Free;
   FPictureFocused.Free;
@@ -1024,6 +1119,11 @@ begin
   result := Assigned(FPicture.Graphic) or Assigned(FPictureFocused.Graphic) or Assigned(FPictureDisabled.Graphic) or Assigned(FPictureDark.Graphic);
 end;
 
+function TBraveButton.IsGlassy: Boolean;
+begin
+  Result := Glassy <> false;
+end;
+
 function TBraveButton.IsImageIndexPicture: Boolean;
 begin
   result := ImageIndexPicture <> -1;
@@ -1133,7 +1233,7 @@ begin
 
       if IsStyleOutline then
       begin
-        Font.Color           := FPenDisabled.Color;
+        Font.Color         := FPenDisabled.Color;
         FSubFont.Pen.Color := FPenDisabled.Color;
       end;
     end
@@ -1181,8 +1281,16 @@ begin
 
       if IsStyleOutline then
       begin
-        Font.Color           := FPen.Color;
+        Font.Color         := FPen.Color;
         FSubFont.Pen.Color := FPen.Color;
+      end;
+
+      if IsGlassy then
+      begin
+        Brush              := FBrushGlassy;
+        Font.Color         := FPen.Color;
+        FSubFont.Pen.Color := FPen.Color;
+        FPen               := FPenGlassy;
       end;
     end;
 
@@ -1283,6 +1391,12 @@ begin
   end;
 end;
 
+procedure TBraveButton.RedefineColors;
+begin
+
+  //LoadingTemplateGlassy;
+end;
+
 procedure TBraveButton.SetAlignment(const Value: TPraAlignment);
 begin
   if FAlignment <> Value then
@@ -1350,6 +1464,13 @@ end;
 procedure TBraveButton.SetFontFocused(const Value: TButtonFont);
 begin
   FFontFocused.Assign(Value);
+end;
+
+procedure TBraveButton.SetGlassy(const Value: Boolean);
+begin
+  if FGlassy <> Value then
+    FGlassy := Value;
+  Invalidate;
 end;
 
 procedure TBraveButton.SetImageIndexPicture(const Value: Integer);
@@ -1779,6 +1900,13 @@ end;
 procedure TBraveButton.LoadingTemplateDark;
 begin
   FBraveButtonTemplateColor := TBraveButtonTemplateColor.New(tcDark, Self.Owner);
+
+  ApplyTemplate;
+end;
+
+procedure TBraveButton.LoadingTemplateGlassy;
+begin
+  FBraveButtonTemplateColor := TBraveButtonTemplateColor.New(tcGlassy, Self.Owner);
 
   ApplyTemplate;
 end;
