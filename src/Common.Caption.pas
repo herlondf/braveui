@@ -22,8 +22,9 @@ type
 
   public
     procedure DrawCaption(X, Y: Integer; AText: String; ACanvas: TCanvas);
+        property Caption: String read FCaption write SetCaption;
   published
-    property Caption: String read FCaption write SetCaption;
+
     property Font   : TFont  read FFont    write SetFont;
   end;
 

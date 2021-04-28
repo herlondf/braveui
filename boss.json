@@ -1,6 +1,6 @@
 {
-	"name": "BraveButton",
-	"description": "",
+	"name": "braveui",
+	"description": "suite ui for delphi",
 	"version": "1.0.0",
 	"homepage": "",
 	"mainsrc": "./src",

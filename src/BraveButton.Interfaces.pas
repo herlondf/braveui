@@ -3,6 +3,7 @@ unit BraveButton.Interfaces;
 interface
 
 uses
+  BraveButton.Consts,
   Vcl.Graphics;
 
 type
@@ -12,16 +13,19 @@ type
     function GetPenFocusedStyle   : TPenStyle;
     function GetPenDisabledStyle  : TPenStyle;
     function GetPenDownStyle      : TPenStyle;
+    function GetPenGlassyStyle    : TPenStyle;
 
     function GetPenWidth          : Smallint;
     function GetPenFocusedWidth   : Smallint;
     function GetPenDisabledWidth  : Smallint;
     function GetPenDownWidth      : Smallint;
+    function GetPenGlassyWidth    : Smallint;
 
     function GetPenColor          : TColor;
     function GetPenFocusedColor   : TColor;
     function GetPenDisabledColor  : TColor;
     function GetPenDownColor      : TColor;
+    function GetPenGlassyColor    : TColor;
   end;
 
   iBrushConfigurationCommom = interface
@@ -30,6 +34,7 @@ type
     function GetBrushFocusedColor : TColor;
     function GetBrushDisabledColor: TColor;
     function GetBrushDownColor    : TColor;
+    function GetBrushGlassyColor  : TColor;
   end;
 
   iFontConfigurationCommon = interface
