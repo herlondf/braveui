@@ -17,7 +17,8 @@ type
     tcLight,
     tcDark,
     tcSuccess,
-    tcInfo
+    tcInfo,
+    tcGlassy
   );
 
   TTemplateStyle = (
@@ -35,7 +36,12 @@ type
     tsRefresh,
     tsArrowUp,
     tsArrowDown,
-    tsMain
+    tsMain,
+    tsArrowRight,
+    tsArrowLeft,
+    tsKey,
+    tsConfig,
+    tsSearch
   );
 
   TSizeLayout = (
@@ -111,6 +117,60 @@ const
   ARROW_UP_LIGHT                   = ARROW_UP_COMPONENT + 'LIGHT';
   ARROW_UP_SUCCESS                 = ARROW_UP_COMPONENT + 'SUCCESS';
   ARROW_UP_INFO                    = ARROW_UP_COMPONENT + 'INFO';
+
+  ARROW_RIGHT_COMPONENT               = 'ARROW_RIGHT_';
+  ARROW_RIGHT_ENABLED                 = ARROW_RIGHT_COMPONENT + 'ENABLED';
+  ARROW_RIGHT_DISABLED                = ARROW_RIGHT_COMPONENT + 'DISABLED';
+  ARROW_RIGHT_FOCUSED                 = ARROW_RIGHT_COMPONENT + 'ENABLED';
+  ARROW_RIGHT_DARK                    = ARROW_RIGHT_COMPONENT + 'DARK';
+  ARROW_RIGHT_WARNING                 = ARROW_RIGHT_COMPONENT + 'ARROWWARNING';
+  ARROW_RIGHT_DANGER                  = ARROW_RIGHT_COMPONENT + 'DANGER';
+  ARROW_RIGHT_PRIMARY                 = ARROW_RIGHT_COMPONENT + 'PRIMARY';
+  ARROW_RIGHT_SECONDARY               = ARROW_RIGHT_COMPONENT + 'SECONDARY';
+  ARROW_RIGHT_LIGHT                   = ARROW_RIGHT_COMPONENT + 'LIGHT';
+  ARROW_RIGHT_SUCCESS                 = ARROW_RIGHT_COMPONENT + 'SUCCESS';
+  ARROW_RIGHT_INFO                    = ARROW_RIGHT_COMPONENT + 'INFO';
+
+  ARROW_LEFT_COMPONENT               = 'ARROW_LEFT_';
+  ARROW_LEFT_ENABLED                 = ARROW_LEFT_COMPONENT + 'ENABLED';
+  ARROW_LEFT_DISABLED                = ARROW_LEFT_COMPONENT + 'DISABLED';
+  ARROW_LEFT_FOCUSED                 = ARROW_LEFT_COMPONENT + 'ENABLED';
+  ARROW_LEFT_DARK                    = ARROW_LEFT_COMPONENT + 'DARK';
+  ARROW_LEFT_WARNING                 = ARROW_LEFT_COMPONENT + 'ARROWWARNING';
+  ARROW_LEFT_DANGER                  = ARROW_LEFT_COMPONENT + 'DANGER';
+  ARROW_LEFT_PRIMARY                 = ARROW_LEFT_COMPONENT + 'PRIMARY';
+  ARROW_LEFT_SECONDARY               = ARROW_LEFT_COMPONENT + 'SECONDARY';
+  ARROW_LEFT_LIGHT                   = ARROW_LEFT_COMPONENT + 'LIGHT';
+  ARROW_LEFT_SUCCESS                 = ARROW_LEFT_COMPONENT + 'SUCCESS';
+  ARROW_LEFT_INFO                    = ARROW_LEFT_COMPONENT + 'INFO';
+
+  KEY_COMPONENT               = 'KEY_';
+  KEY_ENABLED                 = KEY_COMPONENT + 'ENABLED';
+  KEY_DISABLED                = KEY_COMPONENT + 'DISABLED';
+  KEY_FOCUSED                 = KEY_COMPONENT + 'ENABLED';
+  KEY_DARK                    = KEY_COMPONENT + 'DARK';
+  KEY_WARNING                 = KEY_COMPONENT + 'ARROWWARNING';
+  KEY_DANGER                  = KEY_COMPONENT + 'DANGER';
+  KEY_PRIMARY                 = KEY_COMPONENT + 'PRIMARY';
+  KEY_SECONDARY               = KEY_COMPONENT + 'SECONDARY';
+  KEY_LIGHT                   = KEY_COMPONENT + 'LIGHT';
+  KEY_SUCCESS                 = KEY_COMPONENT + 'SUCCESS';
+  KEY_INFO                    = KEY_COMPONENT + 'INFO';
+
+	GEAR_COMPONENT               = 'GEAR_';
+  GEAR_ENABLED                 = GEAR_COMPONENT + 'ENABLED';
+  GEAR_DISABLED                = GEAR_COMPONENT + 'DISABLED';
+  GEAR_FOCUSED                 = GEAR_COMPONENT + 'ENABLED';
+  GEAR_DARK                    = GEAR_COMPONENT + 'DARK';
+  GEAR_WARNING                 = GEAR_COMPONENT + 'ARROWWARNING';
+  GEAR_DANGER                  = GEAR_COMPONENT + 'DANGER';
+  GEAR_PRIMARY                 = GEAR_COMPONENT + 'PRIMARY';
+  GEAR_SECONDARY               = GEAR_COMPONENT + 'SECONDARY';
+  GEAR_LIGHT                   = GEAR_COMPONENT + 'LIGHT';
+  GEAR_SUCCESS                 = GEAR_COMPONENT + 'SUCCESS';
+  GEAR_INFO                    = GEAR_COMPONENT + 'INFO';
+
+
 
   CANCEL_COMPONENT                 = 'CANCEL_';
   CANCEL_ENABLED                   = CANCEL_COMPONENT + 'ENABLED';

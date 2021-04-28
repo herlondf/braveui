@@ -17,7 +17,8 @@ uses
   BraveAbout.View,
   BraveButton.Component,
   BraveEdit.Component,
-  BraveEditTag.Component;
+  BraveEditTag.Component,
+  BraveLabel.Component;
 
 type
   TBraveUIComponentProperty = class(TStringProperty)
@@ -41,6 +42,9 @@ begin
 
   RegisterComponents('BraveUI', [ TBraveEditTag  ] );
   RegisterPropertyEditor( TypeInfo(String), TBraveEditTag, 'About', TBraveUIComponentProperty);
+
+  RegisterComponents('BraveUI', [ TBraveLabel  ] );
+  RegisterPropertyEditor( TypeInfo(String), TBraveLabel, 'About', TBraveUIComponentProperty);
 end;
 
 procedure AddSplash;
@@ -51,9 +55,9 @@ Begin
   ForceDemandLoadState(dlDisable);
 
   LFormAbout := TfrmBraveAbout.Create(nil);
+  LBraveLogo := TBitmap.Create;
 
   try
-    LBraveLogo := TBitmap.Create;
     LFormAbout.imgList.GetBitmap(1, LBraveLogo);
 
     SplashScreenServices.AddPluginBitmap(BraveTitle, LBraveLogo.Handle, false, BraveLicense + ' ' + 'v' + BraveVersion, '');

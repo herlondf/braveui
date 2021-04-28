@@ -2,7 +2,10 @@ program BraveSample;
 
 uses
   Vcl.Forms,
-  Sample.View in 'Sample.View.pas' {frmSample};
+  Sample.View in 'Sample.View.pas' {frmSample},
+  BraveLabel.Component in '..\src\BraveLabel.Component.pas',
+  Vcl.Themes,
+  Vcl.Styles;
 
 {$R *.res}
 
