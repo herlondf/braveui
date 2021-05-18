@@ -60,7 +60,7 @@ Begin
   try
     LFormAbout.imgList.GetBitmap(1, LBraveLogo);
 
-    SplashScreenServices.AddPluginBitmap(BraveTitle, LBraveLogo.Handle, false, BraveLicense + ' ' + 'v' + BraveVersion, '');
+    SplashScreenServices.AddPluginBitmap(BraveTitle, LBraveLogo.Handle, false, BraveLicense + ' ' + BraveUpdated + ' ' + 'v' + BraveVersion, '');
   finally
     LBraveLogo.Free;
     LFormAbout.Free;
