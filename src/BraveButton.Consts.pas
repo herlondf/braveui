@@ -55,9 +55,24 @@ type
     sl110x90
   );
 
-  TPraAlignment        = (
-    paLeftJustify,
-    paCenter
+  TButtonAlignment = (
+    baLeftCustom,
+    baLeftCenter,
+    baRightCustom,
+    baRightCenter,
+    baTopCustom,
+    baTopCenter,
+    baBottomCustom,
+    baBottomCenter,
+    baCenter,
+    baNone
+  );
+
+  TCaptionLayout = (
+    clLeft,
+    clCenter,
+    clRight,
+    clNone
   );
 
   TPictureLayout       = (
