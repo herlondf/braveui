@@ -16,7 +16,6 @@ type
     lblBraveTitleUI: TLabel;
     lblDesenvolvido: TLabel;
     mmoMantenedores: TMemo;
-    btnClose: TBraveButton;
     procedure btnCloseClick(Sender: TObject);
   private
     { Private declarations }

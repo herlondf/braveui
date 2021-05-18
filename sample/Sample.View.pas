@@ -10,8 +10,6 @@ uses
 
 type
   TfrmSample = class(TForm)
-    Button1: TButton;
-    Panel1: TPanel;
   private
     { Private declarations }
   public
