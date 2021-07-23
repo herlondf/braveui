@@ -848,7 +848,11 @@ end;
 
 procedure TBraveEditTag.SetText(const Value: string);
 begin
-  Self.FEdit.Text := Value;
+  if Value <> '' then
+  begin
+    FEdit.Show;
+    FEdit.Text := Value;
+  end;
 end;
 
 procedure TBraveEditTag.SetTextColor(const Value: TColor);
