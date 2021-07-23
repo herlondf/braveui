@@ -92,6 +92,7 @@ type
     procedure SetAutoHeight     ( const Value: Boolean );
 
     procedure SetTags           ( const Value: TStringList);
+    procedure SetText           ( const Value: string );
 
     procedure EditKeyPress      ( Sender: TObject; var Key: Char);
     procedure mnuDeleteItemClick( Sender: TObject );
@@ -149,7 +150,7 @@ type
     property EditorColor        : TColor              read FEditorColor         write FEditorColor         default clWindow;
     property AutoHeight         : Boolean             read FAutoHeight          write SetAutoHeight;
     property CharCase           : TEditCharCase       read FCharCase            write FCharCase            default ecNormal;
-    property Text               : String              read GetText;
+    property Text               : String              read GetText              write SetText;
     property Font;
 
     property OnTagClick         : TTagClickEvent      read FTagClickEvent       write FTagClickEvent;
@@ -843,6 +844,11 @@ procedure TBraveEditTag.SetTags(const Value: TStringList);
 begin
   FTags.Assign(Value);
   Invalidate;
+end;
+
+procedure TBraveEditTag.SetText(const Value: string);
+begin
+  Self.FEdit.Text := Value;
 end;
 
 procedure TBraveEditTag.SetTextColor(const Value: TColor);
