@@ -852,6 +852,8 @@ begin
   begin
     FEdit.Show;
     FEdit.Text := Value;
+    FEdit.SetFocus;
+    FEdit.SelStart := FEdit.GetTextLen;
   end;
 end;
 
