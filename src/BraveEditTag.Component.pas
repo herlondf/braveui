@@ -872,7 +872,7 @@ begin
   FEdit.Top := FEditPos.Y;
   FEdit.Width := ClientWidth - FEdit.Left - FSpacing;
   FEdit.Color := FEditorColor;
-  FEdit.Text := '';
+  //FEdit.Text := '';
   FEdit.Show;
   FEdit.SetFocus;
 end;
