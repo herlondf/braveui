@@ -154,6 +154,7 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="src\BraveLabel.Component.pas"/>
+        <DCCReference Include="src\BrvGrid.pas"/>
         <RcItem Include="assets\common\20px\ADD_DANGER.png">
             <ResourceType>RCDATA</ResourceType>
             <ResourceId>ADD_DANGER</ResourceId>

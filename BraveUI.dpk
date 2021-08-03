@@ -48,7 +48,8 @@ contains
   BraveEditTag.Component in 'src\BraveEditTag.Component.pas',
   Common.Consts in 'src\Common.Consts.pas',
   BraveAbout.View in 'src\BraveAbout.View.pas' {frmBraveAbout},
-  BraveLabel.Component in 'src\BraveLabel.Component.pas';
+  BraveLabel.Component in 'src\BraveLabel.Component.pas',
+  BrvGrid in 'src\BrvGrid.pas';
 
 end.
 

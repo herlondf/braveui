@@ -3,9 +3,9 @@ program BraveSample;
 uses
   Vcl.Forms,
   Sample.View in 'Sample.View.pas' {frmSample},
-  BraveLabel.Component in '..\src\BraveLabel.Component.pas',
   Vcl.Themes,
-  Vcl.Styles;
+  Vcl.Styles,
+  BraveAbout.View in '..\src\BraveAbout.View.pas' {frmBraveAbout};
 
 {$R *.res}
 
@@ -13,5 +13,6 @@ begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TfrmSample, frmSample);
+  Application.CreateForm(TfrmBraveAbout, frmBraveAbout);
   Application.Run;
 end.
