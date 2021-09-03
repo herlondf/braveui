@@ -1,13 +1,13 @@
-unit BraveButton.TemplateStyle;
+unit BrvButton.Style;
 
 interface
 
 uses
   Vcl.Graphics,
   System.SysUtils,
-  Common.Utils,
-  BraveButton.Consts,
-  BraveButton.Interfaces;
+  BrvUtils,
+  BrvButton.Consts,
+  BrvButton.Interfaces;
 
 type
   TBraveButtonTemplateStyle = class(TInterfacedObject, iBraveButtonTemplateStyle)

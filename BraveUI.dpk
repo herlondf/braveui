@@ -34,22 +34,12 @@ requires
   designide;
 
 contains
-  BraveButton.Component in 'src\BraveButton.Component.pas',
-  BraveButton.Consts in 'src\BraveButton.Consts.pas',
-  BraveButton.Interfaces in 'src\BraveButton.Interfaces.pas',
-  BraveButton.TemplateStyle in 'src\BraveButton.TemplateStyle.pas',
-  BraveButton.TemplateColor in 'src\BraveButton.TemplateColor.pas',
-  Common.Register in 'src\Common.Register.pas',
-  Common.Utils in 'src\Common.Utils.pas',
-  Common.Caption in 'src\Common.Caption.pas',
-  BraveEdit.Component in 'src\BraveEdit.Component.pas',
-  Common.Font in 'src\Common.Font.pas',
-  Common.GraphicControl in 'src\Common.GraphicControl.pas',
-  BraveEditTag.Component in 'src\BraveEditTag.Component.pas',
-  Common.Consts in 'src\Common.Consts.pas',
-  BraveAbout.View in 'src\BraveAbout.View.pas' {frmBraveAbout},
-  BraveLabel.Component in 'src\BraveLabel.Component.pas',
-  BrvGrid in 'src\BrvGrid.pas';
+  BrvRegister in 'src\BrvRegister.pas',
+  BrvGrid in 'src\Grid\BrvGrid.pas',
+  BrvGrid.ColumnsEditor in 'src\Grid\BrvGrid.ColumnsEditor.pas' {ColumnsEditorForm},
+  BrvGrid.HeaderEditor in 'src\Grid\BrvGrid.HeaderEditor.pas' {HeaderEditorForm},
+  BrvGrid.RegisterClass in 'src\Grid\BrvGrid.RegisterClass.pas',
+  BrvGrid.Options in 'src\Grid\BrvGrid.Options.pas';
 
 end.
 

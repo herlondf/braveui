@@ -1,6 +1,6 @@
 ﻿{ Diferenca entre Invalidate/Update/Refresh/Repaint }
 { https://pt.stackoverflow.com/questions/37413/qual-a-diferen%C3%A7a-nos-m%C3%A9todos-refresh-update-repaint-invalidate-e-no-applicati }
-unit BraveButton.Component;
+unit BrvButton;
 
 interface
 
@@ -21,9 +21,9 @@ uses
   Winapi.Windows,
 
   {Brave}
-  BraveButton.Interfaces,
-  BraveButton.Consts,
-  Common.Utils, Vcl.Dialogs;
+  BrvButton.Interfaces,
+  BrvButton.Consts,
+  Vcl.Dialogs;
 
 type
   TBraveButton = class;
@@ -353,8 +353,8 @@ type
 implementation
 
 uses
-  BraveButton.TemplateColor,
-  BraveButton.TemplateStyle;
+  BrvButton.Color,
+  BrvButton.Style;
 
 constructor TBraveButton.Create(AOwner: TComponent);
 begin

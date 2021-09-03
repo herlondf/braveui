@@ -1,9 +1,9 @@
-unit BraveButton.Interfaces;
+unit BrvButton.Interfaces;
 
 interface
 
 uses
-  BraveButton.Consts,
+  BrvButton.Consts,
   Vcl.Graphics;
 
 type

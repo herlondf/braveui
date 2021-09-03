@@ -1,4 +1,4 @@
-﻿unit BraveEditTag.Component;
+﻿unit BrvEditTag;
 
 interface
 

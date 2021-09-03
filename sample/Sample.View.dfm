@@ -13,36 +13,35 @@ object frmSample: TfrmSample
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
-  object BrvGrid1: TBrvGrid
-    Left = 48
-    Top = 56
-    Width = 649
-    Height = 313
-    Cursor = 101
-    ColCount = 0
-    HeaderFont.Charset = DEFAULT_CHARSET
-    HeaderFont.Color = clWindowText
-    HeaderFont.Height = -11
-    HeaderFont.Name = 'Tahoma'
-    HeaderFont.Style = []
-    FooterFont.Charset = DEFAULT_CHARSET
-    FooterFont.Color = clWindowText
-    FooterFont.Height = -11
-    FooterFont.Name = 'Tahoma'
-    FooterFont.Style = []
-    Columns = <>
-    GutterFont.Charset = DEFAULT_CHARSET
-    GutterFont.Color = clWindowText
-    GutterFont.Height = -11
-    GutterFont.Name = 'Tahoma'
-    GutterFont.Style = []
-    ShowFooter = False
-    Options = [brvgoThemed]
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = []
+  object GridView1: TGridView
+    Left = 0
+    Top = 0
+    Width = 723
+    Height = 361
+    Align = alTop
+    CheckBoxes = True
+    CheckStyle = csFlat
+    Columns = <
+      item
+        Caption = 'Share Name'
+        DefWidth = 100
+      end
+      item
+        Caption = 'Folder Path'
+        DefWidth = 150
+      end
+      item
+        Caption = 'File Description'
+        DefWidth = 250
+      end
+      item
+        Caption = 'Enabled'
+        CheckKind = gcCheckBox
+        ReadOnly = True
+        DefWidth = 100
+      end>
+    Rows.Count = 7
+    ShowCellTips = False
     TabOrder = 0
   end
 end

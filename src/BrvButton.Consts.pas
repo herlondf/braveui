@@ -1,4 +1,4 @@
-unit BraveButton.Consts;
+unit BrvButton.Consts;
 
 interface
 

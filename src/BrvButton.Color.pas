@@ -1,4 +1,4 @@
-unit BraveButton.TemplateColor;
+unit BrvButton.Color;
 
 interface
 
@@ -11,8 +11,8 @@ uses
   System.Typinfo,
   System.Classes,
   System.SysUtils,
-  BraveButton.Consts,
-  BraveButton.Interfaces;
+  BrvButton.Consts,
+  BrvButton.Interfaces;
 
 type
   TFontConfiguration = class(TInterfacedObject, iFontConfigurationCommon)

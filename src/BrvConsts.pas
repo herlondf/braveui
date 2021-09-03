@@ -1,4 +1,4 @@
-unit Common.Consts;
+unit BrvConsts;
 
 interface
 

@@ -136,25 +136,18 @@
         <DCCReference Include="rtl.dcp"/>
         <DCCReference Include="vcl.dcp"/>
         <DCCReference Include="designide.dcp"/>
-        <DCCReference Include="src\BraveButton.Component.pas"/>
-        <DCCReference Include="src\BraveButton.Consts.pas"/>
-        <DCCReference Include="src\BraveButton.Interfaces.pas"/>
-        <DCCReference Include="src\BraveButton.TemplateStyle.pas"/>
-        <DCCReference Include="src\BraveButton.TemplateColor.pas"/>
-        <DCCReference Include="src\Common.Register.pas"/>
-        <DCCReference Include="src\Common.Utils.pas"/>
-        <DCCReference Include="src\Common.Caption.pas"/>
-        <DCCReference Include="src\BraveEdit.Component.pas"/>
-        <DCCReference Include="src\Common.Font.pas"/>
-        <DCCReference Include="src\Common.GraphicControl.pas"/>
-        <DCCReference Include="src\BraveEditTag.Component.pas"/>
-        <DCCReference Include="src\Common.Consts.pas"/>
-        <DCCReference Include="src\BraveAbout.View.pas">
-            <Form>frmBraveAbout</Form>
+        <DCCReference Include="src\BrvRegister.pas"/>
+        <DCCReference Include="src\Grid\BrvGrid.pas"/>
+        <DCCReference Include="src\Grid\BrvGrid.ColumnsEditor.pas">
+            <Form>ColumnsEditorForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="src\BraveLabel.Component.pas"/>
-        <DCCReference Include="src\BrvGrid.pas"/>
+        <DCCReference Include="src\Grid\BrvGrid.HeaderEditor.pas">
+            <Form>HeaderEditorForm</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="src\Grid\BrvGrid.RegisterClass.pas"/>
+        <DCCReference Include="src\Grid\BrvGrid.Options.pas"/>
         <RcItem Include="assets\common\20px\ADD_DANGER.png">
             <ResourceType>RCDATA</ResourceType>
             <ResourceId>ADD_DANGER</ResourceId>
