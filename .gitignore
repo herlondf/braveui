@@ -70,3 +70,4 @@ modules/
 
 #Samples
 sample/
+res/*.res
